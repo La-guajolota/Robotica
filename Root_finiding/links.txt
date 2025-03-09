@@ -1,0 +1,3 @@
+https://pythonnumericalmethods.studentorg.berkeley.edu/notebooks/chapter14.01-Basics-of-Linear-Algebra.html
+
+http://www.sc.ehu.es/sbweb/fisica3/numerico/raices/raices_5.html 

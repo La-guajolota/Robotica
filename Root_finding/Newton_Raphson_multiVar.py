@@ -22,7 +22,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-def newton_raphson_multiVar(functions, jacobian, initial_points, N=100, epsilon=1e-8):
+def newton_raphson_multiVar(functions, jacobian, initial_points, N=100, epsilon=1e-9):
     for initial_point in initial_points:
         print(f"\nProbando con punto inicial: {initial_point}")
         X = np.array(initial_point)  # Punto inicial
@@ -54,25 +54,34 @@ def newton_raphson_multiVar(functions, jacobian, initial_points, N=100, epsilon=
 if __name__ == "__main__":
     # Definición del sistema de ecuaciones
     functions = [
-        lambda tetha1, tetha2: 70*np.cos(tetha1) + 30*np.cos(tetha1)*np.cos(tetha2) + 30*np.sin(tetha1)*np.sin(tetha2) - 70,
-        lambda tetha1, tetha2: 70*np.sin(tetha1) + 30*np.cos(tetha1)*np.sin(tetha2) + 30*np.sin(tetha1)*np.cos(tetha2) - 30
+        lambda tetha1, tetha2: 240*np.cos(tetha1) + 190*np.cos(tetha1)*np.cos(tetha2) - 190*np.sin(tetha1)*np.sin(tetha2) - 249.447,
+        lambda tetha1, tetha2: 240*np.sin(tetha1) + 190*np.sin(tetha1)*np.cos(tetha2) + 190*np.cos(tetha1)*np.sin(tetha2) - 300.579
     ]
 
     # Derivadas parciales de cada función
     jacobian = [
-        [lambda tetha1, tetha2: -70*np.sin(tetha1) - 30*(np.sin(tetha1)*np.cos(tetha2) - np.cos(tetha1)*np.sin(tetha2)), lambda tetha1, tetha2: 30*(np.sin(tetha1)*np.cos(tetha2) - np.cos(tetha1)*np.sin(tetha2))],
-        [lambda tetha1, tetha2: 70*np.cos(tetha1) + 30*(np.cos(tetha1)*np.cos(tetha2) - np.sin(tetha1)*np.sin(tetha2)), lambda tetha1, tetha2: 30*(np.cos(tetha1)*np.cos(tetha2) - np.sin(tetha1)*np.sin(tetha2))]
+        [
+            lambda tetha1, tetha2: -240*np.sin(tetha1) - 190*np.sin(tetha1)*np.cos(tetha2) - 190*np.cos(tetha1)*np.sin(tetha2),
+            lambda tetha1, tetha2: -190*np.cos(tetha1)*np.sin(tetha2) - 190*np.sin(tetha1)*np.cos(tetha2)
+        ],
+        [
+            lambda tetha1, tetha2: 240*np.cos(tetha1) + 190*np.cos(tetha1)*np.cos(tetha2) - 190*np.sin(tetha1)*np.sin(tetha2),
+            lambda tetha1, tetha2: -190*np.sin(tetha1)*np.sin(tetha2) + 190*np.cos(tetha1)*np.cos(tetha2)
+        ]
     ]
 
     # Puntos iniciales para probar el método de Newton-Raphson
     initial_points = [
-        [0.5, 0.5],
-        [-0.5, 0.5],
-        [0.5, -0.5],
-        [-0.5, -0.5],
-        [0, 0],
-        [np.pi/4, 0],
-        [0, np.pi/4]
+        [0, 0],                     # Origen
+        [np.pi/4, np.pi/4],         # 45°, 45°
+        [np.pi/2, np.pi/2],         # 90°, 90°
+        [np.pi/6, np.pi/3],         # 30°, 60°
+        [-np.pi/4, np.pi/4],        # -45°, 45°
+        [np.pi/4, -np.pi/4],        # 45°, -45°
+        [1.0, 0.5],                 # Aproximadamente 57° y 29°
+        [0.2, 0.2],                 # Valores pequeños
+        [1.5, 1.5],                 # Aproximadamente 86°
+        [2.0, 0.5]                  # Aproximadamente 115° y 29°
     ]
 
     # Llamada a la función de Newton-Raphson
@@ -82,8 +91,10 @@ if __name__ == "__main__":
     x = np.linspace(-2*np.pi, 2*np.pi, 100)
     y = np.linspace(-2*np.pi, 2*np.pi, 100)
     X, Y = np.meshgrid(x, y)
-    Z1 = 70*np.cos(X) + 30*np.cos(X)*np.cos(Y) + 30*np.sin(X)*np.sin(Y) - 70
-    Z2 = 70*np.sin(X) + 30*np.cos(X)*np.sin(Y) + 30*np.sin(X)*np.cos(Y) - 30
+    # Z1 = 70*np.cos(X) + 30*np.cos(X)*np.cos(Y) + 30*np.sin(X)*np.sin(Y) - 70
+    # Z2 = 70*np.sin(X) + 30*np.cos(X)*np.sin(Y) + 30*np.sin(X)*np.cos(Y) - 30
+    Z1 = 240*np.cos(X) + 190*np.cos(X)*np.cos(Y) - 190*np.sin(X)*np.sin(Y) - 249.447
+    Z2 = 240*np.sin(X) + 190*np.sin(X)*np.cos(Y) + 190*np.cos(X)*np.sin(Y) - 300.579
 
     # Crear la figura 3D
     fig = plt.figure()
@@ -107,8 +118,10 @@ if __name__ == "__main__":
     # Graficar funciones variando solo X1
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
     for i, tetha2 in enumerate([0, np.pi/4, np.pi/2, 3*np.pi/4, np.pi]):
-        Z1_varX1 = 70*np.cos(x) + 30*np.cos(x)*np.cos(tetha2) + 30*np.sin(x)*np.sin(tetha2) - 70
-        Z2_varX1 = 70*np.sin(x) + 30*np.cos(x)*np.sin(tetha2) + 30*np.sin(x)*np.cos(tetha2) - 30
+        # Z1_varX1 = 70*np.cos(x) + 30*np.cos(x)*np.cos(tetha2) + 30*np.sin(x)*np.sin(tetha2) - 70
+        # Z2_varX1 = 70*np.sin(x) + 30*np.cos(x)*np.sin(tetha2) + 30*np.sin(x)*np.cos(tetha2) - 30
+        Z1_varX1 = 240*np.cos(x) + 190*np.cos(x)*np.cos(tetha2) - 190*np.sin(x)*np.sin(tetha2) - 249.447
+        Z2_varX1 = 240*np.sin(x) + 190*np.sin(x)*np.cos(tetha2) + 190*np.cos(x)*np.sin(tetha2) - 300.579
         ax1.plot(x, Z1_varX1, label=f'tetha2={tetha2:.2f}')
         ax2.plot(x, Z2_varX1, label=f'tetha2={tetha2:.2f}')
     ax1.set_title('Variando X1')
@@ -124,8 +137,10 @@ if __name__ == "__main__":
     # Graficar funciones variando solo X2
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
     for i, tetha1 in enumerate([0, np.pi/4, np.pi/2, 3*np.pi/4, np.pi]):
-        Z1_varX2 = 70*np.cos(tetha1) + 30*np.cos(tetha1)*np.cos(y) + 30*np.sin(tetha1)*np.sin(y) - 70
-        Z2_varX2 = 70*np.sin(tetha1) + 30*np.cos(tetha1)*np.sin(y) + 30*np.sin(tetha1)*np.cos(y) - 30
+        # Z1_varX2 = 70*np.cos(tetha1) + 30*np.cos(tetha1)*np.cos(y) + 30*np.sin(tetha1)*np.sin(y) - 70
+        # Z2_varX2 = 70*np.sin(tetha1) + 30*np.cos(tetha1)*np.sin(y) + 30*np.sin(tetha1)*np.cos(y) - 30
+        Z1_varX2 = 240*np.cos(tetha1) + 190*np.cos(tetha1)*np.cos(y) - 190*np.sin(tetha1)*np.sin(y) - 249.447
+        Z2_varX2 = 240*np.sin(tetha1) + 190*np.sin(tetha1)*np.cos(y) + 190*np.cos(tetha1)*np.sin(y) - 300.579
         ax1.plot(y, Z1_varX2, label=f'tetha1={tetha1:.2f}')
         ax2.plot(y, Z2_varX2, label=f'tetha1={tetha1:.2f}')
     ax1.set_title('Variando X2')

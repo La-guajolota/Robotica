@@ -139,8 +139,6 @@ def main():
     """
     print("=" * 60)
     print("CALCULADORA DE MATRICES DE DENAVIT-HARTENBERG")
-    print("Autor: [Tu Nombre]")
-    print("Fecha: 14 de marzo de 2025")
     print("=" * 60)
     
     # Puedes modificar estos valores para tu caso específico

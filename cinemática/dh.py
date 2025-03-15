@@ -143,10 +143,10 @@ def main():
     
     # Puedes modificar estos valores para tu caso específico
     # Datos de la tabla DH
-    ai = [0, 0, 20, 0]
-    alphai = [0, 90, 0, 180]
-    di = [0, 30, 0, 10]
-    thetai = [300, 180, 270, 0]
+    ai = [0, 0, 0, 175, 50, 0 ,0]
+    alphai = [0, 90, 0, 0, 180, 0, 0]
+    di = [113, 23, 35, 0, 0, 53, 53]
+    thetai = [0, 90, 0, 0, 90, 0, 360]
     
     # Opción para ingresar datos personalizados
     opcion = input("\n¿Deseas ingresar tus propios parámetros DH? (s/n): ").lower()

@@ -1,0 +1,36 @@
+1. **Filtro promedio**: 
+Suaviza la imagen calculando el promedio de los píxeles en una ventana de tamaño definido, reduciendo 
+el ruido pero perdiendo detalles.
+
+2. **Filtro Gaussiano**: Suaviza la imagen aplicando una función gaussiana, reduciendo el ruido 
+mientras preserva mejor los bordes que el filtro promedio.
+
+3. **Sobel en X e Y**: Detecta bordes en la dirección horizontal (X) o vertical (Y) resaltando 
+cambios de intensidad en esas direcciones.
+
+4. **Magnitud combinada de Sobel**: Combina los resultados de Sobel en X e Y para obtener 
+la magnitud total de los bordes en todas las direcciones.
+
+5. **Prewitt en X e Y**: Similar al filtro Sobel, detecta bordes en las direcciones horizontal (X) o 
+vertical (Y), pero con un enfoque más simple.
+
+6. **Magnitud combinada de Prewitt**: Combina los resultados de Prewitt en X e Y para obtener 
+la magnitud total de los bordes.
+
+7. **Filtro Laplaciano**: Detecta bordes y cambios rápidos de intensidad en todas las direcciones, 
+resaltando contornos.
+
+8. **Filtro pasa-altas**: Resalta los detalles y bordes de la imagen eliminando las frecuencias 
+bajas (suavizado).
+
+9. **Filtro Mediano**: Suaviza la imagen reemplazando cada píxel por la mediana de los valores 
+en su vecindad, reduciendo el ruido impulsivo.
+
+10. **Filtro Mínimo**: Oscurece la imagen seleccionando el valor más bajo en una ventana, útil 
+para eliminar puntos brillantes pequeños.
+
+11. **Filtro Máximo**: Ilumina la imagen seleccionando el valor más alto en una ventana, útil 
+para eliminar puntos oscuros pequeños.
+
+12. **Filtro Bilateral**: Suaviza la imagen mientras preserva los bordes, considerando tanto l
+a proximidad espacial como la similitud de intensidad.

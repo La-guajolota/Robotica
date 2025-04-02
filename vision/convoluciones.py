@@ -4,7 +4,7 @@ from scipy.ndimage import gaussian_filter, sobel, prewitt, laplace, median_filte
 import matplotlib.pyplot as plt
 
 # Cargar la imagen en escala de grises
-image_path = "vision/nadejo.jpeg"  # Cambia esto por la ruta de tu imagen
+image_path = "vision/btns0.jpeg"  # Cambia esto por la ruta de tu imagen
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 
 # Verificar si la imagen se cargó correctamente
@@ -42,23 +42,13 @@ filters = {
     "Bilateral": bilateral,
 }
 
-# Crear un mosaico con matplotlib
-plt.figure(figsize=(20, 15))
-for i, (name, filtered_image) in enumerate(filters.items()):
-    # Mostrar la imagen filtrada
-    plt.subplot((len(filters) + 1) // 2, 2, i + 1)
+# Mostrar las imágenes una por una
+for name, filtered_image in filters.items():
+    plt.figure(figsize=(8, 6))
     plt.imshow(filtered_image, cmap="gray")
     plt.title(f"{name} - Imagen")
     plt.axis("off")
-
-    # Calcular y mostrar el histograma normalizado
-    # plt.subplot(len(filters), 2, 2 * i + 2)
-    # hist, bins = np.histogram(filtered_image.flatten(), bins=256, range=[0, 256], density=True)
-    # plt.plot(hist, color="black")
-    # plt.fill_between(range(256), hist, color="gray", alpha=0.5)
-    # plt.title(f"{name} - Histograma Normalizado")
-    # plt.xlabel("Intensidad")
-    # plt.ylabel("Frecuencia")
+    plt.show()
 
 plt.tight_layout()
 plt.show()

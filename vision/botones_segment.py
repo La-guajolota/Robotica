@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Cargar la imagen en modo color
-image_path = "vision/btns0.jpeg"  # Cambia esto por la ruta de tu imagen
+image_path = "vision/btns2.png"  # Cambia esto por la ruta de tu imagen
 image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
 # Verificar si la imagen se cargó correctamente
@@ -14,11 +14,11 @@ if image is None:
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Aplicar un filtro Gaussiano para reducir el ruido
-# Aplicar un filtro Gaussiano con un kernel de 5x5 para suavizar la imagen y reducir el ruido
-blurred_image = cv2.GaussianBlur(gray_image, (31, 31), 0)
+# con un kernel de 5x5 para suavizar la imagen y reducir el ruido
+blurred_image = cv2.GaussianBlur(gray_image, (3,3), 0)
 
 # Aplicar umbralización para segmentar los círculos negros
-_, binary_image = cv2.threshold(blurred_image, 50, 255, cv2.THRESH_BINARY_INV)
+_, binary_image = cv2.threshold(blurred_image, 71, 255, cv2.THRESH_BINARY_INV)
 
 # Encontrar contornos en la imagen binaria
 contours, _ = cv2.findContours(binary_image, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)

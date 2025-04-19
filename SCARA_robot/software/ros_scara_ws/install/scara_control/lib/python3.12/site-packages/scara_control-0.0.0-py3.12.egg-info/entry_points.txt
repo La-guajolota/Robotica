@@ -1,0 +1,2 @@
+[console_scripts]
+read_encoders_node = scara_control.read_encoders_node:main

@@ -1,0 +1,25 @@
+[0.734s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data
+[0.977s] running egg_info
+[0.996s] writing ../../build/scara_control/scara_control.egg-info/PKG-INFO
+[0.996s] writing dependency_links to ../../build/scara_control/scara_control.egg-info/dependency_links.txt
+[0.996s] writing entry points to ../../build/scara_control/scara_control.egg-info/entry_points.txt
+[0.996s] writing requirements to ../../build/scara_control/scara_control.egg-info/requires.txt
+[0.997s] writing top-level names to ../../build/scara_control/scara_control.egg-info/top_level.txt
+[1.035s] reading manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+[1.035s] adding license file 'LICENSE'
+[1.035s] writing manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+[1.036s] running build
+[1.036s] running build_py
+[1.036s] copying scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+[1.036s] running install
+[1.041s] running install_lib
+[1.061s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+[1.061s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/read_encoders_node.py to read_encoders_node.cpython-312.pyc
+[1.062s] running install_data
+[1.062s] running install_egg_info
+[1.082s] removing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.082s] Copying ../../build/scara_control/scara_control.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control-0.0.0-py3.12.egg-info
+[1.083s] running install_scripts
+[1.210s] Installing read_encoders_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/scara_control
+[1.210s] writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log'
+[1.236s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msg_svrs/srv/MotorControl_Response",
+      "fields": [
+        {
+          "name": "response_message",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msg_svrs/srv/MotorControl_Response",
+      "hash_string": "RIHS01_9c1a3ffb7486d18e2eb896c5b5ea6f2fa2dace5ff3f5be068c4d9d9473246ebc"
+    }
+  ]
+}

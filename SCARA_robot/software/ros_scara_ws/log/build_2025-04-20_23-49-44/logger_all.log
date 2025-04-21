@@ -1,0 +1,212 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72d0d0770830>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72d0d0770530>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72d0d0770530>>, mixin_verb=('build',))
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.122s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extension 'colcon_meta'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extensions ['ros']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msg_svrs) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msg_svrs' with type 'ros.ament_cmake' and name 'custom_msg_svrs'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/scara_control) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/scara_control' with type 'ros.ament_python' and name 'scara_control'
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.161s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.161s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.161s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.162s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install
+[0.164s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 345 installed packages in /opt/ros/jazzy
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_clean_first' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'cmake_force_configure' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'ament_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'custom_msg_svrs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.206s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msg_svrs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs', 'merge_install': False, 'path': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs', 'symlink_install': False, 'test_result_base': None}
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_target' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.206s] Level 5:colcon.colcon_core.verb:set package 'scara_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.206s] DEBUG:colcon.colcon_core.verb:Building package 'scara_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control', 'merge_install': False, 'path': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control', 'symlink_install': False, 'test_result_base': None}
+[0.206s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.207s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.207s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs' with build type 'ament_cmake'
+[0.207s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs'
+[0.209s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs
+[3.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs
+[3.035s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs -- -j12 -l12
+[5.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs -- -j12 -l12
+[5.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs
+[5.441s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msg_svrs)
+[5.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs
+[5.443s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' for CMake module files
+[5.444s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' for CMake config files
+[5.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'cmake_prefix_path')
+[5.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.ps1'
+[5.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.dsv'
+[5.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.sh'
+[5.446s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib'
+[5.446s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'ld_library_path_lib')
+[5.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.ps1'
+[5.447s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.dsv'
+[5.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.sh'
+[5.447s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/bin'
+[5.447s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/pkgconfig/custom_msg_svrs.pc'
+[5.448s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages'
+[5.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'pythonpath')
+[5.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.ps1'
+[5.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.dsv'
+[5.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.sh'
+[5.449s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/bin'
+[5.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.ps1'
+[5.449s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.dsv'
+[5.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.sh'
+[5.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.bash'
+[5.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.zsh'
+[5.451s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/colcon-core/packages/custom_msg_svrs)
+[5.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msg_svrs)
+[5.452s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' for CMake module files
+[5.452s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs' for CMake config files
+[5.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'cmake_prefix_path')
+[5.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.ps1'
+[5.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.dsv'
+[5.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/cmake_prefix_path.sh'
+[5.454s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib'
+[5.454s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'ld_library_path_lib')
+[5.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.ps1'
+[5.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.dsv'
+[5.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/ld_library_path_lib.sh'
+[5.455s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/bin'
+[5.455s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/pkgconfig/custom_msg_svrs.pc'
+[5.455s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages'
+[5.455s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msg_svrs', 'pythonpath')
+[5.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.ps1'
+[5.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.dsv'
+[5.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/hook/pythonpath.sh'
+[5.456s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/bin'
+[5.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.ps1'
+[5.457s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.dsv'
+[5.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.sh'
+[5.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.bash'
+[5.458s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.zsh'
+[5.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/colcon-core/packages/custom_msg_svrs)
+[5.459s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control' with build type 'ament_python'
+[5.459s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_control', 'ament_prefix_path')
+[5.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/ament_prefix_path.ps1'
+[5.460s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/ament_prefix_path.dsv'
+[5.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/ament_prefix_path.sh'
+[5.460s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.655s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control'
+[5.655s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.655s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data
+[6.704s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control' for CMake module files
+[6.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data
+[6.705s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control' for CMake config files
+[6.705s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib'
+[6.705s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/bin'
+[6.705s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/pkgconfig/scara_control.pc'
+[6.706s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages'
+[6.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('scara_control', 'pythonpath')
+[6.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/pythonpath.ps1'
+[6.706s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/pythonpath.dsv'
+[6.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/hook/pythonpath.sh'
+[6.707s] Level 1:colcon.colcon_core.environment:checking '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/bin'
+[6.707s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scara_control)
+[6.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/package.ps1'
+[6.707s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/package.dsv'
+[6.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/package.sh'
+[6.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/package.bash'
+[6.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control/package.zsh'
+[6.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/colcon-core/packages/scara_control)
+[6.709s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.709s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.709s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.709s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.714s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.714s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.715s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.726s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.727s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/local_setup.ps1'
+[6.727s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/_local_setup_util_ps1.py'
+[6.728s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/setup.ps1'
+[6.729s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/local_setup.sh'
+[6.729s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/_local_setup_util_sh.py'
+[6.730s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/setup.sh'
+[6.731s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/local_setup.bash'
+[6.731s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/setup.bash'
+[6.732s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/local_setup.zsh'
+[6.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/setup.zsh'

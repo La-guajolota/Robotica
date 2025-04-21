@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

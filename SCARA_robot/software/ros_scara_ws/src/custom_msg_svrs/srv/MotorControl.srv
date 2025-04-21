@@ -1,0 +1,6 @@
+# Request (joint positions)
+uint8 data_uint8    # which motor
+bool data_bool      # which direction
+float32 data_float  # angle to displace
+---
+string response_message # result

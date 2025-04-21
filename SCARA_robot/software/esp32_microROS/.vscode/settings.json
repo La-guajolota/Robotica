@@ -26,6 +26,24 @@
         "unordered_set": "cpp",
         "initializer_list": "cpp",
         "memory": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "set_bool.h": "c",
+        "float32__functions.h": "c",
+        "empty.h": "c",
+        "service.h": "c",
+        "rclc.h": "c",
+        "float32.h": "c",
+        "trigger.h": "c",
+        "trigger__struct.h": "c",
+        "set_bool__struct.h": "c",
+        "trigger__type_support.h": "c",
+        "set_camera_info__struct.h": "c",
+        "cmath": "cpp",
+        "u_int8.h": "c",
+        "set_bool__functions.h": "c",
+        "string_functions.h": "c",
+        "motor_control.h": "c",
+        "float32__struct.h": "c",
+        "motor_control__struct.h": "c"
     }
 }

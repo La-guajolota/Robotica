@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msg_svrs/srv/MotorControl.srv
+// generated code does not contain a copyright notice
+
+
+module custom_msg_svrs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request (joint positions)")
+    struct MotorControl_Request {
+      @verbatim (language="comment", text=
+        "which motor")
+      uint8 data_uint8;
+
+      @verbatim (language="comment", text=
+        "which direction")
+      boolean data_bool;
+
+      @verbatim (language="comment", text=
+        "angle to displace")
+      float data_float;
+    };
+    struct MotorControl_Response {
+      @verbatim (language="comment", text=
+        "result")
+      string response_message;
+    };
+  };
+};

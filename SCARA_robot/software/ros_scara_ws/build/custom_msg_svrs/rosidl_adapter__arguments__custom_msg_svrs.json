@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_msg_svrs",
+  "non_idl_tuples": [
+    "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs:srv/MotorControl.srv"
+  ]
+}

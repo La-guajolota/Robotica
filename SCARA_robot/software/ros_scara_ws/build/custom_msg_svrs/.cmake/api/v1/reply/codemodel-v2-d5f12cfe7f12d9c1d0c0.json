@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b8c783701a0a3a6c91b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "custom_msg_svrs__py",
+					"jsonFile" : "directory-custom_msg_svrs__py-7f3c05a15e681c638274.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/custom_msg_svrs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "custom_msg_svrs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_custom_msg_svrs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_custom_msg_svrs_egg-cfb183da1f641d52ada6.json",
+					"name" : "ament_cmake_python_build_custom_msg_svrs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_custom_msg_svrs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_custom_msg_svrs-bc9286cb032cdd368bac.json",
+					"name" : "ament_cmake_python_copy_custom_msg_svrs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs-8bd71c763dbcffc60503.json",
+					"name" : "custom_msg_svrs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__cpp-931df4fa4880a9ac0d47.json",
+					"name" : "custom_msg_svrs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "custom_msg_svrs__py::@6c5ee9ca08467aba853b",
+					"jsonFile" : "target-custom_msg_svrs__py-6d0ada06c55674a039cc.json",
+					"name" : "custom_msg_svrs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_generator_c-40505d485e1d30f317f4.json",
+					"name" : "custom_msg_svrs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_generator_py-b1d4e16465b39e7b9973.json",
+					"name" : "custom_msg_svrs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_generator_type_description-f128c15b85253235b9dd.json",
+					"name" : "custom_msg_svrs__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_c-800f5f4d44c8d1562d66.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_cpp-8acdddf649091a4a500a.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_fastrtps_c-86f37abf79a3451ae58f.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_fastrtps_cpp-825d9ff3655ddeb89ec6.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_introspection_c-479e126c48594d7bf953.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs__rosidl_typesupport_introspection_cpp-dea69fd4a9700dc56067.json",
+					"name" : "custom_msg_svrs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs_s__rosidl_typesupport_c-3ef4328da103efe15b3f.json",
+					"name" : "custom_msg_svrs_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs_s__rosidl_typesupport_fastrtps_c-4138986c608d5d5544aa.json",
+					"name" : "custom_msg_svrs_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs_s__rosidl_typesupport_introspection_c-da1e86403fdcbee14dac.json",
+					"name" : "custom_msg_svrs_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "custom_msg_svrs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-custom_msg_svrs_uninstall-47b6ca782180cc5046ca.json",
+					"name" : "custom_msg_svrs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-a8d34dd4b29f49f32cab.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs",
+		"source" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

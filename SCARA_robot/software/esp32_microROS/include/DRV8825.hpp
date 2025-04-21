@@ -1,4 +1,5 @@
-// https://www.ti.com/lit/ds/symlink/drv8825.pdf
+// DRV8825 Stepper Motor Driver Header File
+// Datasheet: https://www.ti.com/lit/ds/symlink/drv8825.pdf
 
 #ifndef DRV8825_HPP
 #define DRV8825_HPP
@@ -6,33 +7,36 @@
 #include <Arduino.h>
 #include "driver/rmt.h"
 
-// Micro steppings modes
-#define MICROSTEP_FULL 0
-#define MICROSTEP_2    2.0
-#define MICROSTEP_8    8.0
-#define MICROSTEP_16   16.0
-#define MICROSTEP_32   32.0
+// Microstepping modes
+#define MICROSTEP_FULL  0
+#define MICROSTEP_2     2.0
+#define MICROSTEP_8     8.0
+#define MICROSTEP_16    16.0
+#define MICROSTEP_32    32.0
 
 extern bool tx_done;
 
-class DRV8825
-{
+class DRV8825 {
 private:
-    uint8_t dir_pin;
-    uint8_t step_pin;
-    
+    uint8_t dir_pin;   // Direction pin
+    uint8_t step_pin;  // Step pin
+
 public:
-     
-    rmt_channel_t used_chnn;
+    
+    uint8_t rst_pin;
+    uint16_t steps_full_rot;
+    rmt_item32_t* pulses_arr; // 
+    rmt_channel_t used_chnn;    // RMT channel used for pulse generation
 
     // Constructor
-    DRV8825(uint8_t dir, uint8_t step, rmt_channel_t chnn);
+    DRV8825(uint8_t dir, uint8_t step, uint8_t rst, rmt_channel_t chnn, uint16_t steps_rot, rmt_item32_t* pulses_arr);
 
     // Methods
-    void move_steps(bool dir , bool wait, uint16_t steps, rmt_item32_t *pulse_arr); // Array to store RMT pulse items
+    void en_dis_driver(bool en_dis);
+    void move_steps(bool direction, bool wait, uint16_t steps, rmt_item32_t* pulse_array); // Move motor steps
 };
 
-//
-void IRAM_ATTR tx_end_callback(rmt_channel_t channel, void* arg);
+// RMT transmission end callback
+void IRAM_ATTR tx_end_callback(rmt_channel_t chnn, void* arg);
 
-#endif
+#endif // DRV8825_HPP

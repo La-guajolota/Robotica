@@ -1,0 +1,12 @@
+{
+  "package_name": "custom_msg_svrs",
+  "output_dir": "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_type_description/custom_msg_svrs",
+  "idl_tuples": [
+    "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_adapter/custom_msg_svrs:srv/MotorControl.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/custom_msg_svrs__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "custom_msg_svrs::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "custom_msg_svrs__py::@6c5ee9ca08467aba853b",
+	"name" : "custom_msg_svrs__py",
+	"paths" : 
+	{
+		"build" : "custom_msg_svrs__py",
+		"source" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/custom_msg_svrs__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/custom_msg_svrs__py/CMakeFiles/custom_msg_svrs__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/custom_msg_svrs__py/CMakeFiles/custom_msg_svrs__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_py/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

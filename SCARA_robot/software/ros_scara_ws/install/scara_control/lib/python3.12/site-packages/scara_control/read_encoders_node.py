@@ -16,7 +16,7 @@ class ReadEncodersSubscriber(Node):
         self.encoder_c_value = 0.0
 
         # Buffers para el promedio móvil
-        self.moving_avg_window_size = 10
+        self.moving_avg_window_size = 3
         self.encoder_a_buffer = deque(maxlen=self.moving_avg_window_size)
         self.encoder_b_buffer = deque(maxlen=self.moving_avg_window_size)
         self.encoder_c_buffer = deque(maxlen=self.moving_avg_window_size)

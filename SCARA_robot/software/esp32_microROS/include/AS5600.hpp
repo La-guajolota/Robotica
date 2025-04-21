@@ -51,7 +51,6 @@ class AS5600 {
 private:
     uint8_t sda_pin;
     uint8_t scl_pin;
-    uint8_t dir_pin;
     I2CType *I2C_port;
 
     uint16_t readReg(uint8_t reg);
@@ -60,7 +59,7 @@ private:
 public:
     uint8_t data[readable_reg] = {0};
 
-    AS5600(uint8_t sda, uint8_t scl, uint8_t dir, I2CType *I2C_port);
+    AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port);
     float read_angle();
     void set_encoder_config(uint8_t *data_config);
 };
@@ -68,8 +67,8 @@ public:
 // Implementación de la plantilla
 
 template<typename I2CType>
-AS5600<I2CType>::AS5600(uint8_t sda, uint8_t scl, uint8_t dir, I2CType *I2C_port)
-    : sda_pin(sda), scl_pin(scl), dir_pin(dir), I2C_port(I2C_port)
+AS5600<I2CType>::AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port)
+    : sda_pin(sda), scl_pin(scl), I2C_port(I2C_port)
 {
     I2C_port->begin(sda_pin, scl_pin, SCL_FREQ);
 }

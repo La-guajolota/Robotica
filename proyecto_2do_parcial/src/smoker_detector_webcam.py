@@ -65,6 +65,15 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import time
 
+# Configurar TensorFlow para usar la GPU
+physical_devices = tf.config.list_physical_devices('GPU')
+if physical_devices:
+    print(f"GPUs detectadas: {len(physical_devices)}")
+    for device in physical_devices:
+        tf.config.experimental.set_memory_growth(device, True)
+else:
+    print("No se detectaron GPUs. TensorFlow usará la CPU.")
+
 def preprocess_image(img, target_size):
     """Preprocesa una imagen para la predicción"""
     img = cv2.resize(img, target_size)

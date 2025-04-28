@@ -4,6 +4,8 @@ Este script utiliza un modelo de aprendizaje profundo para detectar si una perso
 usando la webcam. El modelo previamente entrenado se carga y se utiliza para realizar predicciones en cada
 frame capturado por la cámara. La salida incluye información visual sobre la predicción, confianza, FPS y
 tiempo de inferencia.
+Autor: Adrián Silva Palafox y Felipe Adriel Trejo De Arcos 
+Fecha: 2023-27-05
 Funciones:
 -----------
 preprocess_image(img, target_size):
@@ -82,7 +84,7 @@ def main():
     
     # Inicializar webcam
     print("Iniciando webcam...")
-    cap = cv2.VideoCapture(2)  # 0 para webcam predeterminada
+    cap = cv2.VideoCapture(0)  # 0 para webcam predeterminada
     
     # Verificar si la webcam se abrió correctamente
     if not cap.isOpened():

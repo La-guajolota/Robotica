@@ -214,10 +214,7 @@ python raspberry_pi/smoking_detector_rpi.py
 
 ## 🏆 Resultados
 
-El modelo logra una precisión aproximada de X% en el conjunto de prueba, con tiempos de inferencia de:
-- ~20-30ms en PC con GPU
-- ~150-300ms en PC sin GPU
-- ~500-1000ms en Raspberry Pi 4
+TODO:
 
 ## 🚀 Mejoras Futuras
 
@@ -226,7 +223,6 @@ El modelo logra una precisión aproximada de X% en el conjunto de prueba, con ti
 - **Seguimiento Temporal**: Analizar secuencias de frames para reducir falsos positivos
 - **Clasificación Multiclase**: Diferenciar entre cigarrillos convencionales y vapers
 - **Optimización Avanzada**: Aplicar técnicas de cuantización y poda para mejor rendimiento
-- **Aplicación Móvil**: Desarrollar versión para dispositivos Android/iOS
 
 ## 📄 Licencia
 

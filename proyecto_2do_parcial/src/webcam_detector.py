@@ -93,7 +93,7 @@ def main():
     
     # Inicializar webcam
     print("Iniciando webcam...")
-    cap = cv2.VideoCapture(0)  # 0 para webcam predeterminada
+    cap = cv2.VideoCapture(2)  # 0 para webcam predeterminada
     
     # Verificar si la webcam se abrió correctamente
     if not cap.isOpened():
@@ -133,8 +133,8 @@ def main():
             fps_start_time = time.time()
         
         # Determinar resultado
-        threshold = 0.5
-        result = "FUMANDO" if prediction > threshold else "NO FUMANDO"
+        threshold = 0.85 # Umbral de confianza
+        result = "FUMANDO" if prediction > threshold else "NO FUMANDO" 
         confidence = prediction if prediction > threshold else 1 - prediction
         color = (0, 0, 255) if prediction > threshold else (0, 255, 0)
         

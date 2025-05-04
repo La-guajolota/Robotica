@@ -18,24 +18,12 @@ Un repositorio curado con herramientas, algoritmos, simulaciones y recursos educ
 - [Calculadoras Online](./calculators) ⚡
 - Simulaciones en Python
 
-### ⚙️ **Mecanismos**
-- Tipologías de articulaciones
-- Síntesis de mecanismos (4-barras, paralelos)
-- Análisis de transmisiones
-- Bibliotecas CAD/STL
-
 ### 💻 **Programación & Control**
-- Frameworks ROS/ROS2
+- Frameworks ROS2
 - Firmware para microcontroladores
 - Interfaces de sensores (LiDAR, IMU)
 - Algoritmos de planificación de trayectorias
 
 ### 🎮 **Simuladores**
-| Herramienta             | Tipo               | Enlace                  |
-|-------------------------|--------------------|-------------------------|
-| Gazebo                  | Física 3D          | [Link](./simulators/gazebo) |
-| CoppeliaSim             | Prototipado Rápido | [Link](./simulators/coppelia)|
-| Webots                  | Multiplataforma    | [Link](./simulators/webots) |
 
 ---
-

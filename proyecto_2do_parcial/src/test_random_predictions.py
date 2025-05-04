@@ -89,14 +89,14 @@ def show_random_predictions(model_path, test_dir, num_samples=5):
         true_label = "Fumando" if "smoking" in img_path.split(os.sep)[-2] else "No Fumando"
         
         # Determinar la etiqueta predicha
-        pred_label = "Fumando" if prediction > 0.5 else "No Fumando"
+        pred_label = "Fumando" if prediction > 0.85 else "No Fumando"
         
         # Determinar si la predicción es correcta
         is_correct = (true_label == pred_label)
         border_color = 'green' if is_correct else 'red'
         
         # Calcular confianza
-        confidence = prediction if prediction > 0.5 else 1 - prediction
+        confidence = prediction if prediction > 0.85 else 1 - prediction
         
         # Mostrar la imagen con resultados
         plt.subplot(1, num_samples, i+1)

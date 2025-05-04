@@ -93,7 +93,7 @@ def main():
     
     # Inicializar webcam
     print("Iniciando webcam...")
-    cap = cv2.VideoCapture(2)  # 0 para webcam predeterminada
+    cap = cv2.VideoCapture(0)  # 0 para webcam predeterminada
     
     # Verificar si la webcam se abrió correctamente
     if not cap.isOpened():
@@ -139,7 +139,7 @@ def main():
         color = (0, 0, 255) if prediction > threshold else (0, 255, 0)
         
         # Mostrar información en pantalla
-        cv2.putText(display_frame, f"Predicción: {result}", (10, 30), 
+        cv2.putText(display_frame, f"Prediccion: {result}", (10, 30), 
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
         cv2.putText(display_frame, f"Confianza: {confidence:.2f}", (10, 70), 
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)

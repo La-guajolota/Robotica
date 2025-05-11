@@ -6,7 +6,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "U"
+		(property "Reference" "PCA9548A"
 			(at 0 0 0)
 			(effects
 				(font
@@ -280,14 +280,14 @@
 			(pin input line
 				(at 12.7 -2.54 180)
 				(length 2.54)
-				(name "sc1"
+				(name "sc7"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "13"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -298,14 +298,14 @@
 			(pin open_collector line
 				(at 12.7 -5.08 180)
 				(length 2.54)
-				(name "sd1"
+				(name "sd7"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -316,14 +316,14 @@
 			(pin input line
 				(at 12.7 -7.62 180)
 				(length 2.54)
-				(name "sc0"
+				(name "sc6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "15"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -334,14 +334,14 @@
 			(pin open_collector line
 				(at 12.7 -10.16 180)
 				(length 2.54)
-				(name "sd0"
+				(name "sd6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -352,14 +352,14 @@
 			(pin input line
 				(at 12.7 -12.7 180)
 				(length 2.54)
-				(name "sc1"
+				(name "sc5"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -370,14 +370,14 @@
 			(pin open_collector line
 				(at 12.7 -15.24 180)
 				(length 2.54)
-				(name "sd1"
+				(name "sd5"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -388,14 +388,14 @@
 			(pin input line
 				(at 12.7 -17.78 180)
 				(length 2.54)
-				(name "sc0"
+				(name "sc4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "19"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -406,14 +406,14 @@
 			(pin open_collector line
 				(at 12.7 -20.32 180)
 				(length 2.54)
-				(name "sd0"
+				(name "sd4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "20"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -424,14 +424,14 @@
 			(pin input line
 				(at 12.7 -22.86 180)
 				(length 2.54)
-				(name "sc1"
+				(name "sc3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -442,14 +442,14 @@
 			(pin open_collector line
 				(at 12.7 -25.4 180)
 				(length 2.54)
-				(name "sd1"
+				(name "sd3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "22"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -460,14 +460,14 @@
 			(pin input line
 				(at 12.7 -27.94 180)
 				(length 2.54)
-				(name "sc0"
+				(name "sc2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "24"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -478,14 +478,14 @@
 			(pin open_collector line
 				(at 12.7 -30.48 180)
 				(length 2.54)
-				(name "sd0"
+				(name "sd2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "25"
 					(effects
 						(font
 							(size 1.27 1.27)

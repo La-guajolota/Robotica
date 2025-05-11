@@ -5443,7 +5443,7 @@
 							)
 						)
 					)
-					(number "24"
+					(number "23"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5461,7 +5461,7 @@
 							)
 						)
 					)
-					(number "25"
+					(number "24"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6242,10 +6242,6 @@
 		(uuid "02c417bf-fff1-438a-bb75-f08e667b2c18")
 	)
 	(no_connect
-		(at 165.1 67.31)
-		(uuid "0bfcfca8-0926-4354-83db-007d5ebae5f3")
-	)
-	(no_connect
 		(at 245.11 35.56)
 		(uuid "25c88cef-c9a2-4f43-92c2-266d43ad95e1")
 	)
@@ -6258,24 +6254,12 @@
 		(uuid "3f6e9f5f-50ce-4721-b113-c2cf6e7b7c76")
 	)
 	(no_connect
-		(at 165.1 54.61)
-		(uuid "646f322b-c327-4a9f-ab7d-53efacbc201c")
-	)
-	(no_connect
 		(at 139.7 67.31)
 		(uuid "6a57d3ab-aa8b-4262-880b-559aba45eeac")
 	)
 	(no_connect
 		(at 143.51 132.08)
 		(uuid "7d5d48fa-dac5-42b5-8f6d-2c3e245df314")
-	)
-	(no_connect
-		(at 165.1 62.23)
-		(uuid "8678a084-d4ed-4bc3-80d0-bdd291ee6d3d")
-	)
-	(no_connect
-		(at 165.1 59.69)
-		(uuid "8a3ebe19-ff1c-4002-a57e-e600edcbe7f2")
 	)
 	(no_connect
 		(at 143.51 104.14)
@@ -6288,14 +6272,6 @@
 	(no_connect
 		(at 143.51 137.16)
 		(uuid "8eba19b7-5e8f-438e-a26d-65ec9d3b14ba")
-	)
-	(no_connect
-		(at 165.1 57.15)
-		(uuid "8fec8855-2c8b-4a60-a537-0b2aa46090fa")
-	)
-	(no_connect
-		(at 165.1 64.77)
-		(uuid "98989256-b6c3-40b0-802e-231b5a96ad51")
 	)
 	(no_connect
 		(at 143.51 139.7)
@@ -6658,6 +6634,16 @@
 			(type default)
 		)
 		(uuid "20cd1698-cf3f-4f7d-83e1-3b172baabdf2")
+	)
+	(wire
+		(pts
+			(xy 138.43 49.53) (xy 139.7 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219bfbe4-fb34-4d78-a4fc-2089099aef57")
 	)
 	(wire
 		(pts
@@ -7078,16 +7064,6 @@
 			(type default)
 		)
 		(uuid "511220fd-478c-4dd4-97b9-9897b1c6afda")
-	)
-	(wire
-		(pts
-			(xy 110.49 49.53) (xy 139.7 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5151edb7-891b-42eb-abc9-7b07186f37d3")
 	)
 	(wire
 		(pts
@@ -7528,16 +7504,6 @@
 			(type default)
 		)
 		(uuid "7e26fc46-ec1d-475d-9207-0671745579e2")
-	)
-	(wire
-		(pts
-			(xy 110.49 35.56) (xy 119.38 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fc908dd-75ed-444f-8a16-a5985de8462a")
 	)
 	(wire
 		(pts
@@ -8571,16 +8537,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 41.91) (xy 110.49 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e19e0c7f-b6c6-459d-ab9d-c591f8ccd3b5")
-	)
-	(wire
-		(pts
 			(xy 96.52 30.48) (xy 101.6 30.48)
 		)
 		(stroke
@@ -8938,16 +8894,6 @@
 			(type default)
 		)
 		(uuid "f54050e4-5c9c-4e3e-8922-74f13f682663")
-	)
-	(wire
-		(pts
-			(xy 110.49 36.83) (xy 110.49 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f56129ef-dd9f-402a-9d0a-6d645d0f30a8")
 	)
 	(wire
 		(pts
@@ -9600,12 +9546,12 @@
 		(uuid "b8619240-180f-4924-844b-ce46f0524030")
 	)
 	(label "rst_master"
-		(at 111.76 49.53 0)
+		(at 138.43 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "b86f1be1-77b5-4e22-8d82-78eede413219")
 	)
@@ -11565,7 +11511,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 48v"
+		(property "Value" "47uF 48v"
 			(at 55.88 35.9409 0)
 			(effects
 				(font
@@ -12894,7 +12840,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 48v"
+		(property "Value" "47uF 48v"
 			(at 88.9 35.9409 0)
 			(effects
 				(font
@@ -13639,75 +13585,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 110.49 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "918095fd-1de2-4c19-9797-85440930d508")
-		(property "Reference" "R10"
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 113.03 40.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 110.49 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 110.49 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f794c9c2-c90f-4b5d-a7a0-973d87b2f3a4")
-		)
-		(pin "1"
-			(uuid "4ecb416c-f929-4336-a9fe-f2e5cae3b4a6")
-		)
-		(instances
-			(project "pcb_controller"
-				(path "/d37cc98a-e228-4973-bb4e-be9654c7ae0b"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_LED_AKL:LED_5mm")
 		(at 101.6 35.56 90)
 		(mirror x)
@@ -14445,7 +14322,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 48v"
+		(property "Value" "47uF 48v"
 			(at 39.37 35.9409 0)
 			(effects
 				(font
@@ -15186,7 +15063,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF 48v"
+		(property "Value" "47uF 48v"
 			(at 72.39 35.9409 0)
 			(effects
 				(font
@@ -15263,7 +15140,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "modules:TCA9548A"
 			(at 152.4 36.83 0)
 			(effects
 				(font
@@ -15272,7 +15149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/pca9548a.pdf"
 			(at 152.4 36.83 0)
 			(effects
 				(font
@@ -15335,7 +15212,7 @@
 		(pin "6"
 			(uuid "94ff4421-cf89-4a2d-8863-27eef410c407")
 		)
-		(pin "25"
+		(pin "23"
 			(uuid "05e66a29-2c6c-4907-8bf6-aa631d24bbf1")
 		)
 		(pin "10"

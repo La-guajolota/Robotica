@@ -3514,183 +3514,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_4ms_Regulator:LD1117-3.3V-SOT223"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.143 1.143)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "LD1117-3.3V-SOT223"
-				(at -4.445 4.445 0)
-				(effects
-					(font
-						(size 1.143 1.143)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "4ms_Package_SOT:SOT223"
-				(at 0 6.985 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "STMicroelectronics"
-				(at 0 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Part Number" "LD1117S33CTR"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*TO-252-2* *TO?252?2*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LD1117-3.3V-SOT223_1_0"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(text "IN"
-					(at -3.2766 1.2446 0)
-					(effects
-						(font
-							(size 1.2192 1.2192)
-						)
-					)
-				)
-				(text "ADJ"
-					(at -0.2794 -2.4384 0)
-					(effects
-						(font
-							(size 1.2192 1.2192)
-						)
-					)
-				)
-				(text "OUT"
-					(at 1.8796 1.2446 0)
-					(effects
-						(font
-							(size 1.2192 1.2192)
-						)
-					)
-				)
-			)
-			(symbol "LD1117-3.3V-SOT223_1_1"
-				(pin input line
-					(at -10.16 1.27 0)
-					(length 5.08)
-					(name "IN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -6.35 90)
-					(length 2.54)
-					(name "ADJ"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 1.27 180)
-					(length 5.08)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_Capacitor_AKL:CP_Radial_D10.0mm_P5.00mm"
 			(pin_numbers
 				(hide yes)
@@ -4710,6 +4533,143 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:LD1117S33TR_SOT223"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LD1117S33TR_SOT223"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "REGULATOR LDO 3.3V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LD1117S33TR_SOT223_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LD1117S33TR_SOT223_1_1"
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5992,7 +5952,7 @@
 	)
 	(text "Controller\n"
 		(exclude_from_sim no)
-		(at 128.27 81.534 0)
+		(at 156.464 82.296 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -6278,6 +6238,10 @@
 		(uuid "f6b7b401-9c7e-461b-9fc7-ed3f19c5d816")
 	)
 	(no_connect
+		(at 143.51 127)
+		(uuid "02c417bf-fff1-438a-bb75-f08e667b2c18")
+	)
+	(no_connect
 		(at 165.1 67.31)
 		(uuid "0bfcfca8-0926-4354-83db-007d5ebae5f3")
 	)
@@ -6302,6 +6266,10 @@
 		(uuid "6a57d3ab-aa8b-4262-880b-559aba45eeac")
 	)
 	(no_connect
+		(at 143.51 132.08)
+		(uuid "7d5d48fa-dac5-42b5-8f6d-2c3e245df314")
+	)
+	(no_connect
 		(at 165.1 62.23)
 		(uuid "8678a084-d4ed-4bc3-80d0-bdd291ee6d3d")
 	)
@@ -6314,6 +6282,14 @@
 		(uuid "8ae580ea-1298-455c-a7e6-c218c5289a11")
 	)
 	(no_connect
+		(at 173.99 109.22)
+		(uuid "8c2e23fb-8056-4575-863b-cb6d6be34e30")
+	)
+	(no_connect
+		(at 143.51 137.16)
+		(uuid "8eba19b7-5e8f-438e-a26d-65ec9d3b14ba")
+	)
+	(no_connect
 		(at 165.1 57.15)
 		(uuid "8fec8855-2c8b-4a60-a537-0b2aa46090fa")
 	)
@@ -6322,8 +6298,16 @@
 		(uuid "98989256-b6c3-40b0-802e-231b5a96ad51")
 	)
 	(no_connect
+		(at 143.51 139.7)
+		(uuid "9feadc85-9de0-4aaf-90ca-947ee82cc11b")
+	)
+	(no_connect
 		(at 139.7 64.77)
 		(uuid "a7e54177-bcb3-4ec0-b7a5-452224f9d070")
+	)
+	(no_connect
+		(at 143.51 144.78)
+		(uuid "b85db349-d810-447d-8e60-048a1a6cee06")
 	)
 	(no_connect
 		(at 143.51 111.76)
@@ -6334,6 +6318,14 @@
 		(uuid "bc007caf-77d0-4940-b42d-19248bd06451")
 	)
 	(no_connect
+		(at 173.99 144.78)
+		(uuid "bf0603b0-4d2d-42ab-8cbb-b2721470e52c")
+	)
+	(no_connect
+		(at 173.99 111.76)
+		(uuid "c27b473e-e86c-48a7-a136-e07132ffb1f5")
+	)
+	(no_connect
 		(at 139.7 62.23)
 		(uuid "cdab9a43-f069-4776-b81b-78e5a0485e65")
 	)
@@ -6342,8 +6334,20 @@
 		(uuid "d0fb7628-7a92-4bf2-9392-d8b0e06035b8")
 	)
 	(no_connect
+		(at 143.51 129.54)
+		(uuid "d6ea4a62-a9b2-4f08-9c0b-126ee5df60c9")
+	)
+	(no_connect
 		(at 139.7 59.69)
 		(uuid "d784b4de-8640-4230-88f4-3503b563be2f")
+	)
+	(no_connect
+		(at 143.51 142.24)
+		(uuid "d9496246-756f-4b41-b7ed-d26ede86b0f3")
+	)
+	(no_connect
+		(at 173.99 142.24)
+		(uuid "f3ceca04-be7a-4e40-aeb9-ecdd3ffcc11b")
 	)
 	(wire
 		(pts
@@ -6357,7 +6361,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 31.75) (xy 180.34 41.91)
+			(xy 180.34 34.29) (xy 180.34 41.91)
 		)
 		(stroke
 			(width 0)
@@ -6427,7 +6431,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 25.4) (xy 172.72 26.67)
+			(xy 172.72 25.4) (xy 172.72 29.21)
 		)
 		(stroke
 			(width 0)
@@ -6517,7 +6521,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 31.75) (xy 189.23 44.45)
+			(xy 189.23 34.29) (xy 189.23 44.45)
 		)
 		(stroke
 			(width 0)
@@ -6534,16 +6538,6 @@
 			(type default)
 		)
 		(uuid "10e12278-ac3f-4f53-90bb-857564b263a5")
-	)
-	(wire
-		(pts
-			(xy 172.72 24.13) (xy 172.72 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10f22c85-cbc9-466c-825d-51c5e558da25")
 	)
 	(wire
 		(pts
@@ -6624,6 +6618,16 @@
 			(type default)
 		)
 		(uuid "1ad2ea87-02fe-4371-add3-c188609451f9")
+	)
+	(wire
+		(pts
+			(xy 92.71 57.15) (xy 99.06 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c57f0df-0949-46d3-b2fb-493e3a63321f")
 	)
 	(wire
 		(pts
@@ -6754,16 +6758,6 @@
 			(type default)
 		)
 		(uuid "29f2a60a-2bff-46f8-8315-ff4887ce7aef")
-	)
-	(wire
-		(pts
-			(xy 95.25 57.15) (xy 99.06 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b34fe29-640c-4052-9a91-773d9966d445")
 	)
 	(wire
 		(pts
@@ -7187,7 +7181,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 25.4) (xy 189.23 26.67)
+			(xy 189.23 25.4) (xy 189.23 29.21)
 		)
 		(stroke
 			(width 0)
@@ -7277,7 +7271,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 31.75) (xy 196.85 46.99)
+			(xy 196.85 34.29) (xy 196.85 46.99)
 		)
 		(stroke
 			(width 0)
@@ -7327,7 +7321,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 57.15) (xy 74.93 57.15)
+			(xy 68.58 57.15) (xy 77.47 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7467,7 +7461,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 26.67) (xy 196.85 25.4)
+			(xy 196.85 29.21) (xy 196.85 25.4)
 		)
 		(stroke
 			(width 0)
@@ -7667,7 +7661,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 31.75) (xy 204.47 49.53)
+			(xy 204.47 34.29) (xy 204.47 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8027,7 +8021,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 31.75) (xy 172.72 39.37)
+			(xy 172.72 34.29) (xy 172.72 39.37)
 		)
 		(stroke
 			(width 0)
@@ -8037,7 +8031,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 31.75) (xy 212.09 52.07)
+			(xy 212.09 34.29) (xy 212.09 52.07)
 		)
 		(stroke
 			(width 0)
@@ -8127,7 +8121,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 26.67) (xy 180.34 25.4)
+			(xy 180.34 29.21) (xy 180.34 25.4)
 		)
 		(stroke
 			(width 0)
@@ -8234,6 +8228,16 @@
 			(type default)
 		)
 		(uuid "be463481-d6c8-47ce-8ff3-28a1c680698a")
+	)
+	(wire
+		(pts
+			(xy 172.72 24.13) (xy 172.72 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfccb854-0bdd-47e1-b734-08608e61f015")
 	)
 	(wire
 		(pts
@@ -8527,7 +8531,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 25.4) (xy 204.47 26.67)
+			(xy 204.47 25.4) (xy 204.47 29.21)
 		)
 		(stroke
 			(width 0)
@@ -8777,7 +8781,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 26.67) (xy 212.09 25.4)
+			(xy 212.09 29.21) (xy 212.09 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11687,7 +11691,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 180.34 29.21 0)
+		(at 180.34 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11695,7 +11699,7 @@
 		(dnp no)
 		(uuid "4975c9bc-f14f-4723-b413-3cb7ff7642e7")
 		(property "Reference" "R5"
-			(at 175.26 26.9241 0)
+			(at 175.26 29.4641 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11704,7 +11708,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 175.006 28.956 0)
+			(at 175.006 31.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11713,7 +11717,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 180.34 29.21 0)
+			(at 180.34 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11722,7 +11726,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 29.21 0)
+			(at 180.34 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11731,7 +11735,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 180.34 29.21 0)
+			(at 180.34 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12526,7 +12530,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 189.23 29.21 0)
+		(at 189.23 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12534,7 +12538,7 @@
 		(dnp no)
 		(uuid "64b28952-1e02-4f81-b549-1d609b431ab9")
 		(property "Reference" "R6"
-			(at 184.15 27.1781 0)
+			(at 184.15 29.7181 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12543,7 +12547,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 184.15 29.21 0)
+			(at 184.15 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12552,7 +12556,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 189.23 29.21 0)
+			(at 189.23 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12561,7 +12565,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 29.21 0)
+			(at 189.23 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12570,7 +12574,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 189.23 29.21 0)
+			(at 189.23 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12795,6 +12799,77 @@
 			(project ""
 				(path "/d37cc98a-e228-4973-bb4e-be9654c7ae0b"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:LD1117S33TR_SOT223")
+		(at 85.09 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "775b4fe1-82cb-4841-8e04-aea9309d9243")
+		(property "Reference" "U4"
+			(at 85.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD1117S33TR_SOT223"
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 85.09 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
+			(at 87.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
+			(at 85.09 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "342e02cc-ce59-4502-8ed0-99279b268d27")
+		)
+		(pin "1"
+			(uuid "e268fbcb-9099-443d-93bd-6caedb293ded")
+		)
+		(pin "3"
+			(uuid "83ca18e8-8766-4db2-83f7-6f0b48a21752")
+		)
+		(instances
+			(project ""
+				(path "/d37cc98a-e228-4973-bb4e-be9654c7ae0b"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -13076,7 +13151,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 212.09 29.21 0)
+		(at 212.09 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13084,7 +13159,7 @@
 		(dnp no)
 		(uuid "841f3a34-1123-48aa-bdb3-bb5be5e6a2a7")
 		(property "Reference" "R9"
-			(at 207.264 27.178 0)
+			(at 207.264 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13093,7 +13168,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 207.01 29.21 0)
+			(at 207.01 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13102,7 +13177,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 212.09 29.21 0)
+			(at 212.09 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13111,7 +13186,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 29.21 0)
+			(at 212.09 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13120,7 +13195,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 212.09 29.21 0)
+			(at 212.09 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13703,98 +13778,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_4ms_Regulator:LD1117-3.3V-SOT223")
-		(at 85.09 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "97d5dab0-3597-4bdf-bdbe-d7f7b8090366")
-		(property "Reference" "IC1"
-			(at 85.09 51.308 0)
-			(effects
-				(font
-					(size 1.143 1.143)
-				)
-			)
-		)
-		(property "Value" "LD1117-3.3V-SOT223"
-			(at 85.09 53.34 0)
-			(effects
-				(font
-					(size 1.143 1.143)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Package_TO_SOT_SMD_AKL:TO-252-2_ThermalVias"
-			(at 85.09 51.435 0)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/2/389/cd00000544-1795431.pdf"
-			(at 85.09 57.15 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "3.3V Voltage Regulator, SOT-223-3, Imax=0.8A, VinMax=15V, Vdrop=1V"
-			(at 85.09 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "STMicroelectronics"
-			(at 85.09 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "LD1117S33CTR"
-			(at 85.09 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fef4bdb7-dc30-44c3-a00e-c2c9b2840215")
-		)
-		(pin "1"
-			(uuid "3b56ed5f-a924-4d5e-a82e-27eef306db75")
-		)
-		(pin "3"
-			(uuid "ece8f2b5-a0a9-4146-af36-6f471cab84d8")
-		)
-		(instances
-			(project ""
-				(path "/d37cc98a-e228-4973-bb4e-be9654c7ae0b"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 196.85 29.21 0)
+		(at 196.85 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13802,7 +13787,7 @@
 		(dnp no)
 		(uuid "9b76db27-c37e-4968-b359-0aaccef3fbac")
 		(property "Reference" "R7"
-			(at 192.024 27.178 0)
+			(at 192.024 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13811,7 +13796,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 191.77 29.2099 0)
+			(at 191.77 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13820,7 +13805,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 196.85 29.21 0)
+			(at 196.85 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13829,7 +13814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 29.21 0)
+			(at 196.85 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13838,7 +13823,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 196.85 29.21 0)
+			(at 196.85 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15116,7 +15101,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 204.47 29.21 0)
+		(at 204.47 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15124,7 +15109,7 @@
 		(dnp no)
 		(uuid "c99dcbaa-4648-40a4-aa64-c67c46bca570")
 		(property "Reference" "R8"
-			(at 199.39 26.924 0)
+			(at 199.39 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15133,7 +15118,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 199.136 29.21 0)
+			(at 199.136 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15142,7 +15127,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 204.47 29.21 0)
+			(at 204.47 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15151,7 +15136,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 29.21 0)
+			(at 204.47 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15160,7 +15145,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 204.47 29.21 0)
+			(at 204.47 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16651,7 +16636,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 172.72 29.21 0)
+		(at 172.72 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16659,7 +16644,7 @@
 		(dnp no)
 		(uuid "fe97f43b-a16c-430d-867f-b195ee9a2703")
 		(property "Reference" "R4"
-			(at 168.148 26.9241 0)
+			(at 168.148 29.4641 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16668,7 +16653,7 @@
 			)
 		)
 		(property "Value" "4K7"
-			(at 167.64 29.21 0)
+			(at 167.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16677,7 +16662,7 @@
 			)
 		)
 		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
-			(at 172.72 29.21 0)
+			(at 172.72 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16686,7 +16671,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 29.21 0)
+			(at 172.72 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16695,7 +16680,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 172.72 29.21 0)
+			(at 172.72 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)

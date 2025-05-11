@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "proyectoLechuga")(type "KiCad")(uri "/media/adrian/usb_a/PCBS/libray_juanpepe_pcb/mylib/proyectoLechuga.kicad_sym")(options "")(descr ""))
+)

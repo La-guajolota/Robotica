@@ -6099,12 +6099,6 @@
 		(uuid "5afae48b-4c57-4838-a55f-5a2dd852a595")
 	)
 	(junction
-		(at 33.02 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60c66ba6-b2ce-4088-8953-1414331e47e6")
-	)
-	(junction
 		(at 68.58 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6157,6 +6151,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fb3113d-216d-4bdd-860b-136087b7c2cc")
+	)
+	(junction
+		(at 33.02 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b2d6308-697d-46ed-a2dd-f7134f6817bf")
 	)
 	(junction
 		(at 193.04 26.67)
@@ -6678,16 +6678,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 140.97) (xy 33.02 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23ee9fc1-8cf6-4bde-85cd-ef91afa0be68")
-	)
-	(wire
-		(pts
 			(xy 31.75 167.64) (xy 58.42 167.64)
 		)
 		(stroke
@@ -7058,6 +7048,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 138.43) (xy 59.69 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ab86f81-6c78-40bd-991a-eb7c6016f078")
+	)
+	(wire
+		(pts
 			(xy 273.05 91.44) (xy 265.43 91.44)
 		)
 		(stroke
@@ -7308,16 +7308,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 140.97) (xy 59.69 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60e3daaa-6d6c-4d03-9f79-0716d2a26b06")
-	)
-	(wire
-		(pts
 			(xy 134.62 45.72) (xy 135.89 45.72)
 		)
 		(stroke
@@ -7438,7 +7428,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 140.97) (xy 33.02 140.97)
+			(xy 31.75 140.97) (xy 59.69 140.97)
 		)
 		(stroke
 			(width 0)
@@ -7666,6 +7656,16 @@
 		)
 		(uuid "8db95bd2-80c1-4b4b-a392-260007c63a30")
 	)
+	(wire
+		(pts
+			(xy 33.02 138.43) (xy 33.02 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de64beb-f81a-448f-b898-8c3af72029c1")
+	)
 	(polyline
 		(pts
 			(xy 109.22 74.93) (xy 213.36 74.93)
@@ -7758,7 +7758,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 138.43) (xy 59.69 138.43)
+			(xy 31.75 138.43) (xy 33.02 138.43)
 		)
 		(stroke
 			(width 0)
@@ -11589,7 +11589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 176.53 33.02 0)
 			(effects
 				(font
@@ -12629,7 +12629,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 185.42 33.02 0)
 			(effects
 				(font
@@ -13317,7 +13317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 208.28 33.02 0)
 			(effects
 				(font
@@ -13928,7 +13928,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 193.04 33.02 0)
 			(effects
 				(font
@@ -14850,7 +14850,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 93.98 30.48 0)
 			(effects
 				(font
@@ -15135,7 +15135,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 200.66 33.02 0)
 			(effects
 				(font
@@ -16940,7 +16940,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "PCM_Resistor_THT_AKL:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 168.91 33.02 0)
 			(effects
 				(font

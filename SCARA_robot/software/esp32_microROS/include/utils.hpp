@@ -46,7 +46,7 @@
   */
  #define BASE_MOTOR_DIR_PIN 13   // Direction control pin
  #define BASE_MOTOR_STEP_PIN 25  // Step control pin
- #define BASE_MOTOR_RST_PIN 23   // Reset pin
+ #define BASE_MOTOR_RST_PIN 17   // Reset pin
  extern DRV8825 motor_base;
  
  /**
@@ -54,7 +54,7 @@
   * Link 1 axis stepper motor pins and controller
   */
  #define LINK1_MOTOR_DIR_PIN 33  // Direction control pin
- #define LINK1_MOTOR_STEP_PIN 26 // Step control pin
+ #define LINK1_MOTOR_STEP_PIN 27 // Step control pin
  #define LINK1_MOTOR_RST_PIN 17  // Reset pin
  extern DRV8825 motor_link1;
  
@@ -63,8 +63,8 @@
   * Link 2 axis stepper motor pins and controller
   */
  #define LINK2_MOTOR_DIR_PIN 32  // Direction control pin
- #define LINK2_MOTOR_STEP_PIN 27 // Step control pin
- #define LINK2_MOTOR_RST_PIN 16  // Reset pin
+ #define LINK2_MOTOR_STEP_PIN 26 // Step control pin
+ #define LINK2_MOTOR_RST_PIN 23  // Reset pin
  extern DRV8825 motor_link2;
  
  /**

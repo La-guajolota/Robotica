@@ -9016,16 +9016,6 @@
 		)
 		(uuid "01f400d3-a286-427f-ae63-7a98cd113add")
 	)
-	(label "scl_master"
-		(at 175.26 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "092e8089-7697-4693-b915-687e692565e1")
-	)
 	(label "sda_enA"
 		(at 176.53 43.18 180)
 		(effects
@@ -9106,16 +9096,6 @@
 		)
 		(uuid "1fbd8f5a-c0b3-40c4-8b62-0337548577ff")
 	)
-	(label "sda_master"
-		(at 142.24 147.32 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1fc7391f-cb63-41e9-8214-5bcfad2d7b0d")
-	)
 	(label "sda_enB"
 		(at 85.09 140.97 0)
 		(effects
@@ -9135,6 +9115,16 @@
 			(justify right bottom)
 		)
 		(uuid "2d1c7aa4-1ffc-42f0-91e3-e518bf7b511a")
+	)
+	(label "sda_master"
+		(at 175.26 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e264684-b266-492d-b52d-04b2b6c3afcb")
 	)
 	(label "dirA"
 		(at 43.18 100.33 0)
@@ -9215,6 +9205,16 @@
 			(justify left bottom)
 		)
 		(uuid "468c11e2-90a7-454e-a6ea-8110b28fd838")
+	)
+	(label "scl_master"
+		(at 142.24 147.32 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "474436fd-ae0d-4ca5-9fe6-80c57997ec85")
 	)
 	(label "baseM_rst"
 		(at 175.26 116.84 0)

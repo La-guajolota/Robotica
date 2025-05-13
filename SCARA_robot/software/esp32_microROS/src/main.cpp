@@ -85,6 +85,9 @@ void mv_ang(DRV8825 &motor, AS5600<I2CType> &encoder, std_msgs__msg__Float32 *en
     // Return immediately if no movement required
     if (steps == 0) return;
     
+    // Check if the channel is set and tca9548a is used
+    encoder.muxchannel(encoder.mux_channel);
+
     // Enable motor driver
     motor.en_dis_driver(HIGH);
 

@@ -3,7 +3,11 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include <softI2C.hpp>
+#include "TCA9548A.hpp"
+#include "softI2C.hpp"
+
+// Declared in utils.hpp
+extern TCA9548A tca9548a;
 
 /*****************************************
 MAGNETIC ENCODERS AS5600 
@@ -33,6 +37,8 @@ https://files.seeedstudio.com/wiki/Grove-12-bit-Magnetic-Rotary-Position-Sensor-
 #define BURN         0xFF
 
 #define SCL_FREQ 1000000    //1Mhz
+#define SCL_FREQ_SLOW 4000 //400Khz
+
 const int8_t readable_reg = 17;
 const int8_t writable_reg = 8;
 const int8_t i2c_address = 0x36;
@@ -57,14 +63,23 @@ private:
     void writeReg(uint8_t reg, uint16_t data);
 
 public:
+    uint8_t mux_channel = -1; // TCA9548A channel for the encoder
     uint8_t data[readable_reg] = {0};
 
+    void muxchannel(uint8_t channel);
     AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port);
     float read_angle();
     void set_encoder_config(uint8_t *data_config);
 };
 
 // Implementación de la plantilla
+
+template<typename I2CType>
+void AS5600<I2CType>::muxchannel(uint8_t channel) {
+    if (mux_channel != -1) {
+        tca9548a.sel_channel(mux_channel);
+    }
+}
 
 template<typename I2CType>
 AS5600<I2CType>::AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port)
@@ -106,6 +121,9 @@ float AS5600<I2CType>::read_angle() {
 
 template<typename I2CType>
 void AS5600<I2CType>::set_encoder_config(uint8_t *data_config) {
+    // Check if the channel is set and tca9548a is used
+    muxchannel(mux_channel);
+
     writeReg(ZPOS_H, (data_config[0] << 8) | data_config[1]);
     writeReg(MPOS_H, (data_config[2] << 8) | data_config[3]);
     writeReg(MANG_H, (data_config[4] << 8) | data_config[5]);

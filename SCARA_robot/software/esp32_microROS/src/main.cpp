@@ -31,9 +31,6 @@ void mv_ang(
     bool dir,
     float angle);
 
-/**
- * @brief Initialize system components and communication
- */
 void setup() {
     // Initialize Serial communication
     Serial.begin(115200);
@@ -50,9 +47,6 @@ void setup() {
     setup_stepper_motors();
 }   
 
-/**
- * @brief Main program loop handling service requests
- */
 void loop() {
     RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1000)));
 

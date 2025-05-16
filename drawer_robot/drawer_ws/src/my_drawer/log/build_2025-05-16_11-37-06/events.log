@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000258] (my_drawer) JobQueued: {'identifier': 'my_drawer', 'dependencies': OrderedDict()}
+[0.001299] (my_drawer) JobStarted: {'identifier': 'my_drawer'}
+[0.099592] (-) TimerEvent: {}
+[0.200004] (-) TimerEvent: {}
+[0.300406] (-) TimerEvent: {}
+[0.400768] (-) TimerEvent: {}
+[0.501141] (-) TimerEvent: {}
+[0.601514] (-) TimerEvent: {}
+[0.701909] (-) TimerEvent: {}
+[0.802367] (-) TimerEvent: {}
+[0.902708] (-) TimerEvent: {}
+[1.003012] (-) TimerEvent: {}
+[1.103340] (-) TimerEvent: {}
+[1.203646] (-) TimerEvent: {}
+[1.303940] (-) TimerEvent: {}
+[1.404267] (-) TimerEvent: {}
+[1.504573] (-) TimerEvent: {}
+[1.604869] (-) TimerEvent: {}
+[1.705184] (-) TimerEvent: {}
+[1.741743] (my_drawer) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/my_drawer', 'build', '--build-base', '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build', 'install', '--record', '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer', 'env': {'TMUX': '/tmp/tmux-1000/default,13726,0', 'LANGUAGE': 'en_US:en', 'LC_TIME': 'es_MX.UTF-8', 'USER': 'adrian', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'PT8HOME': '/opt/pt', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '2', 'HOME': '/home/adrian', 'OLDPWD': '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '3.4', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'es_MX.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'P9K_TTY': 'old', 'SYSTEMD_EXEC_PID': '1971', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ZPFX': '/home/adrian/.local/share/zinit/polaris', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'adrian', '_': '/usr/bin/colcon', '_P9K_SSH_TTY': '/dev/pts/6', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'FUNCNEST': '100', 'TERM': 'screen-256color', 'USERNAME': 'adrian', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PMSPEC': '0uUpiPsf', 'WINDOWPATH': '2', 'ZSH_CACHE_DIR': '/home/adrian/.cache/zinit', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/adrian/.local/share/zinit/polaris/bin:/home/adrian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'PAPERSIZE': 'letter', 'SESSION_MANAGER': 'local/laptop:@/tmp/.ICE-unix/1927,unix/laptop:/tmp/.ICE-unix/1927', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/79ea44ce_a192_48d3_97f3_89e574d15a9e', 'LC_ADDRESS': 'es_MX.UTF-8', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'GNOME_TERMINAL_SERVICE': ':1.122', 'TERM_PROGRAM': 'tmux', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ROS_DOMAIN_ID': '0', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'es_MX.UTF-8', 'SHELL': '/bin/zsh', 'GDMSESSION': 'ubuntu', 'GIT_DISCOVERY_ACROSS_FILESYSTEM': '1', 'QT_ACCESSIBILITY': '1', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', '_P9K_TTY': '/dev/pts/6', 'LC_NUMERIC': 'es_MX.UTF-8', 'PYTHONPATH': '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_PAPER': 'es_MX.UTF-8', 'TMUX_PLUGIN_MANAGER_PATH': '/home/adrian/.tmux/plugins/', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'TMUX_PANE': '%1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'LIBGL_DRIVERS_PATH': '/usr/lib/x86_64-linux-gnu/dri'}, 'shell': False}
+[1.805310] (-) TimerEvent: {}
+[1.905620] (-) TimerEvent: {}
+[2.005929] (-) TimerEvent: {}
+[2.106254] (-) TimerEvent: {}
+[2.206550] (-) TimerEvent: {}
+[2.306845] (-) TimerEvent: {}
+[2.330156] (my_drawer) StdoutLine: {'line': b'running egg_info\n'}
+[2.330930] (my_drawer) StdoutLine: {'line': b'creating build/my_drawer/my_drawer.egg-info\n'}
+[2.381289] (my_drawer) StdoutLine: {'line': b'writing build/my_drawer/my_drawer.egg-info/PKG-INFO\n'}
+[2.381780] (my_drawer) StdoutLine: {'line': b'writing dependency_links to build/my_drawer/my_drawer.egg-info/dependency_links.txt\n'}
+[2.382044] (my_drawer) StdoutLine: {'line': b'writing entry points to build/my_drawer/my_drawer.egg-info/entry_points.txt\n'}
+[2.382345] (my_drawer) StdoutLine: {'line': b'writing requirements to build/my_drawer/my_drawer.egg-info/requires.txt\n'}
+[2.382578] (my_drawer) StdoutLine: {'line': b'writing top-level names to build/my_drawer/my_drawer.egg-info/top_level.txt\n'}
+[2.382762] (my_drawer) StdoutLine: {'line': b"writing manifest file 'build/my_drawer/my_drawer.egg-info/SOURCES.txt'\n"}
+[2.407112] (-) TimerEvent: {}
+[2.491061] (my_drawer) StdoutLine: {'line': b"reading manifest file 'build/my_drawer/my_drawer.egg-info/SOURCES.txt'\n"}
+[2.491446] (my_drawer) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.492244] (my_drawer) StdoutLine: {'line': b"writing manifest file 'build/my_drawer/my_drawer.egg-info/SOURCES.txt'\n"}
+[2.492592] (my_drawer) StdoutLine: {'line': b'running build\n'}
+[2.492785] (my_drawer) StdoutLine: {'line': b'running build_py\n'}
+[2.492987] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build\n'}
+[2.493237] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib\n'}
+[2.493436] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib/my_drawer\n'}
+[2.493556] (my_drawer) StdoutLine: {'line': b'copying my_drawer/node_drawer.py -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib/my_drawer\n'}
+[2.493746] (my_drawer) StdoutLine: {'line': b'copying my_drawer/__init__.py -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib/my_drawer\n'}
+[2.494140] (my_drawer) StdoutLine: {'line': b'running install\n'}
+[2.503741] (my_drawer) StdoutLine: {'line': b'running install_lib\n'}
+[2.507228] (-) TimerEvent: {}
+[2.558726] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer\n'}
+[2.559185] (my_drawer) StdoutLine: {'line': b'copying /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib/my_drawer/node_drawer.py -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer\n'}
+[2.559401] (my_drawer) StdoutLine: {'line': b'copying /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/build/lib/my_drawer/__init__.py -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer\n'}
+[2.560033] (my_drawer) StdoutLine: {'line': b'byte-compiling /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer/node_drawer.py to node_drawer.cpython-312.pyc\n'}
+[2.560660] (my_drawer) StdoutLine: {'line': b'byte-compiling /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer/__init__.py to __init__.cpython-312.pyc\n'}
+[2.560961] (my_drawer) StdoutLine: {'line': b'running install_data\n'}
+[2.561234] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/ament_index\n'}
+[2.561527] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/ament_index/resource_index\n'}
+[2.561679] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/ament_index/resource_index/packages\n'}
+[2.561858] (my_drawer) StdoutLine: {'line': b'copying resource/my_drawer -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/ament_index/resource_index/packages\n'}
+[2.562057] (my_drawer) StdoutLine: {'line': b'copying package.xml -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/my_drawer\n'}
+[2.562243] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/my_drawer/meshes\n'}
+[2.562384] (my_drawer) StdoutLine: {'line': b'copying meshes/base.stl -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/my_drawer/meshes\n'}
+[2.562952] (my_drawer) StdoutLine: {'line': b'creating /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/my_drawer/urdf\n'}
+[2.563138] (my_drawer) StdoutLine: {'line': b'copying urdf/robot.urdf -> /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/share/my_drawer/urdf\n'}
+[2.563373] (my_drawer) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.607339] (-) TimerEvent: {}
+[2.617589] (my_drawer) StdoutLine: {'line': b'Copying build/my_drawer/my_drawer.egg-info to /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/python3.12/site-packages/my_drawer-0.0.0-py3.12.egg-info\n'}
+[2.619519] (my_drawer) StdoutLine: {'line': b'running install_scripts\n'}
+[2.707485] (-) TimerEvent: {}
+[2.807809] (-) TimerEvent: {}
+[2.908145] (-) TimerEvent: {}
+[2.943412] (my_drawer) StdoutLine: {'line': b'Installing node_drawer script to /media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/install/my_drawer/lib/my_drawer\n'}
+[2.944025] (my_drawer) StdoutLine: {'line': b"writing list of installed files to '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/drawer_ws/src/my_drawer/build/my_drawer/install.log'\n"}
+[2.977831] (my_drawer) CommandEnded: {'returncode': 0}
+[2.992347] (my_drawer) JobEnded: {'identifier': 'my_drawer', 'rc': 0}
+[2.993607] (-) EventReactorShutdown: {}

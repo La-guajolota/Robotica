@@ -1,2 +1,0 @@
-[console_scripts]
-node_drawer = my_drawer.node_drawer:main

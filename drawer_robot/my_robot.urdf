@@ -1,11 +1,50 @@
 <?xml version="1.0"?>
+
+<!-- 
+    Archivo URDF para definir un robot simple llamado "my_robot".
+    Este robot tiene dos enlaces (links) y un único articulación (joint) revoluta.
+    Puede ser utilizado en simuladores como Gazebo o visualizado en RViz.
+-->
+
 <robot name="my_robot">
+
+    <!-- Definición de materiales -->
+    <material name="green">
+        <color rgba="0 0.6 0 1"/> <!-- Color verde -->
+    </material>
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1"/> <!-- Color gris -->
+    </material>
+
+    <!-- Definición del enlace base (base_link) -->
     <link name="base_link">
         <visual>
             <geometry>
-                <box size=".06 0.4 0.2"/>
+                <box size="0.6 0.4 0.2"/> <!-- Caja con dimensiones 0.6 x 0.4 x 0.2 -->
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/> <!-- Posición del enlace en el marco de coordenadas -->
+            <material name="green"/> <!-- Material verde -->
         </visual>
     </link>
+
+    <!-- Definición del enlace del hombro (shoulder_link) -->
+    <link name="shoulder_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.3"/> <!-- Cilindro con radio 0.1 y longitud 0.3 -->
+            </geometry>
+            <origin xyz="0 0 0.15" rpy="0 0 0"/> <!-- Posición del enlace en el marco de coordenadas -->
+            <material name="grey"/> <!-- Material gris -->
+        </visual>
+    </link>
+
+    <!-- Definición de la articulación entre base_link y shoulder_link -->
+    <joint name="base_shoulder_joint" type="revolute">
+        <parent link="base_link"/> <!-- Enlace padre -->
+        <child link="shoulder_link"/> <!-- Enlace hijo -->
+        <origin xyz="0 0 0.2" rpy="0 0 0"/> <!-- Posición de la articulación -->
+        <axis xyz="0 0 1"/> <!-- Eje de rotación (Z) -->
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="100"/> <!-- Límites de la articulación -->
+    </joint>
+
 </robot>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<!-- 
+    Archivo URDF para definir un robot móvil simple llamado "my_car".
+    Este robot tiene un cuerpo principal (base_link), dos ruedas delanteras (con articulaciones continuas)
+    y una rueda trasera tipo caster (articulación fija). También incluye un enlace virtual para la base.
+    Puede ser utilizado en simuladores como Gazebo o visualizado en RViz.
+-->
+
+<robot name="my_car">
+
+    <!-- Definición de materiales -->
+    <material name="green">
+        <color rgba="0 0.6 0 1"/> <!-- Color verde -->
+    </material>
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1"/> <!-- Color gris -->
+    </material>
+
+    <!-- Definición del enlace base (base_link) -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.6 0.4 0.2"/> <!-- Caja con dimensiones 0.6 x 0.4 x 0.2 -->
+            </geometry>
+            <origin xyz="0 0 0.1" rpy="0 0 0"/> <!-- Posición del enlace en el marco de coordenadas -->
+            <material name="green"/> <!-- Material verde -->
+        </visual>
+    </link>
+
+    <!-- Definición de las ruedas delanteras -->
+    <link name="wheel_front_left">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> <!-- Cilindro con radio 0.1 y longitud 0.05 -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/> <!-- Orientación para que sea perpendicular al suelo -->
+            <material name="grey"/> <!-- Material gris -->
+        </visual>
+    </link>
+    <link name="wheel_front_right">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/> <!-- Cilindro con radio 0.1 y longitud 0.05 -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0"/> <!-- Orientación para que sea perpendicular al suelo -->
+            <material name="grey"/> <!-- Material gris -->
+        </visual>
+    </link>
+
+    <!-- Definición de la rueda trasera tipo caster -->
+    <link name="caster_wheel">
+        <visual>
+            <geometry>
+                <sphere radius="0.05"/> <!-- Esfera con radio 0.05 -->
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/> <!-- Posición en el marco de coordenadas -->
+            <material name="grey"/> <!-- Material gris -->
+        </visual>
+    </link>
+
+    <!-- Enlace virtual para la base -->
+    <link name="base_footprint"/>
+
+    <!-- Definición de las articulaciones -->
+    <!-- Articulación de la rueda delantera izquierda -->
+    <joint name="wheel_front_left_joint" type="continuous">
+        <parent link="base_link"/> <!-- Enlace padre -->
+        <child link="wheel_front_left"/> <!-- Enlace hijo -->
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0"/> <!-- Posición de la articulación -->
+        <axis xyz="0 1 0"/> <!-- Eje de rotación (Y) -->
+    </joint>
+
+    <!-- Articulación de la rueda delantera derecha -->
+    <joint name="wheel_front_right_joint" type="continuous">
+        <parent link="base_link"/> <!-- Enlace padre -->
+        <child link="wheel_front_right"/> <!-- Enlace hijo -->
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0"/> <!-- Posición de la articulación -->
+        <axis xyz="0 1 0"/> <!-- Eje de rotación (Y) -->
+    </joint>
+
+    <!-- Articulación fija de la rueda trasera tipo caster -->
+    <joint name="caster_wheel_joint" type="fixed">
+        <parent link="base_link"/> <!-- Enlace padre -->
+        <child link="caster_wheel"/> <!-- Enlace hijo -->
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0"/> <!-- Posición de la articulación -->
+    </joint>
+
+    <!-- Articulación fija entre base_footprint y base_link -->
+    <joint name="virtual_base_link_joint" type="fixed">
+        <parent link="base_footprint"/> <!-- Enlace padre -->
+        <child link="base_link"/> <!-- Enlace hijo -->
+        <origin xyz="0 0 0.1" rpy="0 0 0"/> <!-- Posición de la articulación -->
+    </joint>
+
+</robot>

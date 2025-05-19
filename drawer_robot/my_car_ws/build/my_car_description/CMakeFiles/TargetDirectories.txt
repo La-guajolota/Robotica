@@ -1,0 +1,9 @@
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/uninstall.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/my_car_description_uninstall.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/test.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/edit_cache.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/rebuild_cache.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/list_install_components.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/install.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/install/local.dir
+/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description/CMakeFiles/install/strip.dir

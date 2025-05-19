@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/my_car.urdf.xacro
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/mobile_base.xacro
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/common_properties.xacro
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz/urdf_config.rviz
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch/display.launch.xml
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/package_run_dependencies/my_car_description
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/parent_prefix_path/my_car_description
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.sh
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.dsv
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.sh
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.dsv
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.bash
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.sh
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.zsh
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.dsv
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.dsv
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/packages/my_car_description
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig.cmake
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig-version.cmake
+-- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.xml

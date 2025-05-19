@@ -6,7 +6,7 @@
     Puede ser utilizado en simuladores como Gazebo o visualizado en RViz.
 -->
 
-<robot name="my_robot">
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- Definición de materiales -->
     <material name="green">

@@ -1,0 +1,28 @@
+[0.009s] Invoking command in '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description -- -j12 -l12
+[0.050s] Invoked command in '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description -- -j12 -l12
+[0.060s] Invoking command in '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description
+[0.068s] -- Install configuration: ""
+[0.068s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf
+[0.068s] -- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/my_car.urdf.xacro
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/mobile_base.xacro
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/common_properties.xacro
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz/urdf_config.rviz
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch/display.launch.xml
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/package_run_dependencies/my_car_description
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/parent_prefix_path/my_car_description
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.sh
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.dsv
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.sh
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.dsv
+[0.069s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.bash
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.sh
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.zsh
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.dsv
+[0.070s] -- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.dsv
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/packages/my_car_description
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig.cmake
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig-version.cmake
+[0.070s] -- Up-to-date: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.xml
+[0.071s] Invoked command in '/media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description

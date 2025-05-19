@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!-- 
+    Archivo Xacro para definir un robot móvil simple llamado "my_car".
+    Este robot tiene un cuerpo principal (base_link), dos ruedas delanteras (con articulaciones continuas)
+    y una rueda trasera tipo caster (articulación fija). También incluye un enlace virtual para la base.
+    Puede ser utilizado en simuladores como Gazebo o visualizado en RViz.
+-->
+
+<robot name="my_car" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="common_properties.xacro"/> <!-- Incluir propiedades comunes -->
+    <xacro:include filename="mobile_base.xacro"/> <!-- Incluir definición de la base móvil -->
+</robot>

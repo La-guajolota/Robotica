@@ -1,0 +1,41 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/build/my_car_description
+-- Install configuration: ""
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/my_car.urdf.xacro
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/mobile_base.xacro
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/urdf/common_properties.xacro
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/rviz/urdf_config.rviz
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/launch/display.launch.xml
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/package_run_dependencies/my_car_description
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/parent_prefix_path/my_car_description
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.sh
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/ament_prefix_path.dsv
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.sh
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/environment/path.dsv
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.bash
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.sh
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.zsh
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/local_setup.dsv
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.dsv
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/ament_index/resource_index/packages/my_car_description
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig.cmake
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/cmake/my_car_descriptionConfig-version.cmake
+-- Installing: /media/adrian/sd_linux/sem8/Robotica/drawer_robot/my_car_ws/install/my_car_description/share/my_car_description/package.xml

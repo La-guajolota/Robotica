@@ -1,0 +1,42 @@
+[1.049s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control': AMENT_PREFIX_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data
+[1.369s] running egg_info
+[1.369s] creating ../../build/scara_control/scara_control.egg-info
+[1.396s] writing ../../build/scara_control/scara_control.egg-info/PKG-INFO
+[1.397s] writing dependency_links to ../../build/scara_control/scara_control.egg-info/dependency_links.txt
+[1.397s] writing entry points to ../../build/scara_control/scara_control.egg-info/entry_points.txt
+[1.397s] writing requirements to ../../build/scara_control/scara_control.egg-info/requires.txt
+[1.397s] writing top-level names to ../../build/scara_control/scara_control.egg-info/top_level.txt
+[1.397s] writing manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+[1.452s] reading manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+[1.452s] adding license file 'LICENSE'
+[1.453s] writing manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+[1.453s] running build
+[1.453s] running build_py
+[1.453s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build
+[1.453s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib
+[1.453s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+[1.453s] copying scara_control/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+[1.454s] copying scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+[1.454s] copying scara_control/move_motors_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+[1.454s] running install
+[1.460s] running install_lib
+[1.490s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+[1.490s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+[1.490s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+[1.491s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/move_motors_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+[1.491s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/__init__.py to __init__.cpython-312.pyc
+[1.491s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/read_encoders_node.py to read_encoders_node.cpython-312.pyc
+[1.492s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/move_motors_node.py to move_motors_node.cpython-312.pyc
+[1.492s] running install_data
+[1.492s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index
+[1.492s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index
+[1.493s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index/packages
+[1.493s] copying resource/scara_control -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index/packages
+[1.493s] copying package.xml -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control
+[1.493s] running install_egg_info
+[1.522s] Copying ../../build/scara_control/scara_control.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control-0.0.0-py3.12.egg-info
+[1.523s] running install_scripts
+[1.701s] Installing move_motor_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/scara_control
+[1.701s] Installing read_encoders_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/scara_control
+[1.701s] writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log'
+[1.727s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/scara_control' returned '0': AMENT_PREFIX_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/scara_control build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log --single-version-externally-managed install_data

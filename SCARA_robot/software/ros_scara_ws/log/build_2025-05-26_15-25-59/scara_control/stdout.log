@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/scara_control/scara_control.egg-info
+writing ../../build/scara_control/scara_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/scara_control/scara_control.egg-info/dependency_links.txt
+writing entry points to ../../build/scara_control/scara_control.egg-info/entry_points.txt
+writing requirements to ../../build/scara_control/scara_control.egg-info/requires.txt
+writing top-level names to ../../build/scara_control/scara_control.egg-info/top_level.txt
+writing manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/scara_control/scara_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+copying scara_control/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+copying scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+copying scara_control/move_motors_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control
+running install
+running install_lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/read_encoders_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/build/lib/scara_control/move_motors_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/read_encoders_node.py to read_encoders_node.cpython-312.pyc
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control/move_motors_node.py to move_motors_node.cpython-312.pyc
+running install_data
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index/packages
+copying resource/scara_control -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/share/scara_control
+running install_egg_info
+Copying ../../build/scara_control/scara_control.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages/scara_control-0.0.0-py3.12.egg-info
+running install_scripts
+Installing move_motor_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/scara_control
+Installing read_encoders_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/scara_control
+writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/scara_control/install.log'

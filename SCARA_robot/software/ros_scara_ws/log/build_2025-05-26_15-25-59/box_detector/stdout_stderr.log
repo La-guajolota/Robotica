@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/box_detector/box_detector.egg-info
+writing ../../build/box_detector/box_detector.egg-info/PKG-INFO
+writing dependency_links to ../../build/box_detector/box_detector.egg-info/dependency_links.txt
+writing entry points to ../../build/box_detector/box_detector.egg-info/entry_points.txt
+writing requirements to ../../build/box_detector/box_detector.egg-info/requires.txt
+writing top-level names to ../../build/box_detector/box_detector.egg-info/top_level.txt
+writing manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'
+reading manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector
+copying box_detector/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector
+copying box_detector/cam_demo_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector
+copying box_detector/box_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector
+running install
+running install_lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector/cam_demo_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector/box_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector/cam_demo_node.py to cam_demo_node.cpython-312.pyc
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector/box_node.py to box_node.cpython-312.pyc
+running install_data
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/share/ament_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/share/ament_index/resource_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/share/ament_index/resource_index/packages
+copying resource/box_detector -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/share/ament_index/resource_index/packages
+copying package.xml -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/share/box_detector
+running install_egg_info
+Copying ../../build/box_detector/box_detector.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector-0.0.0-py3.12.egg-info
+running install_scripts
+Installing box_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector
+Installing cam_demo_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector
+writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log'

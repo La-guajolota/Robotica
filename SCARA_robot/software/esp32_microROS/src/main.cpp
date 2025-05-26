@@ -1,6 +1,6 @@
 /*
  * @file main.cpp
- * @brief Micro-ROS node for controlling a SCARA robot using AS5600 encoders and Nema17 step-motors.
+ * @brief Micro-ROS node for controlling a didactic SCARA robot using AS5600 encoders and Nema17 step-motors.
  * @author Adrián Silva Palafox
  * @date May 2025
  */
@@ -8,6 +8,11 @@
 #include <micro_ros_platformio.h>
 #include "microros_utils.h"
 #include "utils.hpp"
+#include "conf_network.h"
+
+// Uncomment the desired transport method
+//#define urosAgent_serial
+#define urosAgent_wifi 
 
 /*******
  * PROTOTYPES
@@ -29,14 +34,21 @@ void mv_ang(
     std_msgs__msg__Float32 *encoderX_angle_msg, 
     rcl_publisher_t *encoderX_pub, 
     bool dir,
-    float angle);
+    float angle
+);
 
 void setup() {
     // Initialize Serial communication
     Serial.begin(115200);
     
-    // Initialize micro-ROS 
+    // Initialize micro-ROS
+#ifdef urosAgent_serial 
     set_microros_serial_transports(Serial);
+#elif defined(urosAgent_wifi)
+    IPAddress agent_ip(AGENT_IP);
+    size_t agent_port = AGENT_PORT;
+    set_microros_wifi_transports(SSID, SSID_PW, agent_ip, agent_port);
+#endif
     delay(2000);
     setup_micro_ros_scara();
 
@@ -48,7 +60,7 @@ void setup() {
 }   
 
 void loop() {
-    RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1000)));
+    RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1)));
 
     switch (services_flags) {
     case MOVE_BASE_SERVICE:
@@ -63,10 +75,22 @@ void loop() {
         bitClear(services_flags, 2);
         mv_ang(motor_link2, encoder_b, &encoderB_angle_msg, &encoderB_pub, dir[2], angle[2]);
         break;
+    case TOOL_SERVICE:
+        bitClear(services_flags, 3);
+        // Handle tool service request here
+        // This could involve moving a tool or performing an action
+        break;
     default:
         // Handle default case - no service request to process
         break;
     }
+
+    encoderA_angle_msg.data = encoder_a.read_angle();
+    RCSOFTCHECK(rcl_publish(&encoderA_pub, &encoderA_angle_msg, nullptr));
+    encoderB_angle_msg.data = encoder_b.read_angle();
+    RCSOFTCHECK(rcl_publish(&encoderB_pub, &encoderB_angle_msg, nullptr));
+    // encoderC_angle_msg.data = encoder_c.read_angle();
+    // RCSOFTCHECK(rcl_publish(&encoderC_pub, &encoderC_angle_msg, nullptr));        
 }
 
 /**
@@ -84,10 +108,7 @@ void mv_ang(DRV8825 &motor, AS5600<I2CType> &encoder, std_msgs__msg__Float32 *en
     
     // Return immediately if no movement required
     if (steps == 0) return;
-    
-    // Check if the channel is set and tca9548a is used
-    encoder.muxchannel(encoder.mux_channel);
-
+        
     // Enable motor driver
     motor.en_dis_driver(HIGH);
 

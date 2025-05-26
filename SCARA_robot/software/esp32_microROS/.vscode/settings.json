@@ -44,6 +44,10 @@
         "string_functions.h": "c",
         "motor_control.h": "c",
         "float32__struct.h": "c",
-        "motor_control__struct.h": "c"
+        "motor_control__struct.h": "c",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp"
     }
 }

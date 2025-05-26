@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages",
+        "/media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages",
+        "/media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

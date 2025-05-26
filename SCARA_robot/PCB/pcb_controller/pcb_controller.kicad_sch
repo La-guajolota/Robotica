@@ -11641,7 +11641,7 @@
 		(dnp no)
 		(uuid "4c554cd7-1194-4c12-8ee6-84eea8ebc0c6")
 		(property "Reference" "J1"
-			(at 14.478 24.638 0)
+			(at 147.828 255.778 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11649,7 +11649,7 @@
 			)
 		)
 		(property "Value" "Barrel_Jack_Switch"
-			(at 22.606 26.67 0)
+			(at 155.956 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11657,7 +11657,7 @@
 			)
 		)
 		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
-			(at 20.32 34.036 0)
+			(at 153.67 265.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11665,8 +11665,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 20.32 34.036 0)
+		(property "Datasheet" ""
+			(at 153.67 265.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11675,7 +11675,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack with an internal switch"
-			(at 19.05 33.02 0)
+			(at 152.4 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)

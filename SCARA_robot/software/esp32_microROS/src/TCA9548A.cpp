@@ -28,7 +28,7 @@ TCA9548A::TCA9548A(uint8_t address, uint8_t sda, uint8_t scl, uint8_t rst, TwoWi
     : address(address), sda_pin(sda), scl_pin(scl), rst_pin(rst), i2c_port(i2c_port)
 {    
     pinMode(rst_pin, OUTPUT); // Set the reset pin as output
-    digitalWrite(rst_pin, LOW); // Set the reset pin low to reset the multiplexer
+    digitalWrite(rst_pin, HIGH);
     i2c_port->begin(sda_pin, scl_pin); // Initialize the I2C port with the specified pins
 }
 

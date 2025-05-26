@@ -85,15 +85,19 @@ template<typename I2CType>
 AS5600<I2CType>::AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port)
     : sda_pin(sda), scl_pin(scl), I2C_port(I2C_port)
 {
+#ifdef I2C_MUX
     I2C_port->begin(sda_pin, scl_pin, SCL_FREQ);
+#endif
 }
 
 template<typename I2CType>
 uint16_t AS5600<I2CType>::readReg(uint8_t reg) {
+    muxchannel(mux_channel);
     I2C_port->beginTransmission(i2c_address);
     I2C_port->write(reg);
     I2C_port->endTransmission();
 
+    muxchannel(mux_channel);
     uint8_t nbytes = I2C_port->requestFrom(i2c_address, 2);
     uint16_t data = 0;
 
@@ -106,6 +110,8 @@ uint16_t AS5600<I2CType>::readReg(uint8_t reg) {
 
 template<typename I2CType>
 void AS5600<I2CType>::writeReg(uint8_t reg, uint16_t data) {
+    // Check if the channel is set and tca9548a is used
+    muxchannel(mux_channel);
     I2C_port->beginTransmission(i2c_address);
     I2C_port->write(reg);
     I2C_port->write(data >> 8);
@@ -121,9 +127,6 @@ float AS5600<I2CType>::read_angle() {
 
 template<typename I2CType>
 void AS5600<I2CType>::set_encoder_config(uint8_t *data_config) {
-    // Check if the channel is set and tca9548a is used
-    muxchannel(mux_channel);
-
     writeReg(ZPOS_H, (data_config[0] << 8) | data_config[1]);
     writeReg(MPOS_H, (data_config[2] << 8) | data_config[3]);
     writeReg(MANG_H, (data_config[4] << 8) | data_config[5]);

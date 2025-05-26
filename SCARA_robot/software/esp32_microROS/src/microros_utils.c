@@ -2,7 +2,7 @@
  * @file microros_utils.cpp
  * @brief Implementation of MicroROS utilities for SCARA robot communication
  * @author Adrián Silva Palafox
- * @date May 2025
+ * @date Apr 2025
  */
 
 #include "microros_utils.h"

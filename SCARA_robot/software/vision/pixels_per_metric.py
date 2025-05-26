@@ -11,6 +11,10 @@ import numpy as np
 import imutils
 import cv2
 
+# USERS' SETTINGS
+camara = 0 
+
+
 # -------------------------------
 # Utility Functions
 # -------------------------------
@@ -110,8 +114,28 @@ def main():
     Main function to capture video, process frames, and display results.
     """
     # Initialize video capture
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(camara)
+    # Disable autofocus
     cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
+
+    # Set resolution (example: 640x480)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+    # Set brightness (range depends on the camera)
+    cap.set(cv2.CAP_PROP_BRIGHTNESS, 150)
+
+    # Set contrast (range depends on the camera)
+    cap.set(cv2.CAP_PROP_CONTRAST, 50)
+
+    # Set saturation (range depends on the camera)
+    cap.set(cv2.CAP_PROP_SATURATION, 50)
+
+    # Set exposure (manual control, range depends on the camera)
+    cap.set(cv2.CAP_PROP_EXPOSURE, -4)
+
+    # Set frames per second (FPS)
+    cap.set(cv2.CAP_PROP_FPS, 30)
 
     if not cap.isOpened():
         print("Error: Unable to open the camera.")

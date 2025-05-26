@@ -16,7 +16,7 @@ Uncomment the following line to enable TCA9548A I2C multiplexer support or
 to use the default I2C ports for each encoder. 
 */
 #define I2C_MUX
-//#define I2C_PORTS 
+// #define I2C_PORTS 
 
 /**
  * @section ENCODERS
@@ -34,14 +34,14 @@ extern AS5600<TwoWire> encoder_a;
 extern AS5600<TwoWire> encoder_b;
 
 // AS5600 encoder C pinout (Software I2C)
-#define SDA_PIN_c 4
-#define SCL_PIN_c 15
-extern AS5600<softI2C> encoder_c;
+// #define SDA_PIN_c 4
+// #define SCL_PIN_c 15
+// extern AS5600<softI2C> encoder_c;
 #elif defined(I2C_MUX)
 
 //I2C hardware bus 0)
-#define SDA_PIN 21
-#define SCL_PIN 22
+#define SDA_PIN 22
+#define SCL_PIN 21
 
 #define MUX_RST_PIN 2
 extern TCA9548A tca9548a;
@@ -71,7 +71,7 @@ extern AS5600<TwoWire> encoder_c;
  */
 #define BASE_MOTOR_DIR_PIN 13   // Direction control pin
 #define BASE_MOTOR_STEP_PIN 25  // Step control pin
-#define BASE_MOTOR_RST_PIN 17   // Reset pin
+#define BASE_MOTOR_RST_PIN RX2  // Reset pin 16 RX2 pin-board
 extern DRV8825 motor_base;
 
 /**
@@ -80,7 +80,7 @@ extern DRV8825 motor_base;
  */
 #define LINK1_MOTOR_DIR_PIN 33  // Direction control pin
 #define LINK1_MOTOR_STEP_PIN 27 // Step control pin
-#define LINK1_MOTOR_RST_PIN 17  // Reset pin
+#define LINK1_MOTOR_RST_PIN TX2 //  Reset pin 17 TX2 pin-board
 extern DRV8825 motor_link1;
 
 /**

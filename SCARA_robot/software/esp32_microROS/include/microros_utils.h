@@ -2,7 +2,7 @@
  * @file microros_utils.h
  * @brief MicroROS utilities for SCARA robot communication
  * @author Adrián Silva Palafox
- * @date May 2025
+ * @date Apr 2025
  */
 
 #ifndef MICROROS_UTILS_H
@@ -66,6 +66,7 @@ extern volatile float angle[3];  // Target angle for each motor
 #define MOVE_BASE_SERVICE BIT0
 #define MOVE_LINK1_SERVICE BIT1
 #define MOVE_LINK2_SERVICE BIT2
+#define TOOL_SERVICE BIT3
 
 // Motor control service components
 rcl_service_t move_motor_server;

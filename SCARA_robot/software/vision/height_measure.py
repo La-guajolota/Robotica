@@ -1,7 +1,7 @@
 import cv2
 
 # Modificar índice de la función para cambiar entre cámaras
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
 
 if not cap.isOpened():

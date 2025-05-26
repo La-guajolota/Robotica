@@ -14,12 +14,12 @@
 // I2C busses instances
 TwoWire I2C_a = TwoWire(0);
 TwoWire I2C_b = TwoWire(1);
-softI2C I2C_c(SDA_PIN_c, SCL_PIN_c);  // Soft I2C bus
+//softI2C I2C_c(SDA_PIN_c, SCL_PIN_c);  // Soft I2C bus
 
 // AS5600 encoders instances
 AS5600<TwoWire> encoder_a(SDA_PIN_a, SCL_PIN_a, &I2C_a);
 AS5600<TwoWire> encoder_b(SDA_PIN_b, SCL_PIN_b, &I2C_b);
-AS5600<softI2C> encoder_c(SDA_PIN_c, SCL_PIN_c, &I2C_c);
+//AS5600<softI2C> encoder_c(SDA_PIN_c, SCL_PIN_c, &I2C_c);
 #elif defined(I2C_MUX)
 // I2C bus instance
 TwoWire I2C_ = TwoWire(0);
@@ -157,5 +157,5 @@ void setup_magnetic_encoders() {
 
     encoder_a.set_encoder_config(encoders_congig);
     encoder_b.set_encoder_config(encoders_congig);
-    encoder_c.set_encoder_config(encoders_congig);
+    // encoder_c.set_encoder_config(encoders_congig);
 }

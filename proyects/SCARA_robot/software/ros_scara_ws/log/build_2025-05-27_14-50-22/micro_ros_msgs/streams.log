@@ -1,0 +1,299 @@
+[0.009s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/uros/micro_ros_msgs -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs
+[0.018s] Not searching for unused variables given on the command line.
+[0.060s] -- The C compiler identification is GNU 13.3.0
+[0.108s] -- The CXX compiler identification is GNU 13.3.0
+[0.126s] -- Detecting C compiler ABI info
+[0.216s] -- Detecting C compiler ABI info - done
+[0.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.224s] -- Detecting C compile features
+[0.225s] -- Detecting C compile features - done
+[0.234s] -- Detecting CXX compiler ABI info
+[0.329s] -- Detecting CXX compiler ABI info - done
+[0.338s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.338s] -- Detecting CXX compile features
+[0.338s] -- Detecting CXX compile features - done
+[0.343s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.494s] -- Found Python3: /home/adrian/py_ros2/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.618s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.703s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.763s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.768s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.333s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.734s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.239s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.244s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.368s] -- Found PythonExtra: /home/adrian/py_ros2/bin/python3  
+[2.751s] -- Found Python3: /home/adrian/py_ros2/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.782s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.791s] -- Added test 'lint_cmake' to check CMake code style
+[2.796s] -- Added test 'xmllint' to check XML markup files
+[2.801s] -- Configuring done (2.8s)
+[2.835s] -- Generating done (0.0s)
+[2.845s] -- Build files have been written to: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs
+[2.853s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/uros/micro_ros_msgs -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs
+[2.855s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs -- -j12 -l12
+[2.909s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.919s] [  1%] Built target ament_cmake_python_copy_micro_ros_msgs
+[3.136s] [  1%] Built target micro_ros_msgs__rosidl_generator_type_description
+[3.148s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.159s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.199s] running egg_info
+[3.200s] creating micro_ros_msgs.egg-info
+[3.231s] writing micro_ros_msgs.egg-info/PKG-INFO
+[3.231s] writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt
+[3.231s] writing top-level names to micro_ros_msgs.egg-info/top_level.txt
+[3.231s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[3.317s] reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[3.318s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[3.349s] [  5%] Built target ament_cmake_python_build_micro_ros_msgs_egg
+[3.457s] [  5%] Built target micro_ros_msgs__cpp
+[3.497s] [  7%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__description.c.o[0m
+[3.497s] [  9%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__description.c.o[0m
+[3.497s] [ 11%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o[0m
+[3.497s] [ 12%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__type_support.c.o[0m
+[3.498s] [ 14%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o[0m
+[3.498s] [ 16%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__type_support.c.o[0m
+[3.498s] [ 18%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o[0m
+[3.499s] [ 20%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__description.c.o[0m
+[3.499s] [ 22%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__type_support.c.o[0m
+[3.552s] [ 24%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so[0m
+[3.590s] [ 24%] Built target micro_ros_msgs__rosidl_generator_c
+[3.602s] [ 27%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.602s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.602s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.602s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.602s] [ 35%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.602s] [ 35%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.898s] [ 37%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[3.898s] [ 38%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[3.898s] [ 40%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[3.911s] [ 42%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o[0m
+[3.920s] [ 44%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o[0m
+[3.926s] [ 46%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o[0m
+[3.958s] [ 48%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o[0m
+[3.958s] [ 50%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o[0m
+[3.960s] [ 53%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[3.960s] [ 53%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[3.965s] [ 57%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[3.965s] [ 57%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o[0m
+[3.978s] [ 59%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so[0m
+[4.045s] [ 59%] Built target micro_ros_msgs__rosidl_typesupport_c
+[4.047s] [ 61%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.059s] [ 64%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o[0m
+[4.059s] [ 66%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o[0m
+[4.060s] [ 64%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[4.079s] [ 68%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o[0m
+[4.091s] [ 70%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o[0m
+[4.107s] [ 70%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c
+[4.125s] [ 72%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o[0m
+[4.421s] [ 74%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so[0m
+[4.502s] [ 74%] Built target micro_ros_msgs__rosidl_typesupport_cpp
+[4.591s] [ 75%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[4.718s] [ 75%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp
+[4.737s] [ 77%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.762s] [ 79%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.807s] [ 79%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[4.836s] [ 79%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c
+[4.859s] [ 79%] Built target micro_ros_msgs
+[4.881s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.237s] [ 81%] Built target micro_ros_msgs__py
+[5.260s] [ 87%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o[0m
+[5.260s] [ 87%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o[0m
+[5.260s] [ 87%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o[0m
+[5.364s] [ 88%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_py.so[0m
+[5.405s] [ 88%] Built target micro_ros_msgs__rosidl_generator_py
+[5.434s] [ 92%] [32mBuilding C object CMakeFiles/micro_ros_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.434s] [ 92%] [32mBuilding C object CMakeFiles/micro_ros_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.434s] [ 94%] [32mBuilding C object CMakeFiles/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.528s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.so[0m
+[5.532s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[5.537s] [100%] [32m[1mLinking C shared module rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.560s] [100%] Built target micro_ros_msgs_s__rosidl_typesupport_c
+[5.563s] [100%] Built target micro_ros_msgs_s__rosidl_typesupport_introspection_c
+[5.568s] [100%] Built target micro_ros_msgs_s__rosidl_typesupport_fastrtps_c
+[5.581s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs -- -j12 -l12
+[5.592s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs
+[5.600s] -- Install configuration: ""
+[5.600s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs
+[5.600s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.json
+[5.600s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.json
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.json
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h
+[5.601s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h
+[5.602s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__description.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__description.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__description.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c
+[5.603s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h
+[5.604s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h
+[5.604s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh
+[5.604s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv
+[5.604s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so
+[5.605s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""
+[5.605s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.605s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.605s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.605s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.605s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h
+[5.605s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[5.605s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h
+[5.605s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[5.606s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.606s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c
+[5.606s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c
+[5.606s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c
+[5.606s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h
+[5.606s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h
+[5.606s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so
+[5.607s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.607s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so
+[5.607s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""
+[5.607s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.607s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.607s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp
+[5.608s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.hpp
+[5.609s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.609s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.610s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.611s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.611s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[5.611s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[5.611s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[5.612s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so
+[5.613s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs-5.0.2-py3.12.egg-info
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs-5.0.2-py3.12.egg-info/PKG-INFO
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs-5.0.2-py3.12.egg-info/dependency_links.txt
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs-5.0.2-py3.12.egg-info/top_level.txt
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs-5.0.2-py3.12.egg-info/SOURCES.txt
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.so
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/__init__.py
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_graph.py
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_graph_s.c
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_entity.py
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_node_s.c
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/__init__.py
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_entity_s.c
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_node.py
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.654s] Listing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs'...
+[5.655s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/__init__.py'...
+[5.655s] Listing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg'...
+[5.655s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/__init__.py'...
+[5.655s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_entity.py'...
+[5.655s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_graph.py'...
+[5.655s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/msg/_node.py'...
+[5.660s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.so
+[5.660s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.660s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.so
+[5.661s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[5.661s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.so
+[5.661s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.so" to ""
+[5.661s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so
+[5.662s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""
+[5.662s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl
+[5.662s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl
+[5.662s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl
+[5.663s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg
+[5.663s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg
+[5.663s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg
+[5.663s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs
+[5.663s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs
+[5.664s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh
+[5.664s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv
+[5.664s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh
+[5.664s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv
+[5.664s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash
+[5.665s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh
+[5.665s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh
+[5.665s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv
+[5.665s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.666s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.667s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.668s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.668s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.668s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake
+[5.668s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.668s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.669s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.670s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.670s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.670s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake
+[5.670s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake
+[5.670s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.xml
+[5.673s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/micro_ros_msgs

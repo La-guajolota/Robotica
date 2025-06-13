@@ -2,7 +2,7 @@
  * @file microros_utils.h
  * @brief MicroROS utilities for SCARA robot communication
  * @author Adrián Silva Palafox
- * @date May 2025
+ * @date Apr 2025
  */
 
 #ifndef MICROROS_UTILS_H
@@ -24,6 +24,7 @@ extern "C" {
 // ROS message types
 #include <std_msgs/msg/float32.h>
 #include <std_msgs/msg/u_int8.h>
+#include <std_srvs/srv/set_bool.h>
 #include <custom_msg_svrs/srv/motor_control.h>
 
 /**
@@ -59,19 +60,26 @@ std_msgs__msg__Float32 encoderC_angle_msg;
 
 // Service flags and parameters
 extern volatile uint16_t services_flags;
-extern volatile bool dir[3];  // Direction for each motor
-extern volatile float angle[3];  // Target angle for each motor
+extern volatile bool dir[3];             // Direction for each motor
+extern volatile float angle[3];          // Target angle for each motor
+extern volatile bool tool_servo;         // Tool servo state
 
 // Service flag bit definitions
-#define MOVE_BASE_SERVICE BIT0
-#define MOVE_LINK1_SERVICE BIT1
-#define MOVE_LINK2_SERVICE BIT2
+#define MOVE_BASE_SERVICE 0   // Bit 0
+#define MOVE_LINK1_SERVICE 1  // Bit 1
+#define MOVE_LINK2_SERVICE 2  // Bit 2
+#define TOOL_SERVICE 3        // Bit 3
 
 // Motor control service components
 rcl_service_t move_motor_server;
 rmw_request_id_t header_response;
 custom_msg_svrs__srv__MotorControl_Request srv_req;
 custom_msg_svrs__srv__MotorControl_Response srv_res;
+
+// Tool control service components
+rcl_service_t tool_control_server;
+std_srvs__srv__SetBool_Request tool_control_req;
+std_srvs__srv__SetBool_Response tool_control_res;
 
 /**
  * @section ROS_COMPONENTS
@@ -109,6 +117,14 @@ void timer_publisher_encoders(rcl_timer_t * timer, int64_t last_call_time);
  * @param response_msg Pointer to the response message
  */
 void service_server_movemotor(const void * request_msg, void * response_msg);
+
+/**
+ * @brief Service callback for tool control requests
+ * 
+ * @param request_msg Pointer to the request message
+ * @param response_msg Pointer to the response message
+ */
+void service_server_toolcontrol(const void * request_msg, void * response_msg);
 
 /**
  * @brief Initialize all MicroROS components

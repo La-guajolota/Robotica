@@ -123,7 +123,7 @@ rosidl_generator_c/custom_msg_svrs/srv/motor_control.h: /opt/ros/jazzy/share/bui
 rosidl_generator_c/custom_msg_svrs/srv/motor_control.h: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_c/custom_msg_svrs/srv/motor_control.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_c__arguments.json
+	/home/adrian/py_ros2/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__functions.h: rosidl_generator_c/custom_msg_svrs/srv/motor_control.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__functions.h

@@ -10,7 +10,6 @@
 // Microstepping modes
 #define MICROSTEP_FULL  0
 #define MICROSTEP_2     2.0
-#define MICROSTEP_8     8.0
 #define MICROSTEP_16    16.0
 #define MICROSTEP_32    32.0
 

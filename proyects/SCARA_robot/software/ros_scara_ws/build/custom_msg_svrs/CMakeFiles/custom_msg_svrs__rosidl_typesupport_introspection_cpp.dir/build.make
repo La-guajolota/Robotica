@@ -112,7 +112,7 @@ rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__r
 rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ introspection for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_typesupport_introspection_cpp__arguments.json
+	/home/adrian/py_ros2/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_typesupport_introspection_cpp__arguments.json
 
 rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__type_support.cpp: rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__type_support.cpp

@@ -1,0 +1,3 @@
+[console_scripts]
+move_motor_node = scara_control.move_motors_node:main
+read_encoders_node = scara_control.read_encoders_node:main

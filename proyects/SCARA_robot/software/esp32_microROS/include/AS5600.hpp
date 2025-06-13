@@ -3,7 +3,11 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include <softI2C.hpp>
+#include "TCA9548A.hpp"
+#include "softI2C.hpp"
+
+// Declared in utils.hpp
+extern TCA9548A tca9548a;
 
 /*****************************************
 MAGNETIC ENCODERS AS5600 
@@ -33,6 +37,8 @@ https://files.seeedstudio.com/wiki/Grove-12-bit-Magnetic-Rotary-Position-Sensor-
 #define BURN         0xFF
 
 #define SCL_FREQ 1000000    //1Mhz
+#define SCL_FREQ_SLOW 4000 //400Khz
+
 const int8_t readable_reg = 17;
 const int8_t writable_reg = 8;
 const int8_t i2c_address = 0x36;
@@ -57,8 +63,10 @@ private:
     void writeReg(uint8_t reg, uint16_t data);
 
 public:
+    uint8_t mux_channel = -1; // TCA9548A channel for the encoder
     uint8_t data[readable_reg] = {0};
 
+    void muxchannel(uint8_t channel);
     AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port);
     float read_angle();
     void set_encoder_config(uint8_t *data_config);
@@ -67,18 +75,29 @@ public:
 // Implementación de la plantilla
 
 template<typename I2CType>
+void AS5600<I2CType>::muxchannel(uint8_t channel) {
+    if (mux_channel != -1) {
+        tca9548a.sel_channel(mux_channel);
+    }
+}
+
+template<typename I2CType>
 AS5600<I2CType>::AS5600(uint8_t sda, uint8_t scl, I2CType *I2C_port)
     : sda_pin(sda), scl_pin(scl), I2C_port(I2C_port)
 {
+#ifdef I2C_MUX
     I2C_port->begin(sda_pin, scl_pin, SCL_FREQ);
+#endif
 }
 
 template<typename I2CType>
 uint16_t AS5600<I2CType>::readReg(uint8_t reg) {
+    muxchannel(mux_channel);
     I2C_port->beginTransmission(i2c_address);
     I2C_port->write(reg);
     I2C_port->endTransmission();
 
+    muxchannel(mux_channel);
     uint8_t nbytes = I2C_port->requestFrom(i2c_address, 2);
     uint16_t data = 0;
 
@@ -91,6 +110,8 @@ uint16_t AS5600<I2CType>::readReg(uint8_t reg) {
 
 template<typename I2CType>
 void AS5600<I2CType>::writeReg(uint8_t reg, uint16_t data) {
+    // Check if the channel is set and tca9548a is used
+    muxchannel(mux_channel);
     I2C_port->beginTransmission(i2c_address);
     I2C_port->write(reg);
     I2C_port->write(data >> 8);

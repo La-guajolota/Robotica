@@ -1,0 +1,38 @@
+[1.260s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/plc_chat': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/plc_chat build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/install.log --single-version-externally-managed install_data
+[1.582s] running egg_info
+[1.582s] creating ../../build/plc_chat/plc_chat.egg-info
+[1.610s] writing ../../build/plc_chat/plc_chat.egg-info/PKG-INFO
+[1.610s] writing dependency_links to ../../build/plc_chat/plc_chat.egg-info/dependency_links.txt
+[1.610s] writing entry points to ../../build/plc_chat/plc_chat.egg-info/entry_points.txt
+[1.610s] writing requirements to ../../build/plc_chat/plc_chat.egg-info/requires.txt
+[1.610s] writing top-level names to ../../build/plc_chat/plc_chat.egg-info/top_level.txt
+[1.610s] writing manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+[1.666s] reading manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+[1.666s] adding license file 'LICENSE'
+[1.666s] writing manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+[1.666s] running build
+[1.666s] running build_py
+[1.666s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build
+[1.667s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib
+[1.667s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+[1.667s] copying plc_chat/talk_plc_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+[1.667s] copying plc_chat/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+[1.667s] running install
+[1.672s] running install_lib
+[1.700s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+[1.701s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat/talk_plc_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+[1.701s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+[1.701s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat/talk_plc_node.py to talk_plc_node.cpython-312.pyc
+[1.702s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat/__init__.py to __init__.cpython-312.pyc
+[1.703s] running install_data
+[1.703s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index
+[1.703s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index
+[1.703s] creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index/packages
+[1.703s] copying resource/plc_chat -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index/packages
+[1.703s] copying package.xml -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/plc_chat
+[1.703s] running install_egg_info
+[1.732s] Copying ../../build/plc_chat/plc_chat.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat-0.0.0-py3.12.egg-info
+[1.733s] running install_scripts
+[1.911s] Installing talk_plc_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/plc_chat
+[1.911s] writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/install.log'
+[1.949s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/plc_chat' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/plc_chat build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/install.log --single-version-externally-managed install_data

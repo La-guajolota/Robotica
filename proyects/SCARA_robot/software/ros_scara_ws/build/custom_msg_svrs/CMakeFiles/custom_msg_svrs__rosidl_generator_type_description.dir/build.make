@@ -72,7 +72,7 @@ rosidl_generator_type_description/custom_msg_svrs/srv/MotorControl.json: /opt/ro
 rosidl_generator_type_description/custom_msg_svrs/srv/MotorControl.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/custom_msg_svrs/srv/MotorControl.json: rosidl_adapter/custom_msg_svrs/srv/MotorControl.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_type_description__arguments.json
+	/home/adrian/py_ros2/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_type_description__arguments.json
 
 custom_msg_svrs__rosidl_generator_type_description: CMakeFiles/custom_msg_svrs__rosidl_generator_type_description
 custom_msg_svrs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msg_svrs/srv/MotorControl.json

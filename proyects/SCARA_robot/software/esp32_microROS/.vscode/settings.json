@@ -44,6 +44,14 @@
         "string_functions.h": "c",
         "motor_control.h": "c",
         "float32__struct.h": "c",
-        "motor_control__struct.h": "c"
-    }
+        "motor_control__struct.h": "c",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp",
+        "u_int8__functions.h": "c",
+        "u_int8__struct.h": "c",
+        "set_bool__type_support.h": "c"
+    },
+    "cmake.sourceDirectory": "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/esp32_microROS/.pio/libdeps/esp32doit-devkit-v1/micro_ros_platformio/build/dev/src/ament_cmake/ament_cmake"
 }

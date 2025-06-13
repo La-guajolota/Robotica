@@ -1,0 +1,236 @@
+[0.021s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs
+[0.262s] -- The C compiler identification is GNU 13.3.0
+[0.262s] -- The CXX compiler identification is GNU 13.3.0
+[0.262s] -- Detecting C compiler ABI info
+[0.262s] -- Detecting C compiler ABI info - done
+[0.262s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.263s] -- Detecting C compile features
+[0.263s] -- Detecting C compile features - done
+[0.263s] -- Detecting CXX compiler ABI info
+[0.360s] -- Detecting CXX compiler ABI info - done
+[0.369s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.369s] -- Detecting CXX compile features
+[0.369s] -- Detecting CXX compile features - done
+[0.375s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.552s] -- Found Python3: /home/adrian/py_ros2/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.686s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.696s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.773s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.835s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.840s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.485s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.938s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.506s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.511s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.634s] -- Found PythonExtra: /home/adrian/py_ros2/bin/python3  
+[3.022s] -- Found Python3: /home/adrian/py_ros2/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.067s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.109s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.111s] -- Added test 'lint_cmake' to check CMake code style
+[3.113s] -- Added test 'xmllint' to check XML markup files
+[3.117s] -- Configuring done (3.1s)
+[3.152s] -- Generating done (0.0s)
+[3.162s] -- Build files have been written to: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs
+[3.172s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/custom_msg_svrs -DCMAKE_INSTALL_PREFIX=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs
+[3.173s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs -- -j12 -l12
+[3.228s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.238s] [  2%] Built target ament_cmake_python_copy_custom_msg_svrs
+[3.439s] [  2%] Built target custom_msg_svrs__rosidl_generator_type_description
+[3.450s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.462s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.505s] running egg_info
+[3.506s] creating custom_msg_svrs.egg-info
+[3.535s] writing custom_msg_svrs.egg-info/PKG-INFO
+[3.535s] writing dependency_links to custom_msg_svrs.egg-info/dependency_links.txt
+[3.535s] writing top-level names to custom_msg_svrs.egg-info/top_level.txt
+[3.535s] writing manifest file 'custom_msg_svrs.egg-info/SOURCES.txt'
+[3.622s] reading manifest file 'custom_msg_svrs.egg-info/SOURCES.txt'
+[3.623s] writing manifest file 'custom_msg_svrs.egg-info/SOURCES.txt'
+[3.654s] [  8%] Built target ament_cmake_python_build_custom_msg_svrs_egg
+[3.731s] [  8%] Built target custom_msg_svrs__cpp
+[3.743s] [ 17%] [32mBuilding C object CMakeFiles/custom_msg_svrs__rosidl_generator_c.dir/rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__functions.c.o[0m
+[3.743s] [ 17%] [32mBuilding C object CMakeFiles/custom_msg_svrs__rosidl_generator_c.dir/rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__type_support.c.o[0m
+[3.743s] [ 17%] [32mBuilding C object CMakeFiles/custom_msg_svrs__rosidl_generator_c.dir/rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__description.c.o[0m
+[3.806s] [ 20%] [32m[1mLinking C shared library libcustom_msg_svrs__rosidl_generator_c.so[0m
+[3.845s] [ 20%] Built target custom_msg_svrs__rosidl_generator_c
+[3.857s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.857s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.858s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.858s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.859s] [ 35%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.860s] [ 38%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.124s] [ 41%] [32mBuilding CXX object CMakeFiles/custom_msg_svrs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msg_svrs/srv/motor_control__type_support.cpp.o[0m
+[4.125s] [ 44%] [32mBuilding CXX object CMakeFiles/custom_msg_svrs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msg_svrs/srv/motor_control__type_support.cpp.o[0m
+[4.161s] [ 47%] [32mBuilding CXX object CMakeFiles/custom_msg_svrs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msg_svrs/srv/detail/motor_control__type_support.cpp.o[0m
+[4.178s] [ 50%] [32mBuilding C object CMakeFiles/custom_msg_svrs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msg_svrs/srv/detail/motor_control__type_support.c.o[0m
+[4.182s] [ 52%] [32m[1mLinking CXX shared library libcustom_msg_svrs__rosidl_typesupport_c.so[0m
+[4.185s] [ 55%] [32mBuilding CXX object CMakeFiles/custom_msg_svrs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msg_svrs/srv/detail/dds_fastrtps/motor_control__type_support.cpp.o[0m
+[4.227s] [ 58%] [32mBuilding CXX object CMakeFiles/custom_msg_svrs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msg_svrs/srv/detail/motor_control__type_support_c.cpp.o[0m
+[4.229s] [ 61%] [32m[1mLinking C shared library libcustom_msg_svrs__rosidl_typesupport_introspection_c.so[0m
+[4.234s] [ 61%] Built target custom_msg_svrs__rosidl_typesupport_c
+[4.270s] [ 61%] Built target custom_msg_svrs__rosidl_typesupport_introspection_c
+[4.482s] [ 64%] [32m[1mLinking CXX shared library libcustom_msg_svrs__rosidl_typesupport_cpp.so[0m
+[4.529s] [ 67%] [32m[1mLinking CXX shared library libcustom_msg_svrs__rosidl_typesupport_introspection_cpp.so[0m
+[4.565s] [ 67%] Built target custom_msg_svrs__rosidl_typesupport_cpp
+[4.607s] [ 67%] Built target custom_msg_svrs__rosidl_typesupport_introspection_cpp
+[4.670s] [ 70%] [32m[1mLinking CXX shared library libcustom_msg_svrs__rosidl_typesupport_fastrtps_c.so[0m
+[4.722s] [ 73%] [32m[1mLinking CXX shared library libcustom_msg_svrs__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.743s] [ 73%] Built target custom_msg_svrs__rosidl_typesupport_fastrtps_c
+[4.793s] [ 73%] Built target custom_msg_svrs__rosidl_typesupport_fastrtps_cpp
+[4.816s] [ 73%] Built target custom_msg_svrs
+[4.840s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.183s] [ 76%] Built target custom_msg_svrs__py
+[5.206s] [ 79%] [32mBuilding C object CMakeFiles/custom_msg_svrs__rosidl_generator_py.dir/rosidl_generator_py/custom_msg_svrs/srv/_motor_control_s.c.o[0m
+[5.335s] [ 82%] [32m[1mLinking C shared library libcustom_msg_svrs__rosidl_generator_py.so[0m
+[5.378s] [ 82%] Built target custom_msg_svrs__rosidl_generator_py
+[5.400s] [ 91%] [32mBuilding C object CMakeFiles/custom_msg_svrs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.400s] [ 91%] [32mBuilding C object CMakeFiles/custom_msg_svrs_s__rosidl_typesupport_c.dir/rosidl_generator_py/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_c.c.o[0m
+[5.400s] [ 91%] [32mBuilding C object CMakeFiles/custom_msg_svrs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.495s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_c.so[0m
+[5.496s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_introspection_c.so[0m
+[5.499s] [100%] [32m[1mLinking C shared module rosidl_generator_py/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.529s] [100%] Built target custom_msg_svrs_s__rosidl_typesupport_introspection_c
+[5.530s] [100%] Built target custom_msg_svrs_s__rosidl_typesupport_c
+[5.533s] [100%] Built target custom_msg_svrs_s__rosidl_typesupport_fastrtps_c
+[5.546s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs -- -j12 -l12
+[5.547s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs
+[5.556s] -- Install configuration: ""
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/ament_index/resource_index/rosidl_interfaces/custom_msg_svrs
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/srv/MotorControl.json
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/motor_control.h
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.557s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__functions.h
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__functions.c
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__description.c
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__type_support.h
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__struct.h
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__type_support.c
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg/rosidl_generator_c__visibility_control.h
+[5.558s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/library_path.sh
+[5.559s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/library_path.dsv
+[5.559s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_generator_c.so
+[5.559s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_generator_c.so" to ""
+[5.559s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.559s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.560s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.560s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_fastrtps_c.h
+[5.560s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg
+[5.560s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.560s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_fastrtps_c.so
+[5.560s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.560s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.560s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.560s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.561s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_introspection_c.h
+[5.561s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__type_support.c
+[5.561s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg
+[5.561s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.561s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_introspection_c.so
+[5.561s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_introspection_c.so" to ""
+[5.561s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_c.so
+[5.562s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_c.so" to ""
+[5.562s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.562s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/motor_control.hpp
+[5.562s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__struct.hpp
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__traits.hpp
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__type_support.hpp
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__builder.hpp
+[5.562s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg
+[5.562s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.563s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.563s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.563s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.563s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_fastrtps_cpp.hpp
+[5.563s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/dds_fastrtps
+[5.563s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg
+[5.563s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.563s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_fastrtps_cpp.so
+[5.564s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.564s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs
+[5.564s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv
+[5.564s] -- Up-to-date: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail
+[5.564s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__rosidl_typesupport_introspection_cpp.hpp
+[5.564s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/include/custom_msg_svrs/custom_msg_svrs/srv/detail/motor_control__type_support.cpp
+[5.564s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_introspection_cpp.so
+[5.564s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.564s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_cpp.so
+[5.565s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_typesupport_cpp.so" to ""
+[5.565s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/pythonpath.sh
+[5.565s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/pythonpath.dsv
+[5.565s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs-0.0.0-py3.12.egg-info
+[5.565s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs-0.0.0-py3.12.egg-info/PKG-INFO
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs-0.0.0-py3.12.egg-info/top_level.txt
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_fastrtps_c.so
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv
+[5.566s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv/_motor_control.py
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv/_motor_control_s.c
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv/__init__.py
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_c.c
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_c.so
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_introspection_c.so
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/__init__.py
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_introspection_c.c
+[5.567s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/_custom_msg_svrs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.602s] Listing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs'...
+[5.602s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/__init__.py'...
+[5.603s] Listing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv'...
+[5.603s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv/__init__.py'...
+[5.603s] Compiling '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/srv/_motor_control.py'...
+[5.607s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_fastrtps_c.so
+[5.608s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_introspection_c.so
+[5.608s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_introspection_c.so" to ""
+[5.608s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_c.so
+[5.609s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages/custom_msg_svrs/custom_msg_svrs_s__rosidl_typesupport_c.so" to ""
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_generator_py.so
+[5.609s] -- Set non-toolchain portion of runtime path of "/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/libcustom_msg_svrs__rosidl_generator_py.so" to ""
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/srv/MotorControl.idl
+[5.609s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/srv/MotorControl.srv
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/ament_index/resource_index/package_run_dependencies/custom_msg_svrs
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/ament_index/resource_index/parent_prefix_path/custom_msg_svrs
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/ament_prefix_path.sh
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/ament_prefix_path.dsv
+[5.610s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/path.sh
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/environment/path.dsv
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/local_setup.bash
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/local_setup.sh
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/local_setup.zsh
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/local_setup.dsv
+[5.611s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.dsv
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/ament_index/resource_index/packages/custom_msg_svrs
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_generator_cExport.cmake
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_generator_cExport-noconfig.cmake
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.612s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_introspection_cExport.cmake
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_cExport.cmake
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_cExport-noconfig.cmake
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_generator_cppExport.cmake
+[5.613s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_introspection_cppExport.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_cppExport.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.614s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_generator_pyExport.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/export_custom_msg_svrs__rosidl_generator_pyExport-noconfig.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/rosidl_cmake-extras.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.615s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/ament_cmake_export_targets-extras.cmake
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrsConfig.cmake
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/cmake/custom_msg_svrsConfig-version.cmake
+[5.616s] -- Installing: /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/share/custom_msg_svrs/package.xml
+[5.619s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs

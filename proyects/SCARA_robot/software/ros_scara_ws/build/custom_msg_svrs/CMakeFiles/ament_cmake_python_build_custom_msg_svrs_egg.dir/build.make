@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_custom_msg_svrs_egg.dir/compiler_dep
 include CMakeFiles/ament_cmake_python_build_custom_msg_svrs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_custom_msg_svrs_egg:
-	cd /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/ament_cmake_python/custom_msg_svrs && /usr/bin/python3 setup.py egg_info
+	cd /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/ament_cmake_python/custom_msg_svrs && /home/adrian/py_ros2/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_custom_msg_svrs_egg: CMakeFiles/ament_cmake_python_build_custom_msg_svrs_egg
 ament_cmake_python_build_custom_msg_svrs_egg: CMakeFiles/ament_cmake_python_build_custom_msg_svrs_egg.dir/build.make

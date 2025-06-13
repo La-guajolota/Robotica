@@ -1,3 +1,5 @@
+#!/home/adrian/py_ros2/bin/python
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32

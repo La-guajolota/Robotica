@@ -1,0 +1,26 @@
+[0.909s] Invoking command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/box_detector': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py_ros2) %m%# PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py_ros2) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/box_detector build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log --single-version-externally-managed install_data
+[1.223s] running egg_info
+[1.250s] writing ../../build/box_detector/box_detector.egg-info/PKG-INFO
+[1.250s] writing dependency_links to ../../build/box_detector/box_detector.egg-info/dependency_links.txt
+[1.250s] writing entry points to ../../build/box_detector/box_detector.egg-info/entry_points.txt
+[1.250s] writing requirements to ../../build/box_detector/box_detector.egg-info/requires.txt
+[1.250s] writing top-level names to ../../build/box_detector/box_detector.egg-info/top_level.txt
+[1.303s] reading manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'
+[1.303s] adding license file 'LICENSE'
+[1.304s] writing manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'
+[1.304s] running build
+[1.304s] running build_py
+[1.304s] copying box_detector/box_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector
+[1.305s] running install
+[1.310s] running install_lib
+[1.338s] copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector/box_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector
+[1.339s] byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector/box_node.py to box_node.cpython-312.pyc
+[1.340s] running install_data
+[1.340s] running install_egg_info
+[1.368s] removing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector-0.0.0-py3.12.egg-info' (and everything under it)
+[1.369s] Copying ../../build/box_detector/box_detector.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector-0.0.0-py3.12.egg-info
+[1.370s] running install_scripts
+[1.544s] Installing box_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector
+[1.545s] Installing cam_demo_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector
+[1.545s] writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log'
+[1.568s] Invoked command in '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/box_detector' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py_ros2) %m%# PYTHONPATH=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py_ros2) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/box_detector build --build-base /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build install --record /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log --single-version-externally-managed install_data

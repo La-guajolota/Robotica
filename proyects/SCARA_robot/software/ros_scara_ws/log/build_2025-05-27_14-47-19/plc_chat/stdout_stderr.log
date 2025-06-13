@@ -1,0 +1,36 @@
+running egg_info
+creating ../../build/plc_chat/plc_chat.egg-info
+writing ../../build/plc_chat/plc_chat.egg-info/PKG-INFO
+writing dependency_links to ../../build/plc_chat/plc_chat.egg-info/dependency_links.txt
+writing entry points to ../../build/plc_chat/plc_chat.egg-info/entry_points.txt
+writing requirements to ../../build/plc_chat/plc_chat.egg-info/requires.txt
+writing top-level names to ../../build/plc_chat/plc_chat.egg-info/top_level.txt
+writing manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+reading manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/plc_chat/plc_chat.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+copying plc_chat/talk_plc_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+copying plc_chat/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat
+running install
+running install_lib
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat/talk_plc_node.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/build/lib/plc_chat/__init__.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat/talk_plc_node.py to talk_plc_node.cpython-312.pyc
+byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index
+creating /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index/packages
+copying resource/plc_chat -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/ament_index/resource_index/packages
+copying package.xml -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/share/plc_chat
+running install_egg_info
+Copying ../../build/plc_chat/plc_chat.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages/plc_chat-0.0.0-py3.12.egg-info
+running install_scripts
+Installing talk_plc_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/plc_chat
+writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/plc_chat/install.log'

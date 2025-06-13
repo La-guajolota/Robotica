@@ -11,11 +11,11 @@ lectures/
 __pycache__/
 *.pyc
 
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/pio
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/.browse.c_cpp.db*
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/c_cpp_properties.json
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/launch.json
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/ipch
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/inlclude/conf_network.h
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/log/
-./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/lib/
+./proyect/SCARA_robot/software/esp32_microROS/pio
+./proyect/SCARA_robot/software/esp32_microROS/vscode/.browse.c_cpp.db*
+./proyect/SCARA_robot/software/esp32_microROS/vscode/c_cpp_properties.json
+./proyect/SCARA_robot/software/esp32_microROS/vscode/launch.json
+./proyect/SCARA_robot/software/esp32_microROS/vscode/ipch
+./proyect/SCARA_robot/software/esp32_microROS/inlclude/conf_network.h
+./proyect/SCARA_robot/software/esp32_microROS/log/
+./proyect/SCARA_robot/software/esp32_microROS/lib/

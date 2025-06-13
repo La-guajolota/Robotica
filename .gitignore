@@ -19,3 +19,4 @@ __pycache__/
 ./proyect/SCARA_robot/software/esp32_microROS/inlclude/conf_network.h
 ./proyect/SCARA_robot/software/esp32_microROS/log/
 ./proyect/SCARA_robot/software/esp32_microROS/lib/
+./proyects/SCARA_robot/software/Robotica-Melchor/Dashboard_PROYECTO/firebase-credentials.json

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<robot name="brachiograph_2dof">
+  
+  <!-- Base cúbica -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.2 0.2 0.2"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.2 0.2 0.2"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.007" ixy="0" ixz="0" iyy="0.007" iyz="0" izz="0.007"/>
+    </inertial>
+  </link>
+
+  <!-- Primer eslabón (prisma rectangular) -->
+  <link name="link1">
+    <visual>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.004" iyz="0" izz="0.004"/>
+    </inertial>
+  </link>
+
+  <!-- Junta revoluta: Base al primer eslabón -->
+  <joint name="shoulder_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0.1 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="2" lower="-3.14159" upper="3.14159"/>
+    <dynamics damping="0.1" friction="0.05"/>
+  </joint>
+
+  <!-- Segundo eslabón (prisma rectangular, misma longitud) -->
+  <link name="link2">
+    <visual>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.3 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.15 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.004" iyz="0" izz="0.004"/>
+    </inertial>
+  </link>
+
+  <!-- Junta revoluta: Primer eslabón al segundo eslabón -->
+  <joint name="elbow_joint" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0.3 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="2" lower="-3.14159" upper="3.14159"/>
+    <dynamics damping="0.1" friction="0.05"/>
+  </joint>
+
+</robot>

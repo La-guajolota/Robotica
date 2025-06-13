@@ -10,3 +10,12 @@ lectures/
 # Ignorar directorios __pycache__ y archivos compilados .pyc
 __pycache__/
 *.pyc
+
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/pio
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/.browse.c_cpp.db*
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/c_cpp_properties.json
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/launch.json
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/vscode/ipch
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/inlclude/conf_network.h
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/log/
+./media/adrian/sd_linux/sem8/Robotica/SCARA_robot/software/esp32_microROS/lib/

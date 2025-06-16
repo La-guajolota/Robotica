@@ -10,13 +10,3 @@ lectures/
 # Ignorar directorios __pycache__ y archivos compilados .pyc
 __pycache__/
 *.pyc
-
-./proyect/SCARA_robot/software/esp32_microROS/pio
-./proyect/SCARA_robot/software/esp32_microROS/vscode/.browse.c_cpp.db*
-./proyect/SCARA_robot/software/esp32_microROS/vscode/c_cpp_properties.json
-./proyect/SCARA_robot/software/esp32_microROS/vscode/launch.json
-./proyect/SCARA_robot/software/esp32_microROS/vscode/ipch
-./proyect/SCARA_robot/software/esp32_microROS/inlclude/conf_network.h
-./proyect/SCARA_robot/software/esp32_microROS/log/
-./proyect/SCARA_robot/software/esp32_microROS/lib/
-./proyects/SCARA_robot/software/Robotica-Melchor/Dashboard_PROYECTO/firebase-credentials.json

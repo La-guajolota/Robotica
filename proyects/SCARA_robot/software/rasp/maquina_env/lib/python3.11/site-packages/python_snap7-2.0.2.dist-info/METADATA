@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: python-snap7
+Version: 2.0.2
+Summary: Python wrapper for the snap7 library
+Author-email: Gijs Molenaar <gijsmolenaar@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/gijzelaerr/python-snap7
+Project-URL: Documentation, https://python-snap7.readthedocs.io/en/latest/
+Keywords: snap7,s7,siemens,plc
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Topic :: System :: Hardware
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: cli
+Requires-Dist: rich; extra == "cli"
+Requires-Dist: click; extra == "cli"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-rtd-theme; extra == "doc"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: types-setuptools; extra == "test"
+Requires-Dist: ruff; extra == "test"
+Requires-Dist: tox; extra == "test"
+Requires-Dist: types-click; extra == "test"
+Requires-Dist: uv; extra == "test"
+
+About
+=====
+
+This is a Python wrapper for Snap7, an open-source, 32/64 bit, multi-platform Ethernet communication suite for interfacing natively
+with Siemens S7 PLCs.
+
+Python-snap7 is tested with Python 3.9+, on Windows, Linux and OS X.
+
+The full documentation is available on `Read The Docs <https://python-snap7.readthedocs.io/en/latest/>`_.
+
+
+Installation
+============
+
+If you are running Windows (amd64), Mac OS X (amd64/aarch64), GNU/Linux (amd64/arm64) or a compatible platform you can install the binary wheel using::
+
+   $ pip install python-snap7
+
+
+Otherwise, please follow the `online installation instructions <https://python-snap7.readthedocs.io/en/latest/installation.html>`_ to install python-snap7 from source.

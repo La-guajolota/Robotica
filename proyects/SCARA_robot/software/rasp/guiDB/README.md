@@ -1,5 +1,9 @@
 # 🏭 Dashboard PLC con Streamlit y Firebase - Guía de Instalación
 
+## 👤 Autor del Proyecto
+
+Este proyecto fue diseñado y desarrollado por [danvaz313](https://github.com/danvaz313). Refactorizado por Adrián Silva Palafox
+
 ## 📋 Requisitos Previos
 
 - Python 3.8 o superior

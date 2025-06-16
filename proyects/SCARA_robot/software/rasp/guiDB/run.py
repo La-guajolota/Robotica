@@ -8,7 +8,7 @@ import os
 def run_plc_connector():
     """Ejecuta el conector PLC en un hilo separado"""
     try:
-        subprocess.run([sys.executable, "conector_PLC.py"])
+        subprocess.run([sys.executable, "/home/pi2/proyecto/guiDB/conector_PLC.py"])
     except Exception as e:
         print(f"Error al ejecutar el conector PLC: {e}")
 

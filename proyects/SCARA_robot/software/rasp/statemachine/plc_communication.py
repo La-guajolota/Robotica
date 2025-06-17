@@ -29,7 +29,7 @@ class PLCCommunication:
     def write_integer(self, address, value):
         """Write a 2-byte integer to the specified address."""
         try:
-            data = struct.pack('>h', value)  # Pack as big-endian short (2 bytes)
+            data = struct.pack('>h', value)  # Pack as big-endian short (2 bytes) 
             self._client.mb_write(address, 2, data)
             print(f"Integer {value} written to address {address}")
         except Exception as e:

@@ -1,9 +1,17 @@
 from plc_communication import PLCCommunication
 
+
 # PLC Memory addresses
+"""
+MW0  full byte
+MW1  next register address
+-------------------------
+M8.0  bit0 in M8 address
+M8.1  bit1
+"""
 FACTOR_CONSTANT = 1
-PLC_BOX_DATA = 0      # MW0 - Box height data
-PLC_REQUESTS = 8      # M8 - Request flags
+PLC_BOX_DATA = 0      # MW0 - Box height data | 2 bytes int type
+PLC_REQUESTS = 8      # M8.0 - Request flags  |  
 
 # Input register bit definitions
 BIT_PLC_NEW_BOX = 0      # PLC requests new box
@@ -27,6 +35,7 @@ class StateMachine:
         self._state = self.IDLE
         self._input_register = 0x00
         self._plc = plc_instance if plc_instance else PLCCommunication()
+
 
     def get_state(self):
         """Get current state"""
@@ -75,7 +84,7 @@ class StateMachine:
         elif self._input_register == 0b00000010:  # Remove box requested
             self.set_state(self.SCARA2)
         elif self._input_register == 0b00000000:  # No requests
-            pass  # Stay in IDLE
+            self.set_state(self.IDLE)
         else:
             print(f"IDLE: Unknown register state {bin(self._input_register)}")
             self.reset_state()
@@ -92,7 +101,7 @@ class StateMachine:
         # State transitions
         if self._input_register == 0b00000101:  # Need box + no box detected
             self.set_state(self.SCARA1)
-        elif self._input_register == 0b00001001:  # Need box + put routine done
+        elif self._input_register == 0b00001001:  # Need box + box detected +put routine done
             self.set_state(self.PLC_MSG)
         else:
             print(f"BOX_DETECTOR: Unknown register state {bin(self._input_register)}")
@@ -124,7 +133,7 @@ class StateMachine:
 
         # State transitions
         if self._input_register == 0b00010010:  # Get routine completed
-            self.set_state(self.BOX)
+            self.set_state(self.IDLE)
         else:
             print(f"SCARA_GET: Waiting for completion...")
 

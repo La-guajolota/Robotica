@@ -31,7 +31,7 @@ def main():
                     st_machine.handle_plc_message()
             sleep(delay_debug)
             
-    except KeyboardInterrupt:
+    except KeyboardInterrupt: 
         print("\nProgram terminated by user.")
     finally:
         # Desconectar del PLC al salir

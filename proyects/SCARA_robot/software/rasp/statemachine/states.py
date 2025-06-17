@@ -1,11 +1,22 @@
 from plc_communication import PLCCommunication
 
-# Memory addresses for PLC communication
-MW0 = 0  # Memory word address for integer values
-M8_0 = 8  # Memory byte address for boolean values (M8.0)
+# PLC Memory addresses
+FACTOR_CONSTANT = 1
+PLC_BOX_DATA = 0      # MW0 - Box height data
+PLC_REQUESTS = 8      # M8 - Request flags
+
+# Input register bit definitions
+BIT_PLC_NEW_BOX = 0      # PLC requests new box
+BIT_PLC_REMOVE_BOX = 1   # PLC requests box removal
+BIT_NO_BOX_DETECTED = 2  # Webcam: no box present
+BIT_PUT_ROUTINE_DONE = 3 # SCARA put routine completed
+BIT_GET_ROUTINE_DONE = 4 # SCARA get routine completed
+BIT_SEND_DATA = 5        # Send box data to PLC
 
 class StateMachine:
-    # State definitions
+    """State machine for box handling system coordination"""
+    
+    # States
     IDLE = "idle"
     BOX = "box_detector"
     SCARA1 = "scara_put_box"
@@ -13,74 +24,120 @@ class StateMachine:
     PLC_MSG = "plc_message"
 
     def __init__(self, plc_instance=None):
-        self._state = self.IDLE  # Initial state
-        self._input_register = 0b00000000  # 8-bit input register
-        
-        # Use provided PLC instance or create a new one
+        self._state = self.IDLE
+        self._input_register = 0x00
         self._plc = plc_instance if plc_instance else PLCCommunication()
 
-    # Get the current state
     def get_state(self):
-        print(f"Current state: {self._state}")
+        """Get current state"""
         return self._state
 
-    # Set the current state
     def set_state(self, state):
-        if state in [self.IDLE, self.BOX, self.SCARA1, self.SCARA2, self.PLC_MSG]:
+        """Set new state with validation"""
+        valid_states = [self.IDLE, self.BOX, self.SCARA1, self.SCARA2, self.PLC_MSG]
+        if state in valid_states:
             self._state = state
-            print(f"State changed to: {self._state}")
+            print(f"State: {state}")
         else:
             raise ValueError(f"Invalid state: {state}")
 
-    # Get the input register value
     def get_input_register(self):
-        print(f"Current input register: {bin(self._input_register)}")
+        """Get input register value"""
         return self._input_register
 
-    # Set the input register value
-    def set_input_register(self, value):
-        if isinstance(value, int) and 0 <= value <= 0xFF:  # Validate 8-bit integer
-            self._input_register = value
-            print(f"Input register updated to: {bin(self._input_register)}")
-        else:
-            raise ValueError("Input register must be an 8-bit integer.")
+    def _set_bit(self, bit_position):
+        """Set specific bit in input register"""
+        self._input_register |= (1 << bit_position)
 
-    # Reset the state to IDLE
+    def _clear_register(self):
+        """Clear input register"""
+        self._input_register = 0x00
+
     def reset_state(self):
+        """Reset to idle state and clear register"""
+        self._clear_register()
         self._state = self.IDLE
-        print("State reset to IDLE.")
+        print("Reset to IDLE")
 
-    # Handle IDLE state
     def handle_idle(self):
-        print("Handling IDLE state...")
-        # Ejemplo: leer algún sensor del PLC
-        # sensor_value = self._plc.read_boolean(0, 0)  # Lee M0.0
-        self.set_state(self.BOX)
+        """Poll PLC for requests and decide next state"""
+        print("IDLE: Polling PLC requests...")
+        
+        # Poll PLC requests
+        if self._plc.read_boolean(PLC_REQUESTS, 0):
+            self._set_bit(BIT_PLC_NEW_BOX)
+        if self._plc.read_boolean(PLC_REQUESTS, 1):
+            self._set_bit(BIT_PLC_REMOVE_BOX)
 
-    # Handle BOX DETECTOR state
+        # State transitions
+        if self._input_register == 0b00000001:  # New box requested
+            self.set_state(self.BOX)
+        elif self._input_register == 0b00000010:  # Remove box requested
+            self.set_state(self.SCARA2)
+        elif self._input_register == 0b00000000:  # No requests
+            pass  # Stay in IDLE
+        else:
+            print(f"IDLE: Unknown register state {bin(self._input_register)}")
+            self.reset_state()
+
     def handle_box_detector(self):
-        print("Handling BOX DETECTOR state...")
-        # Ejemplo: activar detector de cajas
-        # self._plc.write_boolean(1, 0, True)  # Escribe True en M1.0
-        self.set_state(self.SCARA1)
+        """Check box presence with webcam"""
+        print("BOX_DETECTOR: Checking box presence...")
+        
+        # TODO: Implement webcam/OpenCV box detection
+        # box_present = detect_box()
+        # if not box_present:
+        #     self._set_bit(BIT_NO_BOX_DETECTED)
 
-    # Handle SCARA PUT BOX state
+        # State transitions
+        if self._input_register == 0b00000101:  # Need box + no box detected
+            self.set_state(self.SCARA1)
+        elif self._input_register == 0b00001001:  # Need box + put routine done
+            self.set_state(self.PLC_MSG)
+        else:
+            print(f"BOX_DETECTOR: Unknown register state {bin(self._input_register)}")
+            self.reset_state()
+
     def handle_scara_put_box(self):
-        print("Handling SCARA PUT BOX state...")
-        # Ejemplo: enviar comando al SCARA
-        # self._plc.write_integer(100, 1)  # Escribe comando en MW100
-        self.set_state(self.SCARA2)
+        """Request SCARA robot to place box"""
+        print("SCARA_PUT: Requesting box placement...")
+        
+        # TODO: Send ROS2 request to SCARA robot
+        # success = request_scara_put_routine()
+        # if success:
+        #     self._set_bit(BIT_PUT_ROUTINE_DONE)
 
-    # Handle SCARA GET BOX state
+        # State transitions
+        if self._input_register == 0b00001001:  # Put routine completed
+            self.set_state(self.BOX)
+        else:
+            print(f"SCARA_PUT: Waiting for completion or retry...")
+
     def handle_scara_get_box(self):
-        print("Handling SCARA GET BOX state...")
-        # Ejemplo: enviar otro comando al SCARA
-        # self._plc.write_integer(100, 2)  # Escribe comando en MW100
-        self.set_state(self.PLC_MSG)
+        """Request SCARA robot to remove box"""
+        print("SCARA_GET: Requesting box removal...")
+        
+        # TODO: Send ROS2 request to SCARA robot
+        # success = request_scara_get_routine()
+        # if success:
+        #     self._set_bit(BIT_GET_ROUTINE_DONE)
 
-    # Handle PLC MESSAGE state
+        # State transitions
+        if self._input_register == 0b00010010:  # Get routine completed
+            self.set_state(self.BOX)
+        else:
+            print(f"SCARA_GET: Waiting for completion...")
+
     def handle_plc_message(self):
-        print("Handling PLC MESSAGE state...")
-        # Ejemplo: enviar mensaje de finalización
-        # self._plc.write_boolean(2, 0, True)  # Escribe True en M2.0
+        """Send box height data to PLC"""
+        print("PLC_MSG: Sending box data...")
+        
+        # TODO: Get actual box height from measurement
+        # box_height = measure_box_height()
+        box_height = 100  # Placeholder value
+        
+        data = int(box_height * FACTOR_CONSTANT)
+        self._plc.write_integer(PLC_BOX_DATA, data)
+        print(f"Sent box height: {data}")
+        
         self.reset_state()

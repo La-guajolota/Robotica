@@ -2,6 +2,8 @@ from time import sleep
 from states import StateMachine
 from plc_communication import PLCCommunication
 
+delay_debug = 3 #seconds
+
 def main():
     # Crear la instancia del PLC una sola vez
     plc = PLCCommunication(ip="192.168.1.3")  # Ajusta la IP según tu configuración
@@ -27,7 +29,7 @@ def main():
                     st_machine.handle_scara_get_box()
                 case st_machine.PLC_MSG:
                     st_machine.handle_plc_message()
-            sleep(1)
+            sleep(delay_debug)
             
     except KeyboardInterrupt:
         print("\nProgram terminated by user.")

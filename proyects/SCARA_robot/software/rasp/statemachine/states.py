@@ -10,9 +10,10 @@ from console_styler import styler
 HEIGHT_FACTOR = 1 # A factor to scale the height value before sending to the PLC.
 
 # PLC Memory Addresses
-PLC_BOX_DATA = 0      # MW0: Stores the box height data.
+PLC_BOX_DATA = 44      # MW0: Stores the box height data.
 PLC_REQUESTS = 1      # M1.X: PLC request flags (e.g., new box, remove box).
 PLC_BOX_PRESENCE = 2  # M2.X: Flags related to box presence and robot status.
+PLC_MODE = 3          # M3.X: Mode flags for the PLC (e.g., manual, automatic).
 
 # Bit positions within the internal _input_register
 BIT_PLC_NEW_BOX = 0       # PLC requests a new box.
@@ -21,6 +22,7 @@ BIT_NO_BOX_DETECTED = 2   # Camera does not see a box.
 BIT_PUT_ROUTINE_DONE = 3  # SCARA robot has finished placing a box.
 BIT_GET_ROUTINE_DONE = 4  # SCARA robot has finished removing a box.
 BIT_SEND_DATA = 5         # Ready to send box data to the PLC.
+BIT_PLC_MODE_MANUAL = 6   # PLC is in manual/automatic mode.
 
 class StateMachine:
     """Implements the core logic of the application by managing states and transitions."""
@@ -90,12 +92,17 @@ class StateMachine:
     def handle_idle(self):
         """IDLE state: Waits for a request from the PLC."""
         self.set_state(self.IDLE)
-        styler.print("Polling for PLC requests...", "info", "white")
+        styler.print("Polling for PLC requestsc started...", "info", "white")
         if self._plc.read_boolean(PLC_REQUESTS, 0): self._set_bit(BIT_PLC_NEW_BOX)
         if self._plc.read_boolean(PLC_REQUESTS, 1): self._set_bit(BIT_PLC_REMOVE_BOX)
+        if not self._plc.read_boolean(PLC_MODE, 0): self._set_bit(BIT_PLC_MODE_MANUAL)
+        styler.print("Polling for PLC requests done...", "info", "white")
 
         if self._input_register == 0b000001: self.set_state(self.BOX) # New box request
         elif self._input_register == 0b000010: self.set_state(self.SCARA_GET) # Remove box request
+        elif self._input_register == 0b1000000:
+            styler.print("PLC is in manual mode. Waiting for user input...", "manual", "cyan")
+            if detect_box(): self.set_state(self.PLC_MSG) # Go to PLC_MSG state to write data to PLC.
 
     def handle_box_detector(self):
         """BOX state: Uses the camera to check for a box."""
@@ -142,7 +149,7 @@ class StateMachine:
         if hasattr(self, '_get_requested') and is_get_routine_done():
             styler.print("SCARA get routine completed.", "success", "green")
             delattr(self, '_get_requested') # Clear the flag.
-            self.set_state(self.handle_plc_message)
+            self.set_state(self.PLC_MSG)
 
     def handle_plc_message(self):
         """PLC_MSG state: Sends the detected box's data to the PLC."""
@@ -151,7 +158,7 @@ class StateMachine:
         if height >= 5:
             # Send the box's height.
             data = int(height * HEIGHT_FACTOR)
-            styler.print(f"Sending box height ({data}px) to PLC.", "data", "green")
+            styler.print(f"Sending box height ({data}cm) to PLC.", "data", "green")
             self._plc.write_integer(PLC_BOX_DATA, data)
 
             # Let the PLC know there is a box present.

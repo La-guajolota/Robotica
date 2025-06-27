@@ -8,14 +8,14 @@ import os
 def run_plc_connector():
     """Ejecuta el conector PLC en un hilo separado"""
     try:
-        subprocess.run([sys.executable, "/home/pi2/proyecto/guiDB/conector_PLC.py"])
+        subprocess.run([sys.executable, "/home/rasp/proyecto/guiDB/conector_PLC.py"])
     except Exception as e:
         print(f"Error al ejecutar el conector PLC: {e}")
 
 def run_streamlit_dashboard():
     """Ejecuta el dashboard de Streamlit"""
     try:
-        subprocess.run([sys.executable, "-m", "streamlit", "run", r"/home/pi2/proyecto/guiDB/dashboard.py", "--server.port=8501"])
+        subprocess.run([sys.executable, "-m", "streamlit", "run", r"/home/rasp/proyecto/guiDB/dashboard.py", "--server.port=8501"])
     except Exception as e:
         print(f"Error al ejecutar Streamlit: {e}")
 
@@ -24,7 +24,7 @@ def main():
     print("=====================================")
     
     # Verificar que los archivos necesarios existen
-    required_files = [r"/home/pi2/proyecto/guiDB/dashboard.py", r"/home/pi2/proyecto/guiDB/config.py"]
+    required_files = [r"/home/rasp/proyecto/guiDB/dashboard.py", r"/home/rasp/proyecto/guiDB/config.py"]
     for file in required_files:
         if not os.path.exists(file):
             print(f"❌ Error: Archivo {file} no encontrado")

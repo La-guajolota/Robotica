@@ -5,7 +5,7 @@ from console_styler import styler
 
 class PLCCommunication:
     """Handles network communication with a Siemens S7 PLC using the snap7 library."""
-    def __init__(self, ip="192.168.1.3", rack=0, slot=1):
+    def __init__(self, ip="192.168.5.3", rack=0, slot=1):
         """
         Initializes the PLC client.
         

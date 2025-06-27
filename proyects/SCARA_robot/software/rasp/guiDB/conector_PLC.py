@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class PLCConnector:
-    def __init__(self, plc_ip="192.168.1.3", rack=0, slot=1):
+    def __init__(self, plc_ip="192.168.5.3", rack=0, slot=1):
         """
         Inicializa el conector PLC
         
@@ -31,16 +31,16 @@ class PLCConnector:
         self.db = None
         
         # Configuración de tags del PLC usando memoria M (Merker)
-        # Si tu PLC solo tiene valores de 16 bits, usa esta configuración:
+        # Variables TIME ajustadas para ocupar 4 bytes cada una
         self.tags_config = {
-            "box_count": {"area": "M", "start": 0, "size": 2, "type": "int"},
+            "box_count": {"area": "M", "start": 8, "size": 2, "type": "int"},
             "machine_speed": {"area": "M", "start": 2, "size": 2, "type": "int"},
-            "system_status": {"area": "M", "start": 4, "size": 2, "type": "int"},
-            "production_time": {"area": "M", "start": 6, "size": 2, "type": "int"},
-            "remaining_cycles": {"area": "M", "start": 10, "size": 2, "type": "int"},
-            "cycles": {"area": "M", "start": 12, "size": 2, "type": "int"},
-            "active_time": {"area": "M", "start": 14, "size": 2, "type": "int"},
-            "stop_time": {"area": "M", "start": 18, "size": 2, "type": "int"}
+            "system_status": {"area": "M", "start": 3, "size": 1, "type": "bool"},
+            "production_time": {"area": "M", "start": 40, "size": 4, "type": "time"},  # Cambiado a TIME
+            "remaining_cycles": {"area": "M", "start": 16, "size": 2, "type": "int"},
+            "cycles": {"area": "M", "start": 6, "size": 2, "type": "int"},
+            "active_time": {"area": "M", "start": 10, "size": 4, "type": "time"},     # Cambiado a TIME
+            "stop_time": {"area": "M", "start": 24, "size": 4, "type": "time"}       # Cambiado a TIME
         }
         
         # Diccionario de códigos de error
@@ -54,6 +54,17 @@ class PLCConnector:
         }
         
         self.init_firebase()
+    
+    def format_time(self, ms):
+        """Convierte milisegundos a formato legible"""
+        if ms < 1000:
+            return f"{ms} ms"
+        elif ms < 60000:
+            return f"{ms/1000:.1f} s"
+        elif ms < 3600000:
+            return f"{ms/60000:.1f} min"
+        else:
+            return f"{ms/3600000:.1f} h"
     
     def init_firebase(self):
         """Inicializa la conexión con Firebase"""
@@ -93,7 +104,7 @@ class PLCConnector:
             tag_name (str): Nombre del tag a leer
             
         Returns:
-            int: Valor del tag
+            int/float: Valor del tag
         """
         if tag_name not in self.tags_config:
             logger.error(f"Tag {tag_name} no encontrado en configuración")
@@ -111,6 +122,13 @@ class PLCConnector:
             elif config["type"] == "dint":
                 # Leer como entero de 32 bits (double integer)
                 return get_dint(data, 0)
+            elif config["type"] == "time":
+                # Leer como TIME (32 bits = milisegundos)
+                time_ms = get_dword(data, 0)
+                return time_ms
+            elif config["type"] == "bool":
+                # Leer como booleano (1 byte, bit específico)
+                return snap7.util.get_bool(data, 0, 0)
             else:
                 return data
         except Exception as e:
@@ -121,12 +139,17 @@ class PLCConnector:
         """Lee todos los datos del PLC - las 8 variables principales"""
         data = {}
         
-        # Leer todas las 8 variables configuradas
+        # Leer todas las variables configuradas
         for tag_name in self.tags_config.keys():
             value = self.read_tag(tag_name)
             if value is not None:
                 data[tag_name] = value
-                logger.debug(f"{tag_name}: {value}")
+                
+                # Log especial para variables TIME
+                if self.tags_config[tag_name]["type"] == "time":
+                    logger.debug(f"{tag_name}: {value} ms ({self.format_time(value)})")
+                else:
+                    logger.debug(f"{tag_name}: {value}")
         
         # Procesar estado del sistema basado en system_status
         system_status_code = data.get('system_status', 0)
@@ -168,8 +191,15 @@ class PLCConnector:
             return False
         
         try:
+            # Convertir variables TIME a formato legible antes de guardar
+            firebase_data = data.copy()
+            for tag_name, config in self.tags_config.items():
+                if config["type"] == "time" and tag_name in firebase_data:
+                    # Agregar campo formateado
+                    firebase_data[f"{tag_name}_formatted"] = self.format_time(firebase_data[tag_name])
+            
             collection_ref = self.db.collection(DATABASE_CONFIG["collection_name"])
-            collection_ref.add(data)
+            collection_ref.add(firebase_data)
             logger.info("Datos guardados en Firebase")
             
             # Limpiar registros antiguos si está habilitado
@@ -221,14 +251,19 @@ class PLCConnector:
                 data = self.read_all_data()
                 
                 if data:
+                    # Log con formato TIME para las variables correspondientes
+                    production_time_str = self.format_time(data.get('production_time', 0)) if data.get('production_time') else 'N/A'
+                    active_time_str = self.format_time(data.get('active_time', 0)) if data.get('active_time') else 'N/A'
+                    stop_time_str = self.format_time(data.get('stop_time', 0)) if data.get('stop_time') else 'N/A'
+                    
                     logger.info(f"Datos leídos: Box Count={data.get('box_count', 'N/A')}, "
                               f"Speed={data.get('machine_speed', 'N/A')}, "
                               f"Status={data.get('system_status', 'N/A')}, "
-                              f"Production Time={data.get('production_time', 'N/A')}, "
+                              f"Production Time={production_time_str}, "
                               f"Remaining Cycles={data.get('remaining_cycles', 'N/A')}, "
                               f"Cycles={data.get('cycles', 'N/A')}, "
-                              f"Active Time={data.get('active_time', 'N/A')}, "
-                              f"Stop Time={data.get('stop_time', 'N/A')}")
+                              f"Active Time={active_time_str}, "
+                              f"Stop Time={stop_time_str}")
                     
                     # Guardar en Firebase
                     self.save_to_firebase(data)
@@ -254,7 +289,7 @@ class PLCConnector:
 def main():
     """Función principal para ejecutar el conector"""
     # Configuración del PLC (ajustar según tu setup)
-    PLC_IP = input("Ingresa la IP del PLC (Enter para 192.168.1.3): ").strip() or "192.168.1.3"
+    PLC_IP = input("Ingresa la IP del PLC (Enter para 192.168.5.3): ").strip() or "192.168.5.3"
     RACK = int(input("Ingresa el número de rack (Enter para 0): ").strip() or "0")
     SLOT = int(input("Ingresa el número de slot (Enter para 1): ").strip() or "1")
     MONITORING_INTERVAL = 5    # Intervalo de lectura en segundos

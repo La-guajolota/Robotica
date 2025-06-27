@@ -71,7 +71,7 @@ def main():
 
     if choice == '1':
         styler.print("\nReal PLC Mode - Connecting...", "plc", "yellow")
-        plc_ip = styler.get_input("PLC IP (default: 192.168.1.3)") or "192.168.1.3"
+        plc_ip = styler.get_input("PLC IP (default: 192.168.5.3)") or "192.168.5.3"
         plc = PLCCommunication(ip=plc_ip)
         if not plc.connect(): return # Exit if connection fails.
     else:

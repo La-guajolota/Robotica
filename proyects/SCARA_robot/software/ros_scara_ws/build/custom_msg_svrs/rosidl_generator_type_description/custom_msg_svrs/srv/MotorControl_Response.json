@@ -6,7 +6,7 @@
         {
           "name": "response_message",
           "type": {
-            "type_id": 17,
+            "type_id": 15,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -20,7 +20,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msg_svrs/srv/MotorControl_Response",
-      "hash_string": "RIHS01_9c1a3ffb7486d18e2eb896c5b5ea6f2fa2dace5ff3f5be068c4d9d9473246ebc"
+      "hash_string": "RIHS01_5f653b2d3535a63da145903c3abd154113a424d5021e51fa7c7b5f0cc94b9389"
     }
   ]
 }

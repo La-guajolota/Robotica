@@ -630,6 +630,8 @@ _Python3_INCLUDE_DIR:INTERNAL=/usr/include/python3.12
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;;cpython-312-x86_64-linux-gnu;abi3;/usr/lib/python3.12;/home/adrian/py_ros2/lib/python3.12;/home/adrian/py_ros2/lib/python3.12/site-packages;/home/adrian/py_ros2/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=5f99e46ec5380375734a9092b5f7694c
+//Interpreter reason failure
+_Python3_Interpreter_REASON_FAILURE:INTERNAL=
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/x86_64-linux-gnu/libpython3.12.so
 _Python3_NUMPY_SIGNATURE:INTERNAL=1a1db58f06ebc9e85338c2290a61d270

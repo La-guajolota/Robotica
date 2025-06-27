@@ -11,7 +11,7 @@
 #include "utils.hpp"
 
 // Uncomment the desired transport method
-//#define urosAgent_serial
+// #define urosAgent_serial
 #define urosAgent_wifi 
 
 /*******
@@ -59,7 +59,14 @@ void mv_(
  * as `I2C_ADDRESS`.
  */
 const uint8_t I2C_ADDRESS = 0x08;
-void sendServoAngle(uint8_t angle);
+void sendServoAngle(bool command);
+
+// --- IMPLEMENTACIÓN DE LA FUNCIÓN DE DEBUG ---
+// Como estamos en un archivo .cpp, tenemos acceso a 'Serial'.
+void print_debug(const char *msg) {
+    Serial.println(msg);
+    // Serial.println(String(ESP.getFreeHeap()));
+}
 
 void setup() {
     // Initialize Serial communication
@@ -75,6 +82,7 @@ void setup() {
 #endif
     delay(2000);
     setup_micro_ros_scara();
+    publish_end_of_service(false); // Indicate end of service
 
     // Initialize the AS5600 encoders
     setup_magnetic_encoders();
@@ -84,7 +92,7 @@ void setup() {
 }   
 
 void loop() {
-    RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(10)));
+    RCSOFTCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1)));
 
     switch (services_flags) {
     case MOVE_BASE_SERVICE:
@@ -102,31 +110,25 @@ void loop() {
         break;
     case TOOL_SERVICE:
         bitClear(services_flags, 3);
-        tool_servo ?
-            sendServoAngle(180) : // Send 180 degrees if tool_servo is true
-            sendServoAngle(0);    // Send 0 degrees if tool_servo is false
+        sendServoAngle(tool_servo);
         break;
     default:
-        // Handle default case - no service request to process
-        sleep(1);
+        // No service flags set, do nothing
         break;
     }
 
     // Publish encoder readings with null checks
-    // float angle_a = encoder_a.read_angle();
-    // if (!isnan(angle_a)) {
-    //     encoderA_angle_msg.data = angle_a;
-    //     RCSOFTCHECK(rcl_publish(&encoderA_pub, &encoderA_angle_msg, nullptr));
-    // }
+    float angle = encoder_a.read_angle();
+    if (!isnan(angle)) {
+        encoderA_angle_msg.data = angle;
+        RCSOFTCHECK(rcl_publish(&encoderA_pub, &encoderA_angle_msg, nullptr));
+    }
     
-    // float angle_b = encoder_b.read_angle();
-    // if (!isnan(angle_b)) {
-    //     encoderB_angle_msg.data = angle_b;
-    //     RCSOFTCHECK(rcl_publish(&encoderB_pub, &encoderB_angle_msg, nullptr));
-    // }
-    
-    // encoderC_angle_msg.data = encoder_c.read_angle();
-    // RCSOFTCHECK(rcl_publish(&encoderC_pub, &encoderC_angle_msg, nullptr));        
+    angle = encoder_b.read_angle();
+    if (!isnan(angle)) {
+        encoderB_angle_msg.data = angle;
+        RCSOFTCHECK(rcl_publish(&encoderB_pub, &encoderB_angle_msg, nullptr));
+    }       
 }
 
 /**
@@ -140,6 +142,8 @@ void loop() {
 template<typename I2CType>
 void mv_ang(DRV8825 &motor, AS5600<I2CType> &encoder, std_msgs__msg__Float32 *encoderX_angle_msg, rcl_publisher_t *encoderX_pub, bool dir, float angle)
 {
+    publish_end_of_service(false); // Indicate service is ongoing
+
     // Calculate total steps needed with proper rounding
     const uint32_t steps = static_cast<uint32_t>(round(angle * (motor.steps_full_rot / 360.0)));
     
@@ -207,10 +211,13 @@ void mv_ang(DRV8825 &motor, AS5600<I2CType> &encoder, std_msgs__msg__Float32 *en
         encoderX_angle_msg->data = final_angle;
         RCSOFTCHECK(rcl_publish(encoderX_pub, encoderX_angle_msg, nullptr));
     }
+    publish_end_of_service(true); // Indicate service is done
+    
 }
 
 void mv_(DRV8825 &motor, bool dir, float angle)
 {
+    publish_end_of_service(false); // Indicate service is ongoing
     // Calculate total steps needed with proper rounding
     const uint32_t steps = static_cast<uint32_t>(round(angle * (motor.steps_full_rot / 360.0)));
 
@@ -241,6 +248,8 @@ void mv_(DRV8825 &motor, bool dir, float angle)
     
     // Disable driver to save power and prevent overheating
     motor.en_dis_driver(LOW);
+    publish_end_of_service(true); // Indicate service is done
+
 }
 
 /**
@@ -252,13 +261,14 @@ void mv_(DRV8825 &motor, bool dir, float angle)
  * message to the serial monitor. If the angle is invalid, it prints an 
  * error message to the serial monitor.
  * */
+void sendServoAngle(bool command) {
+    publish_end_of_service(false); // Indicate service is ongoing
 
-void sendServoAngle(uint8_t angle) {
-    if (angle >= 0 && angle <= 180) { // Validate that the angle is within the allowed range
-        
-        tca9548a.sel_channel(0x02);
-        Wire.beginTransmission(I2C_ADDRESS); // Start transmission to the slave
-        Wire.write(angle); // Send the angle as a byte
-        Wire.endTransmission(); // End the transmission
-    } 
+    char str = command ? '0' : '1';
+    tca9548a.sel_channel(0x02);          // Select the channel for I2C communication
+    I2C_.beginTransmission(I2C_ADDRESS); // Start transmission to the slave 
+    I2C_.write((uint8_t)str);                     // servo goes to position 0 or 1
+    I2C_.endTransmission();              // End the transmission
+    
+    publish_end_of_service(true); // Indicate service is done
 }

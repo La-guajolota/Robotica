@@ -151,9 +151,6 @@ PyObject * custom_msg_svrs__srv__motor_control__request__convert_to_py(void * ra
 // already included above
 // #include "custom_msg_svrs/srv/detail/motor_control__functions.h"
 
-#include "rosidl_runtime_c/string.h"
-#include "rosidl_runtime_c/string_functions.h"
-
 
 ROSIDL_GENERATOR_C_EXPORT
 bool custom_msg_svrs__srv__motor_control__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -193,14 +190,8 @@ bool custom_msg_svrs__srv__motor_control__response__convert_from_py(PyObject * _
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
-      Py_DECREF(field);
-      return false;
-    }
-    rosidl_runtime_c__String__assign(&ros_message->response_message, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
+    assert(PyBool_Check(field));
+    ros_message->response_message = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -227,13 +218,7 @@ PyObject * custom_msg_svrs__srv__motor_control__response__convert_to_py(void * r
   custom_msg_svrs__srv__MotorControl_Response * ros_message = (custom_msg_svrs__srv__MotorControl_Response *)raw_ros_message;
   {  // response_message
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->response_message.data,
-      strlen(ros_message->response_message.data),
-      "replace");
-    if (!field) {
-      return NULL;
-    }
+    field = PyBool_FromLong(ros_message->response_message ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "response_message", field);
       Py_DECREF(field);

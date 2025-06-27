@@ -425,8 +425,6 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // response_message
-#include "rosidl_runtime_c/string_functions.h"  // response_message
 
 // forward declare type support functions
 
@@ -441,16 +439,7 @@ bool cdr_serialize_custom_msg_svrs__srv__MotorControl_Response(
 {
   // Field name: response_message
   {
-    const rosidl_runtime_c__String * str = &ros_message->response_message;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << (ros_message->response_message ? true : false);
   }
 
   return true;
@@ -463,18 +452,9 @@ bool cdr_deserialize_custom_msg_svrs__srv__MotorControl_Response(
 {
   // Field name: response_message
   {
-    std::string tmp;
+    uint8_t tmp;
     cdr >> tmp;
-    if (!ros_message->response_message.data) {
-      rosidl_runtime_c__String__init(&ros_message->response_message);
-    }
-    bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->response_message,
-      tmp.c_str());
-    if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'response_message'\n");
-      return false;
-    }
+    ros_message->response_message = tmp ? true : false;
   }
 
   return true;
@@ -496,9 +476,11 @@ size_t get_serialized_size_custom_msg_svrs__srv__MotorControl_Response(
   (void)wchar_size;
 
   // Field name: response_message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->response_message.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->response_message);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -525,13 +507,8 @@ size_t max_serialized_size_custom_msg_svrs__srv__MotorControl_Response(
   // Field name: response_message
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
 
@@ -557,16 +534,7 @@ bool cdr_serialize_key_custom_msg_svrs__srv__MotorControl_Response(
 {
   // Field name: response_message
   {
-    const rosidl_runtime_c__String * str = &ros_message->response_message;
-    if (str->capacity == 0 || str->capacity <= str->size) {
-      fprintf(stderr, "string capacity not greater than size\n");
-      return false;
-    }
-    if (str->data[str->size] != '\0') {
-      fprintf(stderr, "string not null-terminated\n");
-      return false;
-    }
-    cdr << str->data;
+    cdr << (ros_message->response_message ? true : false);
   }
 
   return true;
@@ -588,9 +556,11 @@ size_t get_serialized_size_key_custom_msg_svrs__srv__MotorControl_Response(
   (void)wchar_size;
 
   // Field name: response_message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->response_message.size + 1);
+  {
+    size_t item_size = sizeof(ros_message->response_message);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -615,13 +585,8 @@ size_t max_serialized_size_key_custom_msg_svrs__srv__MotorControl_Response(
   // Field name: response_message
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;

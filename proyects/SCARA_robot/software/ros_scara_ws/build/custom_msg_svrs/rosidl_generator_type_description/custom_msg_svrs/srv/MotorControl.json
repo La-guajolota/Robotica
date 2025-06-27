@@ -137,7 +137,7 @@
           {
             "name": "response_message",
             "type": {
-              "type_id": 17,
+              "type_id": 15,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -196,7 +196,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msg_svrs/srv/MotorControl",
-      "hash_string": "RIHS01_b895e38859493ce3e4cbc69c1f7924ca46c43d57b15290b463492f3f88c42203"
+      "hash_string": "RIHS01_cafa389289c6bfa2cf964139e66945a75086f52f9a7a6691d0b2316c2f6fa9ce"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -204,7 +204,7 @@
     },
     {
       "type_name": "custom_msg_svrs/srv/MotorControl_Event",
-      "hash_string": "RIHS01_0ff0a7e19d6934889272572856d3b1dae0971c46899ab3afba97b82a1a996d26"
+      "hash_string": "RIHS01_9ed0764030ec5735b2d9eb9c50eefc07f29f24020920eb6cf479a64d6c817b55"
     },
     {
       "type_name": "custom_msg_svrs/srv/MotorControl_Request",
@@ -212,7 +212,7 @@
     },
     {
       "type_name": "custom_msg_svrs/srv/MotorControl_Response",
-      "hash_string": "RIHS01_9c1a3ffb7486d18e2eb896c5b5ea6f2fa2dace5ff3f5be068c4d9d9473246ebc"
+      "hash_string": "RIHS01_5f653b2d3535a63da145903c3abd154113a424d5021e51fa7c7b5f0cc94b9389"
     },
     {
       "type_name": "service_msgs/msg/ServiceEventInfo",

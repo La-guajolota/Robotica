@@ -42,6 +42,7 @@ extern AS5600<TwoWire> encoder_b;
 //I2C hardware bus 0)
 #define SDA_PIN 22
 #define SCL_PIN 21
+extern TwoWire I2C_;
 
 #define MUX_RST_PIN 2
 extern TCA9548A tca9548a;
@@ -52,8 +53,8 @@ extern AS5600<TwoWire> encoder_a;
 #define MUX_ENCODER_B 0x04
 extern AS5600<TwoWire> encoder_b;
 
-#define MUX_ENCODER_C 0x02
-extern AS5600<TwoWire> encoder_c;
+// #define MUX_ENCODER_C 0x02
+// extern AS5600<TwoWire> encoder_c;
 #endif
 
 /**

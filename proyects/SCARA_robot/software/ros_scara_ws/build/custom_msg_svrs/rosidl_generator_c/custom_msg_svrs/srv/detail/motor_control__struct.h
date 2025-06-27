@@ -43,15 +43,11 @@ typedef struct custom_msg_svrs__srv__MotorControl_Request__Sequence
 
 // Constants defined in the message
 
-// Include directives for member types
-// Member 'response_message'
-#include "rosidl_runtime_c/string.h"
-
 /// Struct defined in srv/MotorControl in the package custom_msg_svrs.
 typedef struct custom_msg_svrs__srv__MotorControl_Response
 {
   /// result
-  rosidl_runtime_c__String response_message;
+  bool response_message;
 } custom_msg_svrs__srv__MotorControl_Response;
 
 // Struct for a sequence of custom_msg_svrs__srv__MotorControl_Response.

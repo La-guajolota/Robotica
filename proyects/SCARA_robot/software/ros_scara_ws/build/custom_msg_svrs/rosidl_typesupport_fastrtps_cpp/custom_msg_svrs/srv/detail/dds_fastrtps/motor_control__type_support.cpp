@@ -415,7 +415,7 @@ cdr_serialize(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: response_message
-  cdr << ros_message.response_message;
+  cdr << (ros_message.response_message ? true : false);
 
   return true;
 }
@@ -427,7 +427,11 @@ cdr_deserialize(
   custom_msg_svrs::srv::MotorControl_Response & ros_message)
 {
   // Member: response_message
-  cdr >> ros_message.response_message;
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.response_message = tmp ? true : false;
+  }
 
   return true;
 }
@@ -447,9 +451,11 @@ get_serialized_size(
   (void)wchar_size;
 
   // Member: response_message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.response_message.size() + 1);
+  {
+    size_t item_size = sizeof(ros_message.response_message);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -477,13 +483,8 @@ max_serialized_size_MotorControl_Response(
   // Member: response_message
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -509,7 +510,7 @@ cdr_serialize_key(
   eprosima::fastcdr::Cdr & cdr)
 {
   // Member: response_message
-  cdr << ros_message.response_message;
+  cdr << (ros_message.response_message ? true : false);
 
   return true;
 }
@@ -528,9 +529,11 @@ get_serialized_size_key(
   (void)wchar_size;
 
   // Member: response_message
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.response_message.size() + 1);
+  {
+    size_t item_size = sizeof(ros_message.response_message);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -557,13 +560,8 @@ max_serialized_size_key_MotorControl_Response(
   // Member: response_message
   {
     size_t array_size = 1;
-    full_bounded = false;
-    is_plain = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;

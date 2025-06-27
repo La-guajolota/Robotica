@@ -30,7 +30,7 @@ TCA9548A tca9548a(TCA9548A_ADDRESS, SDA_PIN, SCL_PIN, MUX_RST_PIN, &I2C_);
 // AS5600 encoders instances
 AS5600<TwoWire> encoder_a(SDA_PIN, SCL_PIN, &I2C_);
 AS5600<TwoWire> encoder_b(SDA_PIN, SCL_PIN, &I2C_);
-AS5600<TwoWire> encoder_c(SDA_PIN, SCL_PIN, &I2C_);
+//AS5600<TwoWire> encoder_c(SDA_PIN, SCL_PIN, &I2C_);
 #endif
 
 /**
@@ -125,7 +125,7 @@ void setup_stepper_motors() {
     create_RMT_chunck(
         pulses_base, 
         BASE_MOTOR_STEPS, 
-        240,         // RPM
+        100,         // RPM
         MICROSTEP_2, 
         NEMA17_ANGLE_STEP
     );
@@ -134,7 +134,7 @@ void setup_stepper_motors() {
     create_RMT_chunck(
         pulses_links, 
         LINKS_MOTOR_STEPS, 
-        100,          // RPM
+        60,          // RPM
         MICROSTEP_2, //
         NEMA17_ANGLE_STEP
     );
@@ -152,7 +152,7 @@ void setup_magnetic_encoders() {
 #ifdef I2C_MUX
     encoder_a.mux_channel = MUX_ENCODER_A;
     encoder_b.mux_channel = MUX_ENCODER_B;
-    encoder_c.mux_channel = MUX_ENCODER_C;
+    // encoder_c.mux_channel = MUX_ENCODER_C;
 #endif
 
     encoder_a.set_encoder_config(encoders_congig);

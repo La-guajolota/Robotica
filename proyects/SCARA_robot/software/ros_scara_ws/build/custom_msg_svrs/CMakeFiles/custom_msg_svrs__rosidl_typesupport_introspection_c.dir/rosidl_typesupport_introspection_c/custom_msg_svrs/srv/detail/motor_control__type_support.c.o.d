@@ -76,7 +76,6 @@ CMakeFiles/custom_msg_svrs__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_c/custom_msg_svrs/srv/detail/motor_control__struct.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/service_event_info.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__functions.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/rosidl_generator_c__visibility_control.h \

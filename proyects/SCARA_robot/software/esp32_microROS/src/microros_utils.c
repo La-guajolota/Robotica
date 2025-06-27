@@ -7,151 +7,223 @@
 
 #include "microros_utils.h"
 
-// Global variables for service handling
-volatile uint16_t services_flags = 0x00;  // Flags for service request tracking
-volatile bool dir[3] = {0};               // Direction for each motor [base, link1, link2]
-volatile float angle[3] = {0};            // Target angle for each motor [base, link1, link2]
-volatile bool tool_servo = false;         // Tool servo state
+/**
+ * @section GLOBAL_VARIABLES
+ * Definición de todas las variables globales
+ */
+
+// ROS Components
+rclc_executor_t executor;
+rclc_support_t support;
+rcl_allocator_t allocator;
+rcl_node_t node;
+rcl_timer_t timer;
+
+// Publishers of encoders
+rcl_publisher_t encoderA_pub;
+std_msgs__msg__Float32 encoderA_angle_msg;
+
+rcl_publisher_t encoderB_pub;
+std_msgs__msg__Float32 encoderB_angle_msg;
+
+rcl_publisher_t encoderC_pub;
+std_msgs__msg__Float32 encoderC_angle_msg;
+
+// Publisher of end of service
+rcl_publisher_t end_of_service_pub;
+std_msgs__msg__Bool end_of_service_msg;
+
+// Service variables
+volatile uint16_t services_flags = 0x00;
+volatile bool dir[3] = {0};
+volatile float angle[3] = {0};
+volatile bool tool_servo = false;
+
+// Motor control service
+rcl_service_t move_motor_server;
+rmw_request_id_t header_response;
+custom_msg_svrs__srv__MotorControl_Request srv_req;
+custom_msg_svrs__srv__MotorControl_Response srv_res;
+
+// Tool control service
+// rcl_service_t tool_control_server;
+// std_srvs__srv__SetBool_Request tool_control_req;
+// std_srvs__srv__SetBool_Response tool_control_res;
 
 /**
  * @brief Error handling loop
- * 
- * Enters an infinite loop when a critical ROS error occurs,
- * effectively halting the system to prevent further issues.
  */
 void error_loop() {
     while(1) {
-        delay(100);  // Small delay to prevent CPU hogging
+        delay(100);
+        print_debug("Error occurred, entering error loop...");
     }
 }
 
 /**
  * @brief Timer callback to publish encoder angle values
- * 
- * Publishes the current angle readings from all three encoders
- * at regular intervals defined by the timer.
- * 
- * @param timer Pointer to the timer that triggered the callback
- * @param last_call_time Time since last call in nanoseconds (unused)
  */
 void timer_publisher_encoders(rcl_timer_t * timer, int64_t last_call_time) {
     RCLC_UNUSED(last_call_time);
     
     if (timer != NULL) {
-        // Publish all encoder angles
-        RCSOFTCHECK(rcl_publish(&encoderA_pub, &encoderA_angle_msg, NULL));
-        RCSOFTCHECK(rcl_publish(&encoderB_pub, &encoderB_angle_msg, NULL));
-        RCSOFTCHECK(rcl_publish(&encoderC_pub, &encoderC_angle_msg, NULL));
+        publish_encoder_values();
     }
 }
 
 /**
+ * @brief Publish encoder values manually
+ * This function can be called from the main loop
+ */
+void publish_encoder_values(void) {
+    // Here you should read the actual encoder values
+    // For now, using example values
+    
+    // Example of encoder reading (replace with your reading code)
+    // encoderA_angle_msg.data = read_encoder_a();
+    // encoderB_angle_msg.data = read_encoder_b(); 
+    // encoderC_angle_msg.data = read_encoder_c();
+    
+    // Publish values
+    RCSOFTCHECK(rcl_publish(&encoderA_pub, &encoderA_angle_msg, NULL));
+    RCSOFTCHECK(rcl_publish(&encoderB_pub, &encoderB_angle_msg, NULL));
+    RCSOFTCHECK(rcl_publish(&encoderC_pub, &encoderC_angle_msg, NULL));
+}
+
+/**
  * @brief Service callback for motor control requests
- * 
- * Processes incoming motor control requests by setting the appropriate
- * service flags and storing direction and angle parameters.
- * 
- * @param srv_req Pointer to the request message
- * @param srv_res Pointer to the response message
  */
 void service_server_movemotor(const void * srv_req, void * srv_res) {
-    // Cast generic pointers to specific message types
     const custom_msg_svrs__srv__MotorControl_Request * req_in = 
         (const custom_msg_svrs__srv__MotorControl_Request *)srv_req;
     custom_msg_svrs__srv__MotorControl_Response * res_in = 
         (custom_msg_svrs__srv__MotorControl_Response *)srv_res;
 
-    // Set the corresponding flag bit for the requested motor
-    bitSet(services_flags, req_in->data_uint8);
-    
-    // Store direction and angle parameters
-    dir[req_in->data_uint8] = req_in->data_bool;     // Direction (CW/CCW)
-    angle[req_in->data_uint8] = req_in->data_float;  // Target angle
-    
-    // Send confirmation response
-    rosidl_runtime_c__String__assign(&res_in->response_message, "Request received");
+    // Validate that the requested motor is within the valid range (0-2)
+    if (req_in->data_uint8 >= 0 && req_in->data_uint8 < 3) {
+        // Set the corresponding flag bit for the requested motor
+        services_flags |= (1 << req_in->data_uint8);
+        
+        // Store direction and angle parameters
+        dir[req_in->data_uint8] = req_in->data_bool;
+        angle[req_in->data_uint8] = req_in->data_float;
+    } else if (req_in->data_uint8 == 4) { 
+        // Set the tool servo state
+        tool_servo = req_in->data_bool;
+        
+        // Set the tool service flag
+        services_flags |= TOOL_SERVICE;
+    } else {
+        // Motor index out of range
+        res_in->response_message = false; // Indicate failure
+        return;
+    }
+    // Recived 
+    res_in->response_message = true; // Indicate success
+}
+
+/**
+ * @brief Publish end of service message
+ * 
+ * This function publishes a message indicating the end of service.
+ * It can be used to signal that the robot has completed its tasks.
+ * 
+ * @param status The status of the end of service (true for success, false for waitting)
+ */
+void publish_end_of_service(bool status){
+    end_of_service_msg.data = status; // Set the end of service flag
+    RCSOFTCHECK(rcl_publish(&end_of_service_pub, &end_of_service_msg, NULL));
 }
 
 /**
  * @brief Service callback for tool control requests
- * 
- * Processes incoming tool control requests by setting the tool servo state
- * and sending a confirmation response.
- * 
- * @param srv_req Pointer to the request message
- * @param srv_res Pointer to the response message
  */
-void service_server_toolcontrol(const void * srv_req, void * srv_res) {
-    // Cast generic pointers to specific message types
-    const std_srvs__srv__SetBool_Request * req_in = 
-        (const std_srvs__srv__SetBool_Request *)srv_req;
-    std_srvs__srv__SetBool_Response * res_in =
-        (std_srvs__srv__SetBool_Response *)srv_res;
-    
-    // Set the tool service flag bit (bit 3)
-    bitSet(services_flags, TOOL_SERVICE);
+// void service_server_toolcontrol(const void * srv_req, void * srv_res) {
+//     const std_srvs__srv__SetBool_Request * req_in =
+//         (const std_srvs__srv__SetBool_Request *)srv_req;
+//     std_srvs__srv__SetBool_Response * res_in =
+//         (std_srvs__srv__SetBool_Response *)srv_res;
 
-    // Set tool servo state based on request
-    tool_servo = req_in->data;
+//     // Set the tool servo state based on the request
+//     tool_servo = req_in->data;
     
-    // Set success flag and send confirmation response
-    res_in->success = true;
-    // rosidl_runtime_c__String__assign(&res_in->message, "Tool control request received");
-}
+//     // Set the tool service flag
+//     services_flags |= TOOL_SERVICE;
+
+//     // Send confirmation response
+//     res_in->success = true;
+// }
 
 /**
  * @brief Initialize all MicroROS components
- * 
- * Sets up the ROS node, publishers, services, and executor
- * for the SCARA robot control system.
  */
 void setup_micro_ros_scara(void) {
     // Initialize allocator
     allocator = rcl_get_default_allocator();
 
     // Initialize ROS context
+    print_debug("Free Heap before rclc_support_init: ");
     RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
 
     // Create node
+    print_debug("Free Heap before rclc_node_init_default: ");
     RCCHECK(rclc_node_init_default(&node, "scara_micro_ros", "", &support));
 
+    // Initialize message data
+    encoderA_angle_msg.data = 0.0;
+    encoderB_angle_msg.data = 0.0;
+    encoderC_angle_msg.data = 0.0;
+    end_of_service_msg.data = false; 
+
     // Create publishers for encoder angles
+    print_debug("Initializing encoder A publisher...");
     RCCHECK(rclc_publisher_init_default(
         &encoderA_pub,
         &node,
         ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),
         "encoderA_angle_pub"));
     
+    print_debug("Initializing encoder B publisher...");
     RCCHECK(rclc_publisher_init_default(
         &encoderB_pub,
         &node,
         ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),
         "encoderB_angle_pub"));
     
-    // FIXED: Changed from std_srvs/srv/Float32 to std_msgs/msg/Float32
+    print_debug("Initializing encoder C publisher...");
     RCCHECK(rclc_publisher_init_default(
         &encoderC_pub,
         &node,
         ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),
         "encoderC_angle_pub"));
-
-    // Create service server for tool control
-    // RCCHECK(rclc_service_init_default(
-    //     &tool_control_server,
-    //     &node,
-    //     ROSIDL_GET_SRV_TYPE_SUPPORT(std_srvs, srv, SetBool),
-    //     "servo_tool"));
+    
+    // Create publisher for end of service
+    print_debug("Initializing end of service publisher...");
+    RCCHECK(rclc_publisher_init_default(
+        &end_of_service_pub,
+        &node,
+        ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Bool),
+        "end_of_service_pub"));
 
     // Create service server for motor control
+    print_debug("Free Heap before move_motor_server init: ");
     RCCHECK(rclc_service_init_default(
         &move_motor_server,
         &node,
         ROSIDL_GET_SRV_TYPE_SUPPORT(custom_msg_svrs, srv, MotorControl),
         "move_X_motor"));
 
-    // Timer code commented out - left for reference
+    // Create service server for tool control
+    // print_debug("Free Heap before tool_control_server init: ");
+    // RCCHECK(rclc_service_init_default(
+    //     &tool_control_server,
+    //     &node,
+    //     ROSIDL_GET_SRV_TYPE_SUPPORT(std_srvs, srv, SetBool),
+    //     "tool_control_service"));
+    // print_debug("Tool control service initialized successfully");
+
+    // Optional: Create timer for periodic publishing
     /*
-    // Create timer for periodic publishing
     const unsigned int timer_timeout = 100; // ms
     RCCHECK(rclc_timer_init_default(
         &timer,
@@ -160,9 +232,19 @@ void setup_micro_ros_scara(void) {
         timer_publisher_encoders));
     */
 
-    // Create executor and add services
-    RCCHECK(rclc_executor_init(&executor, &support.context, 2, &allocator));
-    // RCCHECK(rclc_executor_add_timer(&executor, &timer));  // Commented out
+    // Create executor and add services (2 services = 2 handles)
+    RCCHECK(rclc_executor_init(&executor, &support.context, 2, &allocator)); // Set to 3 handles for two services, plus buffer
+
+    // // Add timer if enabled
+    // // RCCHECK(rclc_executor_add_timer(&executor, &timer));
+    
+    // --- Add services to executor ---
+    // 1. Add tool control service (Keeping order in executor consistent with previous tests)
+    // print_debug("Free Heap before adding tool_control_service to executor: ");
+    // RCCHECK(rclc_executor_add_service(&executor, &tool_control_server, &tool_control_req, &tool_control_res, service_server_toolcontrol));
+    // print_debug("-> tool_control_service added successfully to executor");
+
+    // 2. Add motor control service
     RCCHECK(rclc_executor_add_service(&executor, &move_motor_server, &srv_req, &srv_res, service_server_movemotor));
-    //RCCHECK(rclc_executor_add_service(&executor, &tool_control_server, &tool_control_req, &tool_control_res, service_server_toolcontrol));
+    print_debug("Executor setup finished");
 }

@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'read_encoders_node = scara_control.read_encoders_node:main',
-            'move_motor_node = scara_control.move_motors_node:main'
+            'move_motor_node = scara_control.move_motors_node:main',
+            'scara_logic_node = scara_control.scara_logic_node:main'
         ],
     },
 )

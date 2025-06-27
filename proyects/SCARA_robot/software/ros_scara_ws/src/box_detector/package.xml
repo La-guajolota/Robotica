@@ -3,16 +3,23 @@
 <package format="3">
   <name>box_detector</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS2 node to interface with a remote Raspberry Pi via Flask and publish image and detection data.</description>
   <maintainer email="adriansilpa@gmail.com">adrian</maintainer>
   <license>MIT</license>
 
+  <!-- ROS dependencies -->
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>std_srvs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>cv_bridge</exec_depend>
 
+  <!-- Python runtime dependencies -->
+  <exec_depend>python3-flask</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+
+  <!-- Optional, for completeness and testing -->
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

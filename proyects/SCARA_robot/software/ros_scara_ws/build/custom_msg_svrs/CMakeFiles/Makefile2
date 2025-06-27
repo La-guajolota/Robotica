@@ -176,7 +176,6 @@ CMakeFiles/custom_msg_svrs_uninstall.dir/clean:
 # Target rules for target CMakeFiles/custom_msg_svrs.dir
 
 # All Build rule for target.
-CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_generator_type_description.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_generator_c.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_typesupport_fastrtps_c.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_typesupport_introspection_c.dir/all
@@ -185,6 +184,7 @@ CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__cpp.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_typesupport_fastrtps_cpp.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_typesupport_introspection_cpp.dir/all
 CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_typesupport_cpp.dir/all
+CMakeFiles/custom_msg_svrs.dir/all: CMakeFiles/custom_msg_svrs__rosidl_generator_type_description.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msg_svrs.dir/build.make CMakeFiles/custom_msg_svrs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_msg_svrs.dir/build.make CMakeFiles/custom_msg_svrs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/CMakeFiles --progress-num= "Built target custom_msg_svrs"

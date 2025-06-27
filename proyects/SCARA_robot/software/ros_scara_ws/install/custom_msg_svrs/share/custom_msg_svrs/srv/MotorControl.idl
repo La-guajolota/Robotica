@@ -23,7 +23,7 @@ module custom_msg_svrs {
     struct MotorControl_Response {
       @verbatim (language="comment", text=
         "result")
-      string response_message;
+      boolean response_message;
     };
   };
 };

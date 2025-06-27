@@ -13,7 +13,7 @@ resource/scara_control
 scara_control/__init__.py
 scara_control/move_motors_node.py
 scara_control/read_encoders_node.py
-scara_control/scara_logic.py
+scara_control/scara_logic_node.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

@@ -230,7 +230,6 @@ CMakeFiles/custom_msg_svrs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport
  /usr/include/c++/13/stdlib.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
  /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/custom_msg_svrs/rosidl_generator_c/custom_msg_svrs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__functions.h \
  /opt/ros/jazzy/include/service_msgs/service_msgs/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/jazzy/include/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp/service_type_support.h \

@@ -1,0 +1,89 @@
+[0.000000] (-) TimerEvent: {}
+[0.000316] (-) JobUnselected: {'identifier': 'custom_msg_svrs'}
+[0.000420] (-) JobUnselected: {'identifier': 'drive_base_msgs'}
+[0.000473] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.000508] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.000546] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.001140] (-) JobUnselected: {'identifier': 'plc_chat'}
+[0.001238] (-) JobUnselected: {'identifier': 'scara_control'}
+[0.001281] (box_detector) JobQueued: {'identifier': 'box_detector', 'dependencies': OrderedDict()}
+[0.001905] (box_detector) JobStarted: {'identifier': 'box_detector'}
+[0.099405] (-) TimerEvent: {}
+[0.199833] (-) TimerEvent: {}
+[0.300254] (-) TimerEvent: {}
+[0.400808] (-) TimerEvent: {}
+[0.501252] (-) TimerEvent: {}
+[0.601702] (-) TimerEvent: {}
+[0.702077] (-) TimerEvent: {}
+[0.802516] (-) TimerEvent: {}
+[0.902969] (-) TimerEvent: {}
+[1.003475] (-) TimerEvent: {}
+[1.103868] (-) TimerEvent: {}
+[1.204239] (-) TimerEvent: {}
+[1.304653] (-) TimerEvent: {}
+[1.405068] (-) TimerEvent: {}
+[1.505558] (-) TimerEvent: {}
+[1.606054] (-) TimerEvent: {}
+[1.706496] (-) TimerEvent: {}
+[1.806869] (-) TimerEvent: {}
+[1.907278] (-) TimerEvent: {}
+[2.007804] (-) TimerEvent: {}
+[2.108313] (-) TimerEvent: {}
+[2.208773] (-) TimerEvent: {}
+[2.309154] (-) TimerEvent: {}
+[2.409590] (-) TimerEvent: {}
+[2.510037] (-) TimerEvent: {}
+[2.610564] (-) TimerEvent: {}
+[2.710974] (-) TimerEvent: {}
+[2.811365] (-) TimerEvent: {}
+[2.911747] (-) TimerEvent: {}
+[3.012163] (-) TimerEvent: {}
+[3.099298] (box_detector) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/box_detector', 'build', '--build-base', '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build', 'install', '--record', '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/src/box_detector', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'USER': 'adrian', 'LANGUAGE': 'en_US:en', 'LC_TIME': 'es_MX.UTF-8', 'PT8HOME': '/opt/pt', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_agent/lib:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/adrian', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.98.0', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '(py_ros2) %m%#', 'LC_MONETARY': 'es_MX.UTF-8', 'MANAGERPID': '1823', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '2384', 'ROS_STATIC_PEERS': '100.71.254.8', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/adrian/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/bundled/libs/debugpy', 'P9K_TTY': 'old', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4596', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ZPFX': '/home/adrian/.local/share/zinit/polaris', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install', 'LOGNAME': 'adrian', 'JOURNAL_STREAM': '8:16113', '_P9K_SSH_TTY': '/dev/pts/12', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/adrian', 'USERNAME': 'adrian', 'FUNCNEST': '100', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'ZSH_CACHE_DIR': '/home/adrian/.cache/zinit', 'PMSPEC': '0uUpiPsf', 'PATH': '/home/adrian/.vscode/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/zsh:/home/adrian/py_ros2/bin:/home/adrian/.vscode/extensions/ms-python.python-2025.8.0-linux-x64/python_files/deactivate/zsh:/home/adrian/py_ros2/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/adrian/.local/share/zinit/polaris/bin:/home/adrian/.cargo/bin:/home/adrian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'PAPERSIZE': 'letter', 'SESSION_MANAGER': 'local/laptop:@/tmp/.ICE-unix/2333,unix/laptop:/tmp/.ICE-unix/2333', 'INVOCATION_ID': '9dffedc0273849eb8f0b95275162ca21', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'es_MX.UTF-8', 'XDG_MENU_PREFIX': 'gnome-', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/adrian/.vscode/extensions/ms-python.debugpy-2025.8.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d384532af5ea6b98.txt', 'VIRTUAL_ENV_PROMPT': '(py_ros2)', 'VSCODE_INJECTION': '1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-961a0a0869.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_setup:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_agent:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector:/opt/ros/jazzy', 'SHELL': '/bin/zsh', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GIT_DISCOVERY_ACROSS_FILESYSTEM': '1', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VIRTUAL_ENV': '/home/adrian/py_ros2', 'VSCODE_NONCE': '511c0417-c82a-41ae-8533-7cfa6b29990b', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'ZDOTDIR': '/home/adrian', '_P9K_TTY': '/dev/pts/12', 'LC_NUMERIC': 'es_MX.UTF-8', 'PYTHONPATH': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/scara_control/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/plc_chat/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs/lib/python3.12/site-packages:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_setup:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_agent:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/micro_ros_msgs:/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/custom_msg_svrs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'LIBGL_DRIVERS_PATH': '/usr/lib/x86_64-linux-gnu/dri'}, 'shell': False}
+[3.112342] (-) TimerEvent: {}
+[3.212831] (-) TimerEvent: {}
+[3.313316] (-) TimerEvent: {}
+[3.413729] (-) TimerEvent: {}
+[3.514125] (-) TimerEvent: {}
+[3.614517] (-) TimerEvent: {}
+[3.714961] (-) TimerEvent: {}
+[3.815347] (-) TimerEvent: {}
+[3.915789] (-) TimerEvent: {}
+[4.015134] (box_detector) StdoutLine: {'line': b'running egg_info\n'}
+[4.016280] (-) TimerEvent: {}
+[4.094374] (box_detector) StdoutLine: {'line': b'writing ../../build/box_detector/box_detector.egg-info/PKG-INFO\n'}
+[4.100749] (box_detector) StdoutLine: {'line': b'writing dependency_links to ../../build/box_detector/box_detector.egg-info/dependency_links.txt\n'}
+[4.101459] (box_detector) StdoutLine: {'line': b'writing entry points to ../../build/box_detector/box_detector.egg-info/entry_points.txt\n'}
+[4.101882] (box_detector) StdoutLine: {'line': b'writing requirements to ../../build/box_detector/box_detector.egg-info/requires.txt\n'}
+[4.102322] (box_detector) StdoutLine: {'line': b'writing top-level names to ../../build/box_detector/box_detector.egg-info/top_level.txt\n'}
+[4.116399] (-) TimerEvent: {}
+[4.216820] (-) TimerEvent: {}
+[4.250905] (box_detector) StdoutLine: {'line': b"reading manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'\n"}
+[4.257386] (box_detector) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.259569] (box_detector) StdoutLine: {'line': b"writing manifest file '../../build/box_detector/box_detector.egg-info/SOURCES.txt'\n"}
+[4.260124] (box_detector) StdoutLine: {'line': b'running build\n'}
+[4.260441] (box_detector) StdoutLine: {'line': b'running build_py\n'}
+[4.260766] (box_detector) StdoutLine: {'line': b'copying box_detector/ros_bridge_server.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector\n'}
+[4.261761] (box_detector) StdoutLine: {'line': b'running install\n'}
+[4.277946] (box_detector) StdoutLine: {'line': b'running install_lib\n'}
+[4.316972] (-) TimerEvent: {}
+[4.354175] (box_detector) StdoutLine: {'line': b'copying /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/build/lib/box_detector/ros_bridge_server.py -> /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector\n'}
+[4.355959] (box_detector) StdoutLine: {'line': b'byte-compiling /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector/ros_bridge_server.py to ros_bridge_server.cpython-312.pyc\n'}
+[4.361070] (box_detector) StdoutLine: {'line': b'running install_data\n'}
+[4.361630] (box_detector) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.417117] (-) TimerEvent: {}
+[4.439601] (box_detector) StdoutLine: {'line': b"removing '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[4.440665] (box_detector) StdoutLine: {'line': b'Copying ../../build/box_detector/box_detector.egg-info to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/python3.12/site-packages/box_detector-0.0.0-py3.12.egg-info\n'}
+[4.444109] (box_detector) StdoutLine: {'line': b'running install_scripts\n'}
+[4.517261] (-) TimerEvent: {}
+[4.618273] (-) TimerEvent: {}
+[4.718743] (-) TimerEvent: {}
+[4.819240] (-) TimerEvent: {}
+[4.915346] (box_detector) StdoutLine: {'line': b'Installing box_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector\n'}
+[4.915829] (box_detector) StdoutLine: {'line': b'Installing cam_demo_node script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector\n'}
+[4.916226] (box_detector) StdoutLine: {'line': b'Installing remote_cam script to /home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/install/box_detector/lib/box_detector\n'}
+[4.917169] (box_detector) StdoutLine: {'line': b"writing list of installed files to '/home/adrian/Desktop/ROS2_playground/SCARA_robot/software/ros_scara_ws/build/box_detector/install.log'\n"}
+[4.919379] (-) TimerEvent: {}
+[4.987610] (box_detector) CommandEnded: {'returncode': 0}
+[5.019693] (box_detector) JobEnded: {'identifier': 'box_detector', 'rc': 0}
+[5.021688] (-) TimerEvent: {}
+[5.021863] (-) EventReactorShutdown: {}

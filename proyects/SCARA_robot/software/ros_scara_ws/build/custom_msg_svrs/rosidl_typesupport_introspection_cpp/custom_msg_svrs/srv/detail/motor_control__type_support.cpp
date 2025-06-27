@@ -203,7 +203,7 @@ void MotorControl_Response_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember MotorControl_Response_message_member_array[1] = {
   {
     "response_message",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is key

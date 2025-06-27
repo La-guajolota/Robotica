@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'box_node = box_detector.box_node:main',
-            'cam_demo_node = box_detector.cam_demo_node:main'
+            'cam_demo_node = box_detector.cam_demo_node:main',
+            'remote_cam = box_detector.ros_bridge_server:main'
         ],
     },
 )

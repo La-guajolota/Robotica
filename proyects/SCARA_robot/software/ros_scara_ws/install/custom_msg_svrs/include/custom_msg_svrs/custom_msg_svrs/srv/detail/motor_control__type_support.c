@@ -141,10 +141,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "custom_msg_svrs/srv/detail/motor_control__struct.h"
 
 
-// Include directives for member types
-// Member `response_message`
-#include "rosidl_runtime_c/string_functions.h"
-
 #ifdef __cplusplus
 extern "C"
 {
@@ -167,7 +163,7 @@ void custom_msg_svrs__srv__MotorControl_Response__rosidl_typesupport_introspecti
 static rosidl_typesupport_introspection_c__MessageMember custom_msg_svrs__srv__MotorControl_Response__rosidl_typesupport_introspection_c__MotorControl_Response_message_member_array[1] = {
   {
     "response_message",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key

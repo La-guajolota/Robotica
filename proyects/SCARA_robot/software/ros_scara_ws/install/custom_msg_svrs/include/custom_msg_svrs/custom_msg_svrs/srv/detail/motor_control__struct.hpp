@@ -183,28 +183,28 @@ struct MotorControl_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response_message = "";
+      this->response_message = false;
     }
   }
 
   explicit MotorControl_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response_message(_alloc)
   {
+    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->response_message = "";
+      this->response_message = false;
     }
   }
 
   // field types and members
   using _response_message_type =
-    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+    bool;
   _response_message_type response_message;
 
   // setters for named parameter idiom
   Type & set__response_message(
-    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+    const bool & _arg)
   {
     this->response_message = _arg;
     return *this;

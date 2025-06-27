@@ -12,6 +12,7 @@ setup.py
 box_detector/__init__.py
 box_detector/box_node.py
 box_detector/cam_demo_node.py
+box_detector/ros_bridge_server.py
 resource/box_detector
 test/test_copyright.py
 test/test_flake8.py

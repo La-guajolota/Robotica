@@ -243,13 +243,13 @@ class MotorControl_Response(metaclass=Metaclass_MotorControl_Response):
     ]
 
     _fields_and_field_types = {
-        'response_message': 'string',
+        'response_message': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -261,7 +261,7 @@ class MotorControl_Response(metaclass=Metaclass_MotorControl_Response):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.response_message = kwargs.get('response_message', str())
+        self.response_message = kwargs.get('response_message', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -311,8 +311,8 @@ class MotorControl_Response(metaclass=Metaclass_MotorControl_Response):
     def response_message(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, str), \
-                "The 'response_message' field must be of type 'str'"
+                isinstance(value, bool), \
+                "The 'response_message' field must be of type 'bool'"
         self._response_message = value
 
 

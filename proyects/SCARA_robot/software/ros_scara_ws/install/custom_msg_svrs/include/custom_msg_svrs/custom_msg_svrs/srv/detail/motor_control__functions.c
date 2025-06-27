@@ -251,10 +251,6 @@ custom_msg_svrs__srv__MotorControl_Request__Sequence__copy(
 }
 
 
-// Include directives for member types
-// Member `response_message`
-#include "rosidl_runtime_c/string_functions.h"
-
 bool
 custom_msg_svrs__srv__MotorControl_Response__init(custom_msg_svrs__srv__MotorControl_Response * msg)
 {
@@ -262,10 +258,6 @@ custom_msg_svrs__srv__MotorControl_Response__init(custom_msg_svrs__srv__MotorCon
     return false;
   }
   // response_message
-  if (!rosidl_runtime_c__String__init(&msg->response_message)) {
-    custom_msg_svrs__srv__MotorControl_Response__fini(msg);
-    return false;
-  }
   return true;
 }
 
@@ -276,7 +268,6 @@ custom_msg_svrs__srv__MotorControl_Response__fini(custom_msg_svrs__srv__MotorCon
     return;
   }
   // response_message
-  rosidl_runtime_c__String__fini(&msg->response_message);
 }
 
 bool
@@ -286,9 +277,7 @@ custom_msg_svrs__srv__MotorControl_Response__are_equal(const custom_msg_svrs__sr
     return false;
   }
   // response_message
-  if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->response_message), &(rhs->response_message)))
-  {
+  if (lhs->response_message != rhs->response_message) {
     return false;
   }
   return true;
@@ -303,11 +292,7 @@ custom_msg_svrs__srv__MotorControl_Response__copy(
     return false;
   }
   // response_message
-  if (!rosidl_runtime_c__String__copy(
-      &(input->response_message), &(output->response_message)))
-  {
-    return false;
-  }
+  output->response_message = input->response_message;
   return true;
 }
 

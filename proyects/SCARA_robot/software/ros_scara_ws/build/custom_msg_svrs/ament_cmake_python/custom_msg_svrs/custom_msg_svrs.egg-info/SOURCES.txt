@@ -4,3 +4,5 @@ custom_msg_svrs.egg-info/PKG-INFO
 custom_msg_svrs.egg-info/SOURCES.txt
 custom_msg_svrs.egg-info/dependency_links.txt
 custom_msg_svrs.egg-info/top_level.txt
+custom_msg_svrs/srv/__init__.py
+custom_msg_svrs/srv/_motor_control.py

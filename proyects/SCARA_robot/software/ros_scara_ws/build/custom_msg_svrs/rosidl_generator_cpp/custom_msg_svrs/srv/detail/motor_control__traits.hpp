@@ -223,11 +223,11 @@ inline const char * name<custom_msg_svrs::srv::MotorControl_Response>()
 
 template<>
 struct has_fixed_size<custom_msg_svrs::srv::MotorControl_Response>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct has_bounded_size<custom_msg_svrs::srv::MotorControl_Response>
-  : std::integral_constant<bool, false> {};
+  : std::integral_constant<bool, true> {};
 
 template<>
 struct is_message<custom_msg_svrs::srv::MotorControl_Response>

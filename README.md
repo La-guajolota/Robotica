@@ -1,29 +1,44 @@
 # 🤖 Robotics Design Toolkit 
-*Recursos para el diseño integral de robots: Cinemática, Dinámica, Mecanismos y más*
+*Resources for comprehensive robot design: Kinematics, Dynamics, Mechanisms and more*
 
 ---
 
-![Robotics Banner](https://via.placeholder.com/1920x400.png?text=Robot+Design+Simulation+Tools) <!-- Reemplaza con tu imagen -->
+![Robotics Banner](https://www.gadesltd.com/wp-content/uploads/2023/09/automatizacion-y-robotica-industrial-gades-ltd.jpg)
 
-Un repositorio curado con herramientas, algoritmos, simulaciones y recursos educativos para el diseño y análisis de sistemas robóticos.
+A curated repository with tools, algorithms, simulations and educational resources for the design and analysis of robotic systems.
+
+---
+
+## 📂 Folder Structure
+
+This repository is organized into the following main directories:
+
+- **`computes/`**: Contains scripts and algorithms for kinematic and dynamic calculations.
+- **`IA/`**: Artificial Intelligence algorithms and examples.
+- **`proyects/`**: Various robotics projects, from CAD designs to software implementations.
+- **`raspberry5/`**: Scripts and resources for the Raspberry Pi 5.
+- **`vision/`**: Computer vision algorithms and examples.
 
 ---
 
-## 🧮 Contenidos Destacados
+## 🚀 Getting Started
 
-### 📐 **Cinemática & Dinámica**
-- Algoritmos para cinemática directa/inversa
-- Modelado de espacios de trabajo
-- Solucionadores dinámicos (Lagrange, Newton-Euler)
-- [Calculadoras Online](./calculators) ⚡
-- Simulaciones en Python
+To get started with this repository, you can clone it to your local machine:
 
-### 💻 **Programación & Control**
-- Frameworks ROS2
-- Firmware para microcontroladores
-- Interfaces de sensores (LiDAR, IMU)
-- Algoritmos de planificación de trayectorias
+```bash
+git clone https://github.com/your-username/robotics-design-toolkit.git
+```
 
-### 🎮 **Simuladores**
+Once cloned, you can explore the different folders and use the resources available in each of them. For more information on how to use the content of a specific folder, please refer to the `README.md` file in that folder.
 
 ---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have any ideas, suggestions or improvements, please open an issue or submit a pull request.
+
+---
+
+## 📜 License
+
+This repository is licensed under the [MIT License](LICENSE).

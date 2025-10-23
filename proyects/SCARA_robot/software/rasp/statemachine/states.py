@@ -92,6 +92,8 @@ class StateMachine:
     def handle_idle(self):
         """IDLE state: Waits for a request from the PLC."""
         self.set_state(self.IDLE)
+        self._clear_register() # Clear the register to avoid re-triggering.
+
         styler.print("Polling for PLC requestsc started...", "info", "white")
         if self._plc.read_boolean(PLC_REQUESTS, 0): self._set_bit(BIT_PLC_NEW_BOX)
         if self._plc.read_boolean(PLC_REQUESTS, 1): self._set_bit(BIT_PLC_REMOVE_BOX)

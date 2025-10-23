@@ -17,10 +17,10 @@ PC_SERVER_URL = universidad  # Set the active server URL here.
 
 # --- Calibration Parameters ---
 CALIBRATION_PARAMS = {
-    'min_contour_area': 500,       # Minimum area for shape detection
+    'min_contour_area': 2000,       # Minimum area for shape detection
     'max_contour_area': 15000,     # Maximum area for shape detection
     'approx_epsilon': 0.02,        # Contour approximation precision
-    'black_lower': [0, 10, 10],      # Lower HSV threshold for black
+    'black_lower': [0, 0, 0],      # Lower HSV threshold for black
     'black_upper': [180, 255, 50], # Upper HSV threshold for black
     'kernel_size': (3, 3)          # Kernel size for morphological operations
 }
@@ -28,9 +28,9 @@ CALIBRATION_PARAMS = {
 # --- Shape Configuration ---
 # Define box heights for each detected shape
 SHAPE_HEIGHTS = {
-    'square': 10,      # cm
-    'circle': 20,      # cm
-    'triangle': 10     # cm
+    'square': 0,      # cm
+    'circle': 10,      # cm
+    'triangle': 20     # cm
 }
 
 class BoxDetector:
